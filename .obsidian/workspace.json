@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fichamento 4.md",
+                "file": "Fichamento.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fichamento 4.md",
+                "file": "Fichamento.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fichamento 4.md"
+                "file": "Fichamento.md"
               }
             }
           },
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fichamento 4.md",
+                "file": "Fichamento.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,13 +181,13 @@
   },
   "active": "c2c08c9235f4f119",
   "lastOpenFiles": [
-    "adm-redes.md",
-    "Artigos.md",
-    "Fichamento 4.md",
+    "Fichamento 3.md",
     "Fichamento.md",
     "Fichamento 2.md",
+    "Fichamento 4.md",
+    "adm-redes.md",
+    "Artigos.md",
     "Excalidraw/first_anime.excalidraw.md",
-    "Fichamento 3.md",
     "Untitled",
     "Excalidraw",
     "Zettelkasten/mode-tcc",
