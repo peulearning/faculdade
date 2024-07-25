@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "37cb8daa53e6495e",
+        "id": "66531309d183b832",
         "type": "tabs",
         "children": [
           {
-            "id": "661d25daf49cb04a",
+            "id": "a06b6508c5d98d79",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fichamento.md",
+                "file": "Artigos.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c2c08c9235f4f119",
+            "id": "09cc3933c69522b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fichamento.md",
+                "file": "Daily Book (guia-pmbok-7-portugues.pdf).md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fichamento.md",
+                "file": "Daily Book (guia-pmbok-7-portugues.pdf).md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fichamento.md"
+                "file": "Daily Book (guia-pmbok-7-portugues.pdf).md"
               }
             }
           },
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fichamento.md",
+                "file": "Daily Book (guia-pmbok-7-portugues.pdf).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5
+    "width": 270.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,14 +179,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c2c08c9235f4f119",
+  "active": "09cc3933c69522b8",
   "lastOpenFiles": [
+    "Escopo do TCC.md",
+    "Daily Book (guia-pmbok-7-portugues.pdf).md",
     "Fichamento 3.md",
     "Fichamento.md",
     "Fichamento 2.md",
-    "Fichamento 4.md",
-    "adm-redes.md",
+    "Ferramentas de Pesquisa Científica.md",
     "Artigos.md",
+    "adm-redes.md",
+    "Pasted image 20240719220437.png",
     "Excalidraw/first_anime.excalidraw.md",
     "Untitled",
     "Excalidraw",
