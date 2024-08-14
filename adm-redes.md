@@ -1,9 +1,11 @@
 #Conceitos
 
+
+Lembrar sempre de abrir os bits
 Domínio de Colisão 
 Protocolo CSMA/CD -> Ethernet 
 Protocolo CSMA/CA -> Wi-fi
-
+Protocolo STP  -> Spanning Tree ( Evita o BrainStorm )
 
 Switch 
 
@@ -45,3 +47,7 @@ ifconfig br0 up
 
 
 
+* *Ativar STP no Switch:*
+```
+brctl stp br0 on
+```

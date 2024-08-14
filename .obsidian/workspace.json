@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "66531309d183b832",
+        "id": "c805fd99045dbac4",
         "type": "tabs",
         "children": [
           {
-            "id": "a06b6508c5d98d79",
+            "id": "abdc64e73e038c43",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artigos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "09cc3933c69522b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily Book (guia-pmbok-7-portugues.pdf).md",
+                "file": "Hipótese de Estudo.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily Book (guia-pmbok-7-portugues.pdf).md",
+                "file": "Hipótese de Estudo.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily Book (guia-pmbok-7-portugues.pdf).md"
+                "file": "Hipótese de Estudo.md"
               }
             }
           },
@@ -125,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily Book (guia-pmbok-7-portugues.pdf).md",
+                "file": "Hipótese de Estudo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +153,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.5
+    "width": 294.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,19 +166,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "09cc3933c69522b8",
+  "active": "abdc64e73e038c43",
   "lastOpenFiles": [
     "Escopo do TCC.md",
-    "Daily Book (guia-pmbok-7-portugues.pdf).md",
-    "Fichamento 3.md",
+    "Materiais e Metódos.md",
+    "Hipótese de Estudo.md",
+    "Untitled",
+    "Ferramentas de Pesquisa Científica.md",
     "Fichamento.md",
     "Fichamento 2.md",
-    "Ferramentas de Pesquisa Científica.md",
-    "Artigos.md",
-    "adm-redes.md",
+    "Git Commands.md",
+    "Fichamento 3.md",
     "Pasted image 20240719220437.png",
+    "Projeto Sistemas Embarcados.md",
+    "DataSets ( TCC ).md",
+    "Daily Book (guia-pmbok-7-portugues.pdf).md",
+    "Excalidraw/Drawing 2024-08-08 20.52.16.excalidraw.md",
+    "Excalidraw/Drawing 2024-08-08 20.52.19.excalidraw.md",
+    "Bolsa Treinamento.md",
+    "adm-redes.md",
+    "Artigos.md",
+    "Zettelstaken.md",
+    "Excalidraw/Drawing 2024-08-02 22.27.43.excalidraw.md",
     "Excalidraw/first_anime.excalidraw.md",
-    "Untitled",
+    "Excalidraw/Untitled.md",
     "Excalidraw",
     "Zettelkasten/mode-tcc",
     "mode-tcc",
