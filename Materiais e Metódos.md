@@ -45,18 +45,6 @@
 |Avaliação e Comparação|4 semanas|Fevereiro 2025|
 |Documentação e Preparação Final|2 semanas|Março 2025|
 
-### 3. **Criação e Compartilhamento do Documento:**
-
-Vou ajudá-lo a gerar esse documento. Siga os passos:
-
-1. **Acesse o Google Docs**: Abra [Google Docs](https://docs.google.com/).
-2. **Crie um Novo Documento**: Clique em "Em branco".
-3. **Insira as Informações**: Cole as informações fornecidas acima e ajuste conforme necessário.
-4. **Formate o Documento**: Adicione cabeçalhos, listas, e negrito para organizar o conteúdo.
-5. **Nomeie o Documento**: No canto superior esquerdo, renomeie para algo como "Material e Métodos - Projeto de Classificação de Lesões Cutâneas".
-6. **Compartilhe o Documento**: Clique em "Compartilhar", ajuste as permissões e copie o link para compartilhamento.
-
-
 
 ## Links / Note
 

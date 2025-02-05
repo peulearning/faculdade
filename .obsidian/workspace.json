@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c805fd99045dbac4",
+        "id": "266fbf75314bf7b7",
         "type": "tabs",
         "children": [
           {
-            "id": "abdc64e73e038c43",
+            "id": "ed9591012131546d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hipótese de Estudo.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -38,8 +36,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +55,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,14 +65,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 207.5110321044922
+    "width": 200
   },
   "right": {
     "id": "5e43eb4f4f9e7cdc",
@@ -85,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hipótese de Estudo.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +97,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
             }
           },
           {
@@ -102,8 +108,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hipótese de Estudo.md"
-              }
+                "file": "Artigos.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Artigos"
             }
           },
           {
@@ -112,10 +120,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hipótese de Estudo.md",
+                "file": "Artigos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Artigos"
             }
           }
         ]
@@ -131,8 +141,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           }
         ]
@@ -146,14 +160,16 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 294.5
+    "width": 201.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,35 +182,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "abdc64e73e038c43",
+  "active": "2ff48c7d3f7d4ce0",
   "lastOpenFiles": [
-    "Escopo do TCC.md",
-    "Materiais e Metódos.md",
-    "Hipótese de Estudo.md",
-    "Untitled",
-    "Ferramentas de Pesquisa Científica.md",
+    "Artigos.md",
+    "Fichamentos/Proteção da privacidade em dispositivos IOT de acordo com a LGPD.md",
+    "Fichamentos/Prospecção Tecnológica de Soluções de Internet.md",
+    "Fichamentos/Conectividade e saúde uma revisão crítica da literatura sobre a inserção da IOT no contexto médico. ( UFScar ).md",
+    "8 Período/Avaliação SASI.md",
+    "8 Período/Segurança e Auditoria de Sistemas de Informação.md",
+    "8 Período/Sistemas de Apoio à Decisão.md",
+    "Excalidraw/system_design.excalidraw.md",
+    "Excalidraw/Drawing 2025-02-03 17.29.35.excalidraw.md",
+    "Excalidraw/Drawing 2025-02-03 17.29.34.excalidraw.md",
+    "Excalidraw/Drawing 2025-01-31 18.24.46.excalidraw.md",
+    "adm-redes.md",
     "Fichamento.md",
     "Fichamento 2.md",
-    "Git Commands.md",
     "Fichamento 3.md",
-    "Pasted image 20240719220437.png",
-    "Projeto Sistemas Embarcados.md",
+    "Excalidraw/Drawing 2025-01-31 13.15.52.excalidraw.md",
+    "Ferramentas de Pesquisa Científica.md",
+    "Universidade Pessoal.md",
+    "Fichamentos",
+    "Zettelstaken.md",
+    "Tabela Comparativa.md",
+    "Escopo do TCC.md",
     "DataSets ( TCC ).md",
-    "Daily Book (guia-pmbok-7-portugues.pdf).md",
+    "Excalidraw/Drawing 2024-08-02 22.27.43.excalidraw.md",
     "Excalidraw/Drawing 2024-08-08 20.52.16.excalidraw.md",
     "Excalidraw/Drawing 2024-08-08 20.52.19.excalidraw.md",
-    "Bolsa Treinamento.md",
-    "adm-redes.md",
-    "Artigos.md",
-    "Zettelstaken.md",
-    "Excalidraw/Drawing 2024-08-02 22.27.43.excalidraw.md",
-    "Excalidraw/first_anime.excalidraw.md",
-    "Excalidraw/Untitled.md",
+    "Excalidraw/Drawing 2024-10-01 14.55.08.excalidraw.md",
+    "Pasted image 20240817152617.png",
+    "Pasted image 20240817142716.png",
+    "Pasted image 20240817142614.png",
+    "Pasted image 20240817142600.png",
+    "Pasted image 20240719220437.png",
+    "Untitled/desktop.ini",
+    "8 Período",
     "Excalidraw",
     "Zettelkasten/mode-tcc",
     "mode-tcc",
     "Zettelkasten/Fichamento para TCC",
-    "Fichamento para Projeto de TCC.md",
     "Zettelkasten"
   ]
 }
