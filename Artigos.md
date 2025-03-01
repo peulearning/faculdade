@@ -26,3 +26,6 @@ https://repositorio.pucgoias.edu.br/jspui/handle/123456789/7816 - ( **SIMULAÇÃ
 https://www.jhi.sbis.org.br/index.php/jhi-sbis/article/view/1440 - (**Domínios, competências e habilidades em informática em saúde e saúde digital: análise documental** )
 
 https://repositorio.ucp.pt/bitstream/10400.14/28405/1/TFM_JoanaSaldanha.pdf - (**Internet das Coisas  Aplicada á Área da Saúde**)
+
+https://sci-hub.st/https://ieeexplore.ieee.org/document/9365708 - ( Internet of Things (IoT): A review of its enabling technologies in healthcare applications, standards protocols, security and market **opportunities** )
+
