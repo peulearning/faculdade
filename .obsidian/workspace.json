@@ -11,10 +11,14 @@
             "id": "e45652941ca71742",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "8 Período/Desenvolvimento TCC/Reunião Dia 12-03.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Reunião Dia 12-03"
             }
           }
         ]
@@ -186,21 +190,22 @@
   },
   "active": "e45652941ca71742",
   "lastOpenFiles": [
-    "Fichamentos/SkinGPT-4.md",
-    "Fichamentos/Integrated Image and Location Analysis for Wound Classification.md",
-    "8 Período/Desenvolvimento TCC/Reunião Dia 12-03.md",
     "8 Período/Desenvolvimento TCC/Reunião Dia 12-01.md",
     "8 Período/Desenvolvimento TCC/Reunião Dia 12-02.md",
-    "8 Período/Desenvolvimento TCC/Reunião Dia 19-02.md",
-    "Fichamentos/Experimental Study on Wound Area Measurement with Mobile Devices.md",
+    "Fichamentos/Integrated Image and Location Analysis for Wound Classification.md",
     "Fichamentos/Image-Based Artificial Intelligence in Wound Assessment A Systematic Review.md",
-    "8 Período/Avaliação SASI.md",
-    "8 Período/Sistemas de Apoio à Decisão.md",
     "Fichamentos/Artificial Intelligence of Things for Smarter Healthcare A Survey of Advancements, Challenges, and Opportunities.md",
     "Fichamentos/Conectividade e saúde uma revisão crítica da literatura sobre a inserção da IOT no contexto médico. ( UFScar ).md",
-    "Fichamentos/Internet of Things (IoT) A review of its enabling technologies in healthcare applications, standards protocols, security and market opportunities.md",
-    "Fichamentos/Proteção da privacidade em dispositivos IOT de acordo com a LGPD.md",
+    "Fichamentos/SkinGPT-4.md",
+    "Fichamentos/LLMs-Healthcare.md",
     "Fichamentos/Prospecção Tecnológica de Soluções de Internet.md",
+    "Fichamentos/Experimental Study on Wound Area Measurement with Mobile Devices.md",
+    "Fichamentos/Internet of Things (IoT) A review of its enabling technologies in healthcare applications, standards protocols, security and market opportunities.md",
+    "8 Período/Desenvolvimento TCC/Reunião Dia 12-03.md",
+    "8 Período/Desenvolvimento TCC/Reunião Dia 19-02.md",
+    "8 Período/Avaliação SASI.md",
+    "8 Período/Sistemas de Apoio à Decisão.md",
+    "Fichamentos/Proteção da privacidade em dispositivos IOT de acordo com a LGPD.md",
     "8 Período/Segurança e Auditoria de Sistemas de Informação.md",
     "Zettelstaken.md",
     "Universidade Pessoal.md",
@@ -211,7 +216,6 @@
     "Materiais e Metódos.md",
     "Tabela Comparativa.md",
     "Hipótese de Estudo.md",
-    "Fichamento 2.md",
     "Images TCC/Pasted image 20250212155707.png",
     "Images TCC/Pasted image 20250212155701.png",
     "Images TCC/Pasted image 20250212155651.png",
