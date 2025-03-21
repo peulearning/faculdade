@@ -5,7 +5,7 @@ No artigo de Experimental Study
 - O que é padrão ? [ x ]
 - E oque tem de oportunidade de melhorar. [ x ]
 - Pesquisar em cima do Artigo de Experimental Study : Limitações Tecnológicas, DataSet, Acesso do DataSet [ x ]
-
+	
 
 Pesquisar Aplicações de LLM no contexto de feridas (API)
 
@@ -19,9 +19,9 @@ Imagem Rotulado / Não Rotulado
 
 O estudo utiliza diversas tecnologias e métodos para medir a área de feridas com dispositivos móveis, destacando-se:
 
-- **OpenCV**: Uma biblioteca poderosa de processamento de imagem que permite capturar imagens, segmentar feridas e medir suas áreas com base em algoritmos robustos , .
-- **Algoritmos de Segmentation e Thresholding**: Esses permitem que o software identifique partes da imagem que representam a ferida, utilizando técnicas como dilatação e erosão para melhorar a precisão da medição .
+- **OpenCV**: Uma biblioteca poderosa de processamento de imagem que permite capturar imagens, segmentar feridas e medir suas áreas com base em algoritmos robustos 
 
+- **Algoritmos de Segmentation e Thresholding**: Esses permitem que o software identifique partes da imagem que representam a ferida, utilizando técnicas como dilatação e erosão para melhorar a precisão da medição .
 
 
 ### 2. Oportunidades de Melhoria
