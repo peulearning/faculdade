@@ -1,6 +1,6 @@
 
 Executar os Steps e Explicar [  ] 
-Entender porque a dimensão 224x224 foi utilizada [ x ]  ( Possível Testar em resolução 256x256 ou 512x512 )
+Entender porque a dimensão 224x224 foi utilizada [ x ]  ( Possível Testar em resolução 256x256 ou 512x512 )  
 Procurar Artigos 5 á 10 quais motivações de utilizar Visão Computacional com Feridas. [ x ]  
 ### 📌 **1. Padrão de Modelos Pré-Treinados**
 
@@ -50,3 +50,14 @@ Se aumentarmos muito a resolução, apenas aumentamos o custo de processamento *
 Usar **224x224** para todas as imagens padroniza os dados de entrada, tornando o treinamento mais eficiente e evitando que a CNN precise lidar com tamanhos variados.
 
 Sem um tamanho fixo, precisaríamos de **camadas adaptativas** ou realizar **padding**, o que poderia introduzir distorções.
+
+
+### ⚡ **1. Redes  Convolucionais Parâmetros Técnicos**
+
+https://www.youtube.com/watch?v=lb5ocJiDLgg&t=1268s - Redes Neurais Convolucionais
+
+Estamos Tratando de Dados Complexos ( Imagens )
+
+* Imagem , Texto, Grafos, Aúdio.*
+
+Dados Complexos : Alta dimensionalidade (Grande número de Atributos e Características ) em outras palavras cada pixel e um dado.  Uma imagem de 7x7 pixels e menos que um ícone ou seja mesmo pequenas imagem pequenas existe uma quantidade absurda de atributos. ainda assim os dados são " NÃO ESTRUTURADOS " pois as informações necessárias estão distribuídas em vários pixels, dando o fato que precisa ser LIMPADO para conseguirmos extrair as características necessárias.
