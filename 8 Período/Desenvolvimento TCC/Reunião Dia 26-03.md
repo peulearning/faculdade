@@ -103,7 +103,6 @@ Funções de Ativação ( Para última camada da Rede ) :
 *  Família ReLU 
 *  Família Softmax ( Cara Computacionalmente ) : Quanto mais saídas eu tiver mais caro será ( O(n ))
 
-* Funções de Custo 
  
 	Em outras palavras as CNN's elas terão muitas camadas de convulção, pooling, relu e perceptrons, com isso temos a primeira parte ou seja o Pass Forward e geralmente o output e a Classificação ou seja  essa saída e uma distribuição de probabilidade que será associada a cada classe possível . O modelo então e treinado comparando a distribuição de probabilidades com a classe verdadeira , sendo realizada pela função de custo ( otimizador ) .
 
@@ -114,4 +113,28 @@ Da penúltima camada para trás a gente usa a ReLU  seria o estado da arte é qu
 Otimizadores / Métodos de Treinamento : 
 
 
-Gradiente Descendente [ Batch / Mini-Batch / Stochastic ]  ( Pelo menos e oque estamos utilizando) e um Suavizador  dos pesos do modelo, 
+Gradiente Descendente [ Batch / Mini-Batch / Stochastic ]  ( Pelo menos e oque estamos utilizando) e um Suavizador  dos pesos do modelo,  mas em outras palavras cada otimizados da um modelo diferente. e por padrão utiliza-se o descendente. 
+
+
+* Funções de Custo : 
+
+Entropia Cruzada  e uma função de custo que tem que ser utilizada quando a função de ativação da última camada for uma sigmóide ou uma softmax .  E isso porque ela compara o quão parecidas são duas distribuições de probabilidade da sua rede.  
+
+No caso utilizamos a Entropia Cruzada  Binária e ( 0, 1 )  e deveremos utilizar a Entropia Cruzada Multinomial.
+
+Componentes da Camada Convolucional 
+
+* Quantos Filtros ? 
+* Qual a dimensão de cada Fitlro ?
+* Qual o incremento entre os filtros (stride) ? 
+* Qual e a função de ativação ? 
+
+Camadas de Pooling 
+* Qual tipo do pooling ? ( Máximo , média, mínimo)
+* Qual a dimensão do filtro ?
+
+Camadas de Perceptrons ( Densas / Totalmente Conectadas )
+
+* Quantas camadas ?
+* Quantos neurônios por camda ?
+* Qual a função de ativação ?
