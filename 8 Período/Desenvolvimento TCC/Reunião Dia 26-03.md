@@ -73,10 +73,45 @@ Aprendizagem de Máquina Clássico ( Shallow ) era utilizado essa etapas até ag
 * Modelos Simples ( Rasos - Shallow ( OpenCV2  >> SVM  ( Classificador Linear Filtros  )))
 * Poucos parâmetros
 
-Aprendizado Profundo ( Deep Learning )
+Aprendizado Profundo ( Deep Learning ) em outra palavras o modelo aprende sozinho apenas com a imagem crua , sem que eu tenha que pré-processar os dados.
 
 * Atributos Complexos :  Não estruturados, Alta Dimensionalidade
 * Previamente Selecionados / Manipulados ( Engenharia de Características )
 *  O próprio modelo aprende como : Selecionar e extrair características , reconhece padrões de características
 * Modelos Complexos : Milhares  / Milhões de Parâmetros 
-* 
+
+Redes Neurais Convolucionais :  São redes neurais que trabalham com qualquer tipo de dado porém vamos fixar com Imagens .
+
+* Convoluções de Dimensão 1 :  Para vetores
+* Convoluções de Dimensão 2 : Matrizes =  Imagens
+* Convoluções de Dimensão 3 : Matrizes de Matrizes = Volumes
+
+Em outras palavras não estamos criando uma outra rede neural , apenas estamos adicionando camadas novas dando suas respectivas responsabilidades.
+
+*  Bloco 1  : Redução de Dimensionalidade , Extração de Características  ( Camadas de Convoluções , por exemplo Pooling, Conv, ReLU )
+*  Bloco 2 :  Reconhecimento de Classificação de Padrões
+
+Tipos de Camadas : 
+
+* Convolucionais
+* Dimensionalidade (Pooling / Up Sampling )
+* Densas / Totalmente Conectadas (MLP)
+* Normalização (Dropout , Normalization, Nose )
+
+Funções de Ativação ( Para última camada da Rede ) :
+
+*  Família ReLU 
+*  Família Softmax ( Cara Computacionalmente ) : Quanto mais saídas eu tiver mais caro será ( O(n ))
+
+* Funções de Custo 
+ 
+	Em outras palavras as CNN's elas terão muitas camadas de convulção, pooling, relu e perceptrons, com isso temos a primeira parte ou seja o Pass Forward e geralmente o output e a Classificação ou seja  essa saída e uma distribuição de probabilidade que será associada a cada classe possível . O modelo então e treinado comparando a distribuição de probabilidades com a classe verdadeira , sendo realizada pela função de custo ( otimizador ) .
+
+
+Da penúltima camada para trás a gente usa a ReLU  seria o estado da arte é que funciona bem para todos os modelos, e a última camada e utilizado o Softmax ( problemas de classificação ) .
+
+
+Otimizadores / Métodos de Treinamento : 
+
+
+Gradiente Descendente [ Batch / Mini-Batch / Stochastic ]  ( Pelo menos e oque estamos utilizando) e um Suavizador  dos pesos do modelo, 
