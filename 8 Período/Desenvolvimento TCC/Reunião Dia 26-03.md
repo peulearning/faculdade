@@ -58,6 +58,25 @@ https://www.youtube.com/watch?v=lb5ocJiDLgg&t=1268s - Redes Neurais Convoluciona
 
 Estamos Tratando de Dados Complexos ( Imagens )
 
-* Imagem , Texto, Grafos, Aúdio.*
+* Imagem , Texto, Grafos, Aúdio.
 
 Dados Complexos : Alta dimensionalidade (Grande número de Atributos e Características ) em outras palavras cada pixel e um dado.  Uma imagem de 7x7 pixels e menos que um ícone ou seja mesmo pequenas imagem pequenas existe uma quantidade absurda de atributos. ainda assim os dados são " NÃO ESTRUTURADOS " pois as informações necessárias estão distribuídas em vários pixels, dando o fato que precisa ser LIMPADO para conseguirmos extrair as características necessárias.
+
+Problemas dos dados  Complexos : Redundância doa dados, padrões distribuídos em muitos atributos .  Feature Engineering  ( Limpeza de Dados, Transformação dos Dados, Seleção das Características ), Reconhecimento de Padrões . 
+
+Exemplo  : Conjunto de imagem de Dígitos  cujo objetivo e identificar dentro das imagens os subconjuntos de pixels (atributos características ) que identifique um determinado padrão  então o algoritmo deve encontrar as características mais fortes de uma classe para outras e após a extração desse conjunto de pixels são as características e após extraídos 
+
+Aprendizagem de Máquina Clássico ( Shallow ) era utilizado essa etapas até agora feito a mão
+
+* Atributos Simples, Estruturados, Baixa Dimensionalidade  
+*  Previamente Selecionados / Manipulados ( Engenharia de Características )
+* Modelos Simples ( Rasos - Shallow ( OpenCV2  >> SVM  ( Classificador Linear Filtros  )))
+* Poucos parâmetros
+
+Aprendizado Profundo ( Deep Learning )
+
+* Atributos Complexos :  Não estruturados, Alta Dimensionalidade
+* Previamente Selecionados / Manipulados ( Engenharia de Características )
+*  O próprio modelo aprende como : Selecionar e extrair características , reconhece padrões de características
+* Modelos Complexos : Milhares  / Milhões de Parâmetros 
+* 
