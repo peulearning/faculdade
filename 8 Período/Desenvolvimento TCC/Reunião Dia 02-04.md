@@ -1,6 +1,6 @@
 
-Executar os Steps e Explicar [  ] 
-Entender porque a dimensão 224x224 foi utilizada [ x ]  ( Possível Testar em resolução 256x256 ou 512x512 )  
+Executar os Steps e Explicar [ X ] 
+Entender porque a dimensão 224x224 foi utilizada [ X ]  ( Possível Testar em resolução 256x256 ou 512x512 )  
 Procurar Artigos 5 á 10 quais motivações de utilizar Visão Computacional com Feridas. [ x ]  
 ### 📌 **1. Padrão de Modelos Pré-Treinados**
 
@@ -122,19 +122,79 @@ Entropia Cruzada  e uma função de custo que tem que ser utilizada quando a fun
 
 No caso utilizamos a Entropia Cruzada  Binária e ( 0, 1 )  e deveremos utilizar a Entropia Cruzada Multinomial.
 
+Arquitetura do Modelo
+
 Componentes da Camada Convolucional 
 
 * Quantos Filtros ? 
 * Qual a dimensão de cada Fitlro ?
 * Qual o incremento entre os filtros (stride) ? 
-* Qual e a função de ativação ? 
+* Qual e a função de ativação ?  Não e obrigatório porém podem passar valores negativos.
 
-Camadas de Pooling 
+Camadas de Pooling  ( Redução , Amostra , Pixels Importante )
+
 * Qual tipo do pooling ? ( Máximo , média, mínimo)
-* Qual a dimensão do filtro ?
+* Qual a dimensão do filtro ? 2x2 , 3x3 , 4x4  .... 
+* Quanto maior a dimensão maior a redução da imagem e quanto maior a redução da imagem mais perde definição.
 
 Camadas de Perceptrons ( Densas / Totalmente Conectadas )
 
-* Quantas camadas ?
+* Quantas camadas ? 
 * Quantos neurônios por camda ?
 * Qual a função de ativação ?
+*  Sabemos por padrão da penúltima  camada para trás  usamos Relu e da camada final em diante e Softmax. 
+
+Outras escolhas arquiteturais 
+
+* Otimizador 
+* Funções de Custo
+* Técnicas de Normalização 
+* Dropout, Normalization, Noise
+
+Depois de escolher você a Arquitetura Sequencial  
+
+* Como as camadas estarão conectadas entre si ? 
+
+Arquitetura Pararalela -> Percorre caminhos diferentes  e depois são concatenadas
+
+Framework Keras + TensorFlow   ( Deep Learning )
+
+Deep Learning e muto caro computacionalmente 
+
+* Paralelos ou divididos 
+* Hardware GPU NVIDIA , TPU GOOGLE
+
+Para o Framework Keras o Modelo é Camadas e Otimizador 
+
+keras.layers - Camadas
+
+* Densa
+* Convolucional  ( Conv2D )
+* Pooling ( MaxPooling2D , AveragePooling2D )
+* Regularização ( Dropout, GaussianNose, BatchNormalization )
+
+nn.layers - Camadas 
+
+* Input
+* Flatten
+* Reshape
+* Concatenate
+
+![[Pasted image 20250325214851.png]]
+
+![[Pasted image 20250325214905.png]]
+
+
+![[Pasted image 20250325215139.png]]
+
+![[Pasted image 20250325215245.png]]
+
+
+Motivações de Usar Visão Computacional no Tratamento de Feridas : 
+
+1.  Automatização de Análise de Feridas 
+2. Precisão e Consistência 
+3. Análise Multimodal
+4. Capacidade de Lidar com Diversidade
+5. Melhorias nos Tratamentos e Resultados
+6. Redução de Custos 
