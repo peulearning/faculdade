@@ -189,12 +189,50 @@ nn.layers - Camadas
 
 ![[Pasted image 20250325215245.png]]
 
+![[Pasted image 20250327131546.png]]
 
-Motivações de Usar Visão Computacional no Tratamento de Feridas : 
 
-1.  Automatização de Análise de Feridas 
-2. Precisão e Consistência 
-3. Análise Multimodal
-4. Capacidade de Lidar com Diversidade
-5. Melhorias nos Tratamentos e Resultados
-6. Redução de Custos 
+![[Pasted image 20250327131605.png]]
+
+![[Pasted image 20250327131739.png]]
+
+![[Pasted image 20250327131831.png]]
+
+Motivações de Usar Visão Computacional no Tratamento de Feridas Por Artigos 
+
+1. APLICATIVO PARA SMARTPHONE DE GERENCIAMENTO DO CUIDADO AOS  
+INDIVÍDUOS COM LESÃO POR PRESSÃO 
+
+	Objetividade na avaliação : A visão computacional fornece uma análise objetiva das características das feridas, minimizando a subjetividade que pode estar presente na avaliação visual feita somente por profissionais de saúde. Isso é fundamental para garantir consistência nas análises e nos tratamentos proposto . Páginas 105 e 67
+
+	Automatização dos Processos : O uso de técnicas de processamento de imagens permite o registro preciso dos dados das feridas, facilitando o acompanhamento da evolução e o desenvolvimento de relatórios. Isso pode melhorar a comunicação entre os profissionais de saúde e aumentar a segurança no cuidado dos pacientes . Páginas 38 e 15
+
+	A visão computacional, integrada ao aplicativo GeFe App, utiliza algoritmos como redes neurais para reconhecer padrões e classificar automaticamente os tecidos presentes no leito das feridas. Isso reduz a necessidade de intervenções manuais e agiliza o processo de avaliação. Págnas 38 e 15
+
+	Redução dos Riscos : A utilização de tecnologias computacionais ajuda a reduzir o risco de contaminação durante a documentação clínica das lesões e melhora a precisão dos dados coletados, o que é vital para o planejamento e execução do tratamento Páginas 67 e 2 
+
+2.  Integrated Image and Location Analysis for Wound Classification:  A Deep Learning Approach
+
+		O texto menciona que "a advento da inteligência artificial (IA) trouxe mudanças significativas na assistência médica, incluindo o diagnóstico de feridas", salientando como a IA, particularmente o aprendizado profundo, é um "game-changer na análise de imagens médicas, permitindo classificações de feridas precisas, rápidas e econômicas". Página 2
+
+		Aqui é mencionado que técnicas tradicionais de aprendizado de máquina, como SVM, têm sido "significativas na classificação de imagens de feridas", o que demonstra que métodos computacionais têm sido utilizados para melhorar a precisão na classificação de feridas. Página 4
+
+		A nota sobre "futuramente, a pesquisa se concentrará em aprimorar nosso modelo, incluindo mais modalidades como nível de dor e achados de palpação" indica que a combinação de diferentes tipos de dados pode otimizar ainda mais a análise das feridas. Página 5
+
+3. SkinGPT-4: An Interactive Dermatology  Diagnostic System with Visual Large Language Model
+		
+		Diagnóstico Acelerado: A visão computacional permite a análise rápida de imagens de feridas, proporcionando diagnósticos preliminares mais ágeis. Isso é particularmente útil em situações em que dermatologistas estão em falta, como em áreas rurais, reduzindo o tempo esperado para que os pacientes recebam uma avaliação. Página 11
+
+		Suporte a Educação do Paciente : O uso de tecnologia de visão computacional pode capacitar os pacientes a entenderem melhor suas condições. Com diagnósticos mais claros e recomendações interativas, os pacientes se sentem mais informados sobre seu estado de saúde, o que pode levar a um melhor engajamento no tratamento. Páginas 9 e 3.
+
+		Economia de Recursos: Com a capacidade de processar imagens e fornecer diagnósticos automaticamente, o trabalho dos dermatologistas pode ser otimizado, permitindo-lhes focar em casos mais complexos e consultas que necessitam de um toque humano. Página 3.
+
+4. Experimental Study on Wound Area Measurement with  Mobile Devices
+
+		Medição Precisa da área da ferida : A visão computacional permite a medição automatizada e precisa da área da ferida, o que é crucial para monitorar a evolução da cicatrização. A utilização de algoritmos de segmentação e detecção de contornos facilita a quantificação da área com precisão, superando a subjetividade dos métodos manuais. Páginas 16 e 2.
+
+		Integração com outros sistemas : Sistemas que utilizam visão computacional podem ser integrados a outras tecnologias, como sistemas de informação em saúde, permitindo uma análise mais abrangente e contextualizada das condições do paciente e do tratamento. Página 2
+
+		Acessibilidade : Com o avanço da tecnologia e a ubiquidade de dispositivos móveis, a visão computacional proporciona soluções de baixo custo e acessíveis, permitindo que um maior número de pessoas tenha acesso a tecnologias que podem melhorar o tratamento de feridas . Páginas 2
+
+		Monitoramento da Cicatrização : A capacidade de avaliar a cicatrização com dados objetivos e quantitativos ajuda profissionais de saúde a determinar a eficácia do tratamento. Isso é especialmente vital para pacientes com feridas crônicas ou infectadas, onde o acompanhamento constante da progressão é essencial para a intervenção clínica. Páginas 2 e 16.
