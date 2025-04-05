@@ -52,7 +52,7 @@ Usar **224x224** para todas as imagens padroniza os dados de entrada, tornando o
 Sem um tamanho fixo, precisaríamos de **camadas adaptativas** ou realizar **padding**, o que poderia introduzir distorções.
 
 
-### ⚡ **1. Redes  Convolucionais Parâmetros Técnicos**
+### ⚡ **1. Redes  Convolucional Parâmetros Técnicos**
 
 https://www.youtube.com/watch?v=lb5ocJiDLgg&t=1268s - Redes Neurais Convolucionais
 
@@ -198,7 +198,7 @@ nn.layers - Camadas
 
 ![[Pasted image 20250327131831.png]]
 
-Motivações de Usar Visão Computacional no Tratamento de Feridas Por Artigos 
+### 🪄 **Motivações de Usar Visão Computacional no Tratamento de Feridas Por Artigos 
 
 1. APLICATIVO PARA SMARTPHONE DE GERENCIAMENTO DO CUIDADO AOS  
 INDIVÍDUOS COM LESÃO POR PRESSÃO 
