@@ -108,3 +108,5 @@ Depende do objetivo, mas **geralmente o mais importante é o `Recall`**.
 | **F1-Score**  | Média harmônica entre Precision e Recall (boa para equilíbrio)                     |
 
 Fonte : https://en.wikipedia.org/wiki/Precision_and_recall
+
+Alterações Pontuais no Código 
