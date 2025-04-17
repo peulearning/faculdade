@@ -57,7 +57,7 @@ O padrão de 224x224 surgiu com **AlexNet**, uma das primeiras CNNs a se destaca
 Fonte : https://www.baeldung.com/cs/convolutional-vs-regular-nn?utm_source=chatgpt.com
 
 
-### 📌 **Porque os artigos defendem .Qual a aplicação dela para visão computacional**
+### 📌 **Porque os artigos defendem a rede convolucional .Qual a aplicação dela para visão computacional ( Trazer mais artigos que fortaleçam essa abordagem.**
 
 Fonte : https://ojs.revistacontemporanea.com/ojs/index.php/home/article/view/7190/5125
 
@@ -110,3 +110,9 @@ Depende do objetivo, mas **geralmente o mais importante é o `Recall`**.
 Fonte : https://en.wikipedia.org/wiki/Precision_and_recall
 
 Alterações Pontuais no Código 
+
+
+### 📌**O que são filtros na CNN ? 
+
+
+Fonte : https://www.databricks.com/br/glossary/convolutional-layer 
