@@ -26,3 +26,35 @@ Se tivermos uma primitiva F de uma função f então qualquer outra tem a forma
 
 
 Aula 16/05/2025 ( Segunda Aula )
+
+
+* Utilização do Software GeoGebra ( Confirmar Gráficos Construídos )
+
+Oque é uma primitiva de uma função ? Quando eu Derivo eu encontro a função. ( Recapitulando )
+
+Lembrando que F(X) -> é uma Família de Funções
+
+	Primeiro Exercícios : Encontre a primitva mais geral de cada uma das funções.
+	a) f(x) = senx
+	b) f(X) = 1/x
+	c) f(x) = x^n
+
+	Respostas ( Lembrar dessas Propiedades ) :  a) F(X) = -cos(x) + C
+	b) F(x) = ln |x| + C
+	c) F(X) = x^n+1 / n+1 + C
+
+	Práticando para Fixar : 
+	A) f(x) = 4x²
+	B) f(X) = 3x²
+	C) f(X) = h(x) x³ + senx
+	D) f(x) = √x¹
+	E) f(x) = 1/x²
+
+	Funções Inversas 
+	Pergunta a se fazer toda vez que for Trigonometria 
+	"Qual é o ângulo ou qual é o arco que eu calculo o Sen dele dá 1 ? "
+
+Questões para trabalhar e relembrar Trigonometria ( Tabela / Plano Cartesiano )
+
+	a) f(x) = sen-¹
+	
