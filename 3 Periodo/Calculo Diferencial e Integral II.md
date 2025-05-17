@@ -23,3 +23,6 @@ Teorema ( Geral para todas as Primitivas que Representam a mesma Função  ):
 Se tivermos uma primitiva F de uma função f então qualquer outra tem a forma 
 
 	F ( x ) + k com k constante.
+
+
+Aula 16/05/2025 ( Segunda Aula )

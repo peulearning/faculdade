@@ -1,6 +1,6 @@
 Aula 15/05/25 ( Primeira Aula )
 
-* Apostila PDF ![[Estat e prob.pdf]]
+* Apostila PDF Gustavo![[Estat e prob.pdf]]
 
 Conceitos Básicos  Apreendidos Hoje 
 
