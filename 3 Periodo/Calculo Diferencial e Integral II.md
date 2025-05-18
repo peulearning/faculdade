@@ -57,4 +57,6 @@ Lembrando que F(X) -> é uma Família de Funções
 Questões para trabalhar e relembrar Trigonometria ( Tabela / Plano Cartesiano )
 
 	a) f(x) = sen-¹
-	
+
+Pratiquei algumas questões como
+	`"Encontre a primitiva geral da função tal"` 
