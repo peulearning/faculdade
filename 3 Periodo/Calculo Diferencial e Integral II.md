@@ -60,3 +60,6 @@ Questões para trabalhar e relembrar Trigonometria ( Tabela / Plano Cartesiano )
 
 Pratiquei algumas questões como
 	`"Encontre a primitiva geral da função tal"` 
+
+Para relembrar vou adicionar as regras de operações fracionárias :
+	
