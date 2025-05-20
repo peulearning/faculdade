@@ -61,5 +61,37 @@ Questões para trabalhar e relembrar Trigonometria ( Tabela / Plano Cartesiano )
 Pratiquei algumas questões como
 	`"Encontre a primitiva geral da função tal"` 
 
-Para relembrar vou adicionar as regras de operações fracionárias :
-	
+**Adição de Frações**
+
+- **Denominadores Iguais**: Se as frações têm o mesmo denominador, some os numeradores e mantenha o denominador.
+    
+    - Exemplo: ac+bc=a+bc
+    
+- **Denominadores Diferentes**: Encontre um denominador comum, que é o mínimo múltiplo comum (MMC) dos denominadores.
+    
+    - Exemplo: ab+cd=a⋅d+b⋅cb⋅d
+    
+
+**Subtração de Frações**
+
+- **Denominadores Iguais**: Se as frações têm o mesmo denominador, subtraia os numeradores e mantenha o denominador.
+    
+    - Exemplo: ac−bc=a−bc
+    
+- **Denominadores Diferentes**: Encontre um denominador comum e siga o mesmo procedimento da adição.
+    
+    - Exemplo: ab−cd=a⋅d−b⋅cb⋅d
+    
+
+**Multiplicação de Frações**
+
+- Multiplique os numeradores entre si e os denominadores entre si.
+    
+    - Exemplo: ab×cd=a⋅cb⋅d
+    
+
+**Divisão de Frações**
+
+- Inverse a segunda fração (multiplicativa) e multiplique.
+    
+    - Exemplo: ab / cd = ab * dc  = ad / bc
