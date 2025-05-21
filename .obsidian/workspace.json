@@ -35,7 +35,8 @@
               "title": "Calculo Diferencial e Integral II"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,10 +195,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f17dfd648173230f",
+  "active": "c00151bac8758aa5",
   "lastOpenFiles": [
-    "3 Periodo/Calculo Diferencial e Integral II.md",
     "5 Período/Estatística e Probabilidade I.md",
+    "Pasted image 20250520074820.png",
+    "3 Periodo/Calculo Diferencial e Integral II.md",
     "Pasted image 20250517130416.png",
     "Estat e prob.pdf",
     "Pasted image 20250514174108.png",

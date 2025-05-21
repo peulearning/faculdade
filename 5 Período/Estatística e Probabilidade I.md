@@ -30,6 +30,44 @@ Com isso entendemos que na ementa trabalharemos :  `População -> Amostra -> To
 * Estatística Descritiva: Organizar e Representar os Dados.
 * Estatística Inferencial:  Realizar inferências nos dados coletados, utilizando a Probabilidade.
 
+
+Aula 2  20/05/2025  ( Segunda Aula )
+
+População e Amostra
+
+* Definição 1.1.1 : Conjunto de todos os elementos de um fenômeno.
+
+* Amostra pode ser finita :  possuir uma quantidade limitada de elementos. 
+* Amostra infinita : Possui  "infinito conjunto de elementos".
+* Amostra é um subconjunto da população.
+
+Exemplos:  P (população):  Sala de aula 
+a1( amostra 1) : Homens e mulheres
+a2 ( amostra 2) : Pessoas que usam óculos
+
+* Censo: Pesquisa com toda a população. ( Maior confiabilidade nos resultados)
+* Amostra : Deve ser considerado uma % de erro. Além de outro ponto considerável que  há amostra deve condizer com a realidade da população.
+
+**Tipos de amostragem**
+
+* Amostragem Aleatória Simples
+* Amostragem Proporcional Estratificada
+* Amostragem Estratificada Uniforme
+* Amostragem Sistemática
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **Experimento Aleatório**
 * Resultados imprevisíveis, mesmo em condições "iguais";
 * Cada experimento pode ser repetido indefinidamente;
@@ -46,3 +84,11 @@ Com isso entendemos que na ementa trabalharemos :  `População -> Amostra -> To
 * Experimento aleatório : Lançamento de um dado.
 * Espaço amostral (S):  S= {1,2,3,4,5,6}
 * Evento aleatório (E): Par -> E = { 2,4,6}
+
+**Espaço Equiprováveis**
+* Em um espaço equiprovável temos que todos os pontos amostrais dentro dele têm a mesma chance de ocorrer.
+
+**Definição de Probabilidade**
+* Com espaços equiprováveis conseguimos definir a probabilidade.
+![[Pasted image 20250520074820.png]]
+
