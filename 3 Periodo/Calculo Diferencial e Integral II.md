@@ -95,3 +95,20 @@ Pratiquei algumas questões como
 - Inverse a segunda fração (multiplicativa) e multiplique.
     
     - Exemplo: ab / cd = ab * dc  = ad / bc
+
+**Tabela para consultar Primitivas**
+![[Pasted image 20250521110215.png]]
+
+**Lista 1 de Exercícios **
+![[Pasted image 20250522154747.png]]
+![[Pasted image 20250522154926.png]]
+
+Aula 3 ( Terceira Aula ) 21/05/2025
+
+Foi apresentado o conceito de movimento retlíne
+
+Aula 4 ( Quarta Aula ) 23/05/2025
+
+Aplicamos conhecimentos de cálculo por área utilizando o software Geo. Gebra Classic para obter o pensamento crítico de como solucionar : 
+
+	 Através da aula foi compreendido que toda derivada e um tipo de Limite e que a Integral também e um tipo de Limite.
