@@ -101,6 +101,40 @@ Exercícios
 
 Aula 4  ( Quarta Aula ) 27/05/2025
 
+Tabela Frequência : cujo sua função e organizar os dados observados, mostrando quantas vezes cada valor ou intervalo de valores ocorre em um conjunto de dados, facilitando a análise e interpretação dos mesmos.
+
+Tipos de Tabelas:
+
+- Sem Intervalos : Para dados discretos, onde cada valor distinto é contado individualmente.
+- Com intervalo ( classes ): Para dados contínuos ou com muitos valores diferentes, agrupando dados em classes ou intervalos para facilitar a leitura, gerando tabela de classes ou categorias.
+
+Componentes Básicos:
+
+* Frequência Absoluta (fᵢ): Número de vezes que um dado valor ou classe aparece.
+* Frequência Relativa (fnᵢ): Proporção da frequência absoluta em relação ao total de dados (fnᵢ = fᵢ / n )
+* Frequência Cumulativa (Fᵢ): Soma das frequências absolutas até classe ou valor corrente, útil para entender a distribuição acumulada.
+* Frequência Relativa Cumulativa (Fnᵢ): Soma das frequências relativas até a classe ou valor atual.
+
+Construção Passo-a-Passo: 
+
+* Encontrar a Amplitude Amostral (Diferença entre o Máximo e o Minimo ).
+* Determinar o número de classes, por exemplo, usando regras como a de Sturges ou a raíz quadrada de n.
+* Calcular a Amplitude de cada Classe
+* Listar as classes e contar as frequências de cada uma.
+
+Interpretação: As tabelas fornecem uma visão resumida e clara dos dados, permitindo identificar modes, tendências centrais, dispersão e distribuição geral.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
