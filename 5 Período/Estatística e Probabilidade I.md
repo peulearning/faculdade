@@ -124,18 +124,110 @@ Construção Passo-a-Passo:
 
 Interpretação: As tabelas fornecem uma visão resumida e clara dos dados, permitindo identificar modes, tendências centrais, dispersão e distribuição geral.
 
+**Exercícios**
+
+1. Considere os dados: 21, 21, 21, 22, 22, 23, 23, 24, 25, 25, 25, 25, 26, 26, 26, 28, 30. Construa uma tabela de frequências sem intervalos e com intervalos.
+
+|Número|Quantas Vezes Aparece (Frequência)|
+|---|---|
+|21|3|
+|22|2|
+|23|2|
+|24|1|
+|25|4|
+|26|3|
+|28|1|
+|30|1|
+
+2. Os dados abaixo representam o preço, em reais, do produto A vendido em 25 diferentes estabelecimentos.
+
+
+20,5  19,5  15,6  24,1  9,9  15,4 12,7  5,4  17,0  28,6  16,9  7,8 
+23,3 11,8 18,4 13,4  14,3   19,2   9,2    16,8     8,8    22,1   20,8   12,6   15,9
+
+(a) Calcule a amplitude amostral.
+
+Maior Valor = 28,6  
+Menor Valor = 5,4 
+
+Amplitude = 28,6 - 5,4 = 23,2 
+
+
+(b) Calcule o número de intervalos utilizando a fórmula k = √n. 
+
+√25 = 5 usaremos essa quantia de intervalos.
+
+
+(c) Calcule a amplitude dos intervalos.
+
+Amplitude Total : 23,32 
+Número de Intervalos = 5 
+
+23,2 / 5 = 4,64 arredonda-se para 5
+
+(d) Construa a tabela de frequências em classes.
+
+| Intervalo     | Frequência (F) | Valores no intervalo                                         |
+| ------------- | -------------- | ------------------------------------------------------------ |
+| 5,0 ├── 10,0  | 5              | 5,4 – 7,8 – 8,8 – 9,2 – 9,9                                  |
+| 10,0 ├── 15,0 | 6              | 11,8 – 12,6 – 12,7 – 13,4 – 14,3                             |
+| 15,0 ├── 20,0 | 9              | 15,4 – 15,6 – 15,9 – 16,8 – 16,9 – 17,0 – 18,4 – 19,2 – 19,5 |
+| 20,0 ├── 25,0 | 4              | 20,5 – 20,8 – 22,1 – 24,1                                    |
+| 25,0 ├── 30,0 | 1              | 28,6                                                         |
+
+Tabela Final de Frequência 
+
+| Intervalo (R$) | Frequência |
+| -------------- | ---------- |
+| 5,0 ├── 10,0   | 5          |
+| 10,0 ├── 15,0  | 6          |
+| 15,0 ├── 20,0  | 9          |
+| 20,0 ├── 25,0  | 4          |
+| 25,0 ├── 30,0  | 1          |
+| **Total**      | **25**     |
+
+3. As informações abaixo indicam o número de acidentes ocorridos com 70 motoristas de uma empresa de ônibus nos últimos 5 anos:
+
+| **Nº de Acidentes**  | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+| -------------------- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Nº de Motoristas** | 15  | 11  | 20  | 9   | 6   | 5   | 3   | 1   |
+
+(a) Determine o número de motoristas com menos de 1 acidente. 
+
+15 motoristas 
+
+(b) Determine o percentual de motoristas com pelo menos 3 acidentes.
+
+3 acidentes → 9  
+4 acidentes → 6  
+5 acidentes → 5  
+6 acidentes → 3  
+7 acidentes → 1  
+
+
+Total = 9 + 6 + 5 + 3 + 1 = 24 motoristas
+
+
+(c) Determine o percentual de motoristas com no máximo 2 acidentes.
+
+0 → 15  
+1 → 11  
+2 → 20  
+
+Total = 15 + 11 + 20 = 46 motoristas
+
+
+(d) Qual o número total de acidentes ocorrido no período?
+
+Aqui a gente multiplica o número de acidentes por motorista, por quantos motoristas tiveram esse número:
+
+(0×15)+(1×11)+(2×20)+(3×9)+(4×6)+(5×5)+(6×3)+(7×1)
+
+0 + 11 + 40 + 27 + 24 + 25 + 18 + 7 = 152 acidentes
 
 
 
-
-
-
-
-
-
-
-
-
+1.4 Representações Gráficas
 
 
 
