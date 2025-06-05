@@ -112,3 +112,23 @@ Aula 4 ( Quarta Aula ) 23/05/2025
 Aplicamos conhecimentos de cálculo por área utilizando o software Geo. Gebra Classic para obter o pensamento crítico de como solucionar : 
 
 	 Através da aula foi compreendido que toda derivada e um tipo de Limite e que a Integral também e um tipo de Limite.
+
+
+Aula 5 ( Quinta Aula ) 28/05/2025
+
+Foi aplicado o conceito de Cálculo de Áreas e Distâncias
+
+Aula  6 ( Sexta aula ) 30/05/2025 ( Não teve )
+
+Aula 7 ( Sétima Aula ) 04/06/2025
+
+Foi elaborado o exercício da Lista 2 Cálculo de Áreas e Distâncias Questão Número 5 
+
+Além da explicação dos conceitos das propriedades de integrais definidas
+
+
+Outro ponto importante e que definimos que integrais são o o calculo resultante de áreas 
+
+A constante sempre serão retas e sempre precisaremos interpretar e definir o gráfico com base na integral.
+
+

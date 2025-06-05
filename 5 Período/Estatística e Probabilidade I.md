@@ -231,6 +231,18 @@ Aqui a gente multiplica o número de acidentes por motorista, por quantos motori
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 **Experimento Aleatório**
 * Resultados imprevisíveis, mesmo em condições "iguais";
 * Cada experimento pode ser repetido indefinidamente;
