@@ -11,10 +11,14 @@
             "id": "751d0adb8c6f9a81",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "5 Período/Estatística e Probabilidade I.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Estatística e Probabilidade I"
             }
           }
         ]
@@ -179,8 +183,10 @@
   "active": "751d0adb8c6f9a81",
   "lastOpenFiles": [
     "8 Período/Desenvolvimento TCC/Pesquisa 09-06 ( 2ª Feira).md",
-    "8 Período/Desenvolvimento TCC/Reunião Dia 12-01.md",
+    "Pasted image 20250609151529.png",
+    "Pasted image 20250609145305.png",
     "8 Período/Desenvolvimento TCC/Reunião Dia 02-04.md",
+    "8 Período/Desenvolvimento TCC/Reunião Dia 12-01.md",
     "8 Período/Desenvolvimento TCC/Reunião Dia 09-04.md",
     "5 Período/Estatística e Probabilidade I.md",
     "3 Periodo/Calculo Diferencial e Integral II.md",
@@ -198,8 +204,6 @@
     "Ferramentas de Pesquisa Científica.md",
     "Fichamentos/Integrated Image and Location Analysis for Wound Classification.md",
     "Fichamentos/Image-Based Artificial Intelligence in Wound Assessment A Systematic Review.md",
-    "Pasted image 20250327131739.png",
-    "Pasted image 20250327131605.png",
-    "Pasted image 20250327131603 1.png"
+    "Pasted image 20250327131739.png"
   ]
 }

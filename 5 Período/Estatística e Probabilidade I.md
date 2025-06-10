@@ -52,6 +52,13 @@ Aula 3 ( Terceira Aula ) 22/05/25
 * Amostragem Intencional: Seleção de indivíduos com base em critérios específicos definidos pelo pesquisador, visando obter informações de interesse particular. É útil em situações onde a aleatoriedade é impraticável.
 
 
+
+
+
+
+
+
+
 **Oque são dados ?** é um conjunto de informações coletadas que podem ser analisados para extrair informações ou insights. Sendo classificados em diferentes tipos.
 
 `Variáveis Qualitativas: Representam categorias ou atributos e não podem ser mensurados numericamente. Exemplos : Cores, Nomes, Opiniões.`
@@ -231,7 +238,61 @@ Aqui a gente multiplica o número de acidentes por motorista, por quantos motori
 
 
 
+Aula 5 29/05 ( Quinta-feira)
 
+
+Aula 6 02/06 ( Terça-Feira )
+
+
+Aula 7 05/06 ( Quinta-feira )
+
+* Média Aritmética para dados não tabulados 
+* Média Aritmética para dados tabulados
+
+**Exemplo 2.1.2 Dados não tabulados** 
+
+**Cálculo passo a passo:**
+
+- Multiplicar cada nota pelo seu número de ocorrências: 3×3=9 4×5=20 5×6=30 6×7=42 7×6=36
+    
+- Somar esses produtos: 9+20+30+42+36=137
+    
+- Somar as frequências: 3+5+6+7+6=27
+    
+- Portanto, a **média aritmética das notas** é: xˉ= 137/27 ​≈ 5,07
+
+**Exemplo 2.1.3 Dados tabulados**
+
+- Ponto médio de cada intervalo: _Exemplo:_ para (150–154), o ponto médio é: 2150+154​=152
+    
+- Aplica-se essa lógica a cada intervalo:
+    
+
+|Intervalo|Ponto médio (xi​)|Frequência (fi​)|xi​⋅fi​|
+|---|---|---|---|
+|150–154|152|4|152×4=608|
+|154–158|156|9|156×9=1404|
+|158–162|160|11|160×11=1760|
+|162–166|164|8|164×8=1312|
+|166–170|168|5|168×5=840|
+|170–174|172|3|172×3=516|
+
+- Soma de xi​⋅fi​: 608+1404+1760+1312+840+516=5820
+    
+- Soma das frequências: 4+9+11+8+5+3=40
+    
+- **Média aritmética das estaturas:**
+    
+
+xˉ= 5820 / 20 ​= 145,5cm
+
+
+Aula 8 10/06 ( Terça-Feira )
+
+* Moda para dados sem classes
+* Moda para dados com classes
+* Mediana para dados sem classes 
+* Mediana para dados com classes
 
 
 
