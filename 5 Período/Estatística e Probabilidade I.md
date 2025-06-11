@@ -294,8 +294,36 @@ Aula 8 10/06 ( Terça-Feira )
 * Mediana para dados sem classes 
 * Mediana para dados com classes
 
+**Exempo 2.1.10 ( Dados agrupados por frequência )**
+
+**Passos para encontrar a mediana:**
+
+- Primeiro, calcular a _frequência acumulada_ Fi​:
+
+|Nº de meninos|fi​|Fi​ (frequência acumulada)|
+|---|---|---|
+|0|2|2|
+|1|6|2 + 6 = 8|
+|2|10|8 + 10 = 18|
+|3|12|18 + 12 = 30|
+|4|4|30 + 4 = 34|
+
+- Como total de elementos (n) é 34, a **mediana** estará na posição:
+
+ n +1 / 2 ​= 34 + 1 / 2 ​=17,5
+
+- Situação: como a posição 17,5 não é um inteiro, a mediana será a **média entre o valor na posição 17 e o valor na posição 18**.
+    
+- Olhando na tabela de frequências acumuladas:
+    
+- A posição 17 pertence ao intervalo onde Fi​≥17, que é onde Fi​=18, correspondendo ao valor 2 meninos (pois na soma acumulada até o valor 2 há 8 elementos, até o valor 2 há 18 elementos, portanto, 17 e 18 posições estão na faixa do valor 2).
+    
+- A posição 18 também está na faixa do valor 2 (porque Fi​=18), ou seja, o valor que ocupa a posição 17 e 18 é **2**.
+
+**Portanto, a mediana é:** 2​
 
 
+**Exemplo 2.1.11 (dados agrupados em intervalos de classes)**
 
 
 

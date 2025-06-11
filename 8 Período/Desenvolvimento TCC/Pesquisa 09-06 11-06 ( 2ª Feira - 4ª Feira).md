@@ -28,4 +28,23 @@
 
 # 📌 **Visão Computacional** 
 
-* 
+
+
+Oque é a visão computacional ? 
+```
+A visão computacional em aprendizado de máquina é o uso da técnica de aprendizado de máquina para permitir que os computadores "vejam" e compreendam o mundo ao seu redor (SHAPIRO; STOCKMAN,2001).
+
+Isso é alcançado através de análises de imagens e vídeos para extrair informações úteis e tomar decisões baseadas em seu treinamento.
+
+As estruturas mais comuns de aprendizado de máquinas para visão computacional incluem redes neurais, profundas do inglês Deep Learning (DP), como a rede neural convolucional (CNN), que é especialmente eficaz para reconhecimento de imagem.
+```
+
+* Proposta de trabalho com poucos recursos computacionais
+
+
+A method for embedding a computer vision application into a wearable device ( Um método para incorporar uma aplicação de visão computacional em um dispositivo vestível )  [[Fichamentos/A method for embedding a computer vision application into a wearable device ( Um método para incorporar uma aplicação de visão computacional em um dispositivo vestível )]]
+
+
+* Comportamento das Tecnologias em Nuvem
+
+
