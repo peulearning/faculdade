@@ -238,13 +238,13 @@ Aqui a gente multiplica o número de acidentes por motorista, por quantos motori
 
 
 
-Aula 5 29/05 ( Quinta-feira)
+**Aula 5 29/05 ( Quinta-feira)**
 
 
-Aula 6 02/06 ( Terça-Feira )
+**Aula 6 02/06 ( Terça-Feira )**
 
 
-Aula 7 05/06 ( Quinta-feira )
+**Aula 7 05/06 ( Quinta-feira )**
 
 * Média Aritmética para dados não tabulados 
 * Média Aritmética para dados tabulados
@@ -287,7 +287,7 @@ Aula 7 05/06 ( Quinta-feira )
 xˉ= 5820 / 20 ​= 145,5cm
 
 
-Aula 8 10/06 ( Terça-Feira )
+**Aula 8 10/06 ( Terça-Feira )**
 
 * Moda para dados sem classes
 * Moda para dados com classes
@@ -327,6 +327,14 @@ Aula 8 10/06 ( Terça-Feira )
 
 
 
+**Aula 12/06/2025 ( Quinta -feira  )**
+
+
+Exemplo 2.1.11 (Calculo de mediana para dados tabulados com intervalos de classes ) Calcule a mediana.
+
+Exercícios 
+
+e 2.2 Medidas de Dispersão
 
 
 

@@ -132,3 +132,12 @@ Outro ponto importante e que definimos que integrais são o o calculo resultante
 A constante sempre serão retas e sempre precisaremos interpretar e definir o gráfico com base na integral.
 
 
+Aula 8 ( Oitava Aula ) 06/06/2025
+
+Aula 9 ( Nona Aula ) 11/06/2025
+
+Aula 10 ( Décima Aula ) 13/06/2025
+
+Foi visto hoje exercícios com deslocamento de distâncias com integral.
+
+
