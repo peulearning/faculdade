@@ -138,6 +138,9 @@ Aula 9 ( Nona Aula ) 11/06/2025
 
 Aula 10 ( Décima Aula ) 13/06/2025
 
-Foi visto hoje exercícios com deslocamento de distâncias com integral.
+Aula 11 ( Aula ) 18/06/2025
+
+Aula 12 25/06/2025
+
 
 

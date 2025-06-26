@@ -80,7 +80,7 @@ Computação em nuvem é a entrega de recursos de TI—como computação, armaze
 5. **Serviço mensurável** – monitoramento, controle e cobrança baseados em métricas.
     
 
-### Modelos de implantação [catalogcdns3.ulife.com.br+2atlassian.com+2pt.wikipedia.org+2](https://www.atlassian.com/br/microservices/cloud-computing?utm_source=chatgpt.com)[catalogcdns3.ulife.com.br+2esr.rnp.br+2pt.wikipedia.org+2](https://esr.rnp.br/computacao-em-nuvem/o-que-e-computacao-em-nuvem/?utm_source=chatgpt.com)[ciasc.sc.gov.br+2teleone.com.br+2pt.wikipedia.org+2](https://www.teleone.com.br/recursos/nuvem/?utm_source=chatgpt.com)[esr.rnp.br+2pt.wikipedia.org+2catalogcdns3.ulife.com.br+2](https://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_em_nuvem?utm_source=chatgpt.com)[catalogcdns3.ulife.com.br](https://catalogcdns3.ulife.com.br/content-cli/CTI_SECLOU_20/unidade_1/ebook/index.html?utm_source=chatgpt.com):
+### Modelos de implantação [catalogcdns3.ulife.com.br+2atlassian.com+2pt.wikipedia.org+2](https://www.atlassian.com/br/microservices/cloud-computing?)[catalogcdns3.ulife.com.br+2esr.rnp.br+2pt.wikipedia.org+2](https://esr.rnp.br/computacao-em-nuvem/o-que-e-computacao-em-nuvem/)[ciasc.sc.gov.br+2teleone.com.br+2pt.wikipedia.org+2](https://www.teleone.com.br/recursos/nuvem/)[esr.rnp.br+2pt.wikipedia.org+2catalogcdns3.ulife.com.br+2](https://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_em_nuvem?)[catalogcdns3.ulife.com.br](https://catalogcdns3.ulife.com.br/content-cli/CTI_SECLOU_20/unidade_1/ebook/index.html?):
 
 - **Nuvem Pública** – recursos compartilhados via internet.
     

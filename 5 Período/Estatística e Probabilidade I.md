@@ -337,6 +337,32 @@ Exercícios
 e 2.2 Medidas de Dispersão
 
 
+**Aula 17/06/2025 (Terça-feira)**
+
+**Aula 19/06/2025 (Quinta-feira)**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
