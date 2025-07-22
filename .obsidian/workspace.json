@@ -4,109 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "e5c4b74d2b6b88d0",
+        "id": "6255a16d0d663ed4",
         "type": "tabs",
         "children": [
           {
-            "id": "115767038f8d6103",
+            "id": "b5e21351c0c0cc0e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fichamentos/CONTROLE DE UM SISTEMA DE LEVITAÇÃO PNEUMÁTICA UTILIZANDO VISÃO COMPUTACIONAL E ARMAZENAMENTO DE DADOS NA NUVEM.md",
+                "file": "8 Período/Desenvolvimento TCC/Reunião 25-07.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CONTROLE DE UM SISTEMA DE LEVITAÇÃO PNEUMÁTICA UTILIZANDO VISÃO COMPUTACIONAL E ARMAZENAMENTO DE DADOS NA NUVEM"
-            }
-          },
-          {
-            "id": "b554aac5b3ff6af3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "8 Período/Desenvolvimento TCC/Pesquisa 09-06 11-06 ( 2ª Feira - 4ª Feira).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Pesquisa 09-06 11-06 ( 2ª Feira - 4ª Feira)"
-            }
-          },
-          {
-            "id": "b239df78368d3f10",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3 Periodo/Calculo Diferencial e Integral II.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Calculo Diferencial e Integral II"
-            }
-          },
-          {
-            "id": "a2c4f40c7e91db97",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "8 Período/Desenvolvimento TCC/Reunião 26-06.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Reunião 26-06"
-            }
-          },
-          {
-            "id": "dfd98a93233db4fb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fichamentos/A method for embedding a computer vision application into a wearable device ( Um método para incorporar uma aplicação de visão computacional em um dispositivo vestível ).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "A method for embedding a computer vision application into a wearable device ( Um método para incorporar uma aplicação de visão computacional em um dispositivo vestível )"
-            }
-          },
-          {
-            "id": "81e3bb4749f85fbf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5 Período/Estatística e Probabilidade I.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Estatística e Probabilidade I"
-            }
-          },
-          {
-            "id": "594a2785276e7908",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Fichamentos/SEGURANÇA DO AMBIENTE USANDO DISPOSITIVO IOT COM PROCESSAMENTO DISTRIBUÍDO.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SEGURANÇA DO AMBIENTE USANDO DISPOSITIVO IOT COM PROCESSAMENTO DISTRIBUÍDO"
+              "title": "Reunião 25-07"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -163,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5110321044922,
+    "width": 219.5110321044922,
     "collapsed": true
   },
   "right": {
@@ -180,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5 Período/Estatística e Probabilidade I.md",
+                "file": "8 Período/Desenvolvimento TCC/Reunião 15-07.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Estatística e Probabilidade I"
+              "title": "Backlinks for Reunião 15-07"
             }
           },
           {
@@ -251,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 253.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -265,36 +180,46 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a2c4f40c7e91db97",
+  "active": "b5e21351c0c0cc0e",
   "lastOpenFiles": [
-    "5 Período/Estatística e Probabilidade I.md",
+    "Fichamentos/Internet of Things (IoT) A review of its enabling technologies in healthcare applications, standards protocols, security and market opportunities.md",
+    "8 Período/Desenvolvimento TCC/Reunião 25-07.md",
+    "8 Período/Desenvolvimento TCC/Reunião 15-07.md",
+    "8 Período/Desenvolvimento TCC/Reunião 17-07.md",
+    "Fichamentos/Integrated Image and Location Analysis for Wound Classification.md",
+    "Fichamentos/Experimental Study on Wound Area Measurement with Mobile Devices.md",
+    "Fichamentos/Image-Based Artificial Intelligence in Wound Assessment A Systematic Review.md",
+    "Fichamentos/SkinGPT-4.md",
     "Fichamentos/A method for embedding a computer vision application into a wearable device ( Um método para incorporar uma aplicação de visão computacional em um dispositivo vestível ).md",
-    "8 Período/Desenvolvimento TCC/Reunião 26-06.md",
-    "3 Periodo/Calculo Diferencial e Integral II.md",
-    "8 Período/Desenvolvimento TCC/Pesquisa 09-06 11-06 ( 2ª Feira - 4ª Feira).md",
+    "Fichamentos/Computer Vision Challenges for Chronic Wounds Assessment.md",
+    "Fichamentos/Conectividade e saúde uma revisão crítica da literatura sobre a inserção da IOT no contexto médico. ( UFScar ).md",
     "Fichamentos/CONTROLE DE UM SISTEMA DE LEVITAÇÃO PNEUMÁTICA UTILIZANDO VISÃO COMPUTACIONAL E ARMAZENAMENTO DE DADOS NA NUVEM.md",
+    "8 Período/Desenvolvimento TCC/Reunião Dia 12-01.md",
+    "Fichamentos/LLMs-Healthcare.md",
+    "Fichamentos/Prospecção Tecnológica de Soluções de Internet.md",
+    "Fichamentos/Proteção da privacidade em dispositivos IOT de acordo com a LGPD.md",
     "Fichamentos/SEGURANÇA DO AMBIENTE USANDO DISPOSITIVO IOT COM PROCESSAMENTO DISTRIBUÍDO.md",
+    "8 Período/Desenvolvimento TCC/Reunião 26-06.md",
+    "8 Período/Desenvolvimento TCC/Pesquisa 09-06 11-06 ( 2ª Feira - 4ª Feira).md",
+    "8 Período/Desenvolvimento TCC/Reunião Dia 12-02.md",
+    "8 Período/Desenvolvimento TCC/Reunião Dia 02-04.md",
+    "8 Período/Desenvolvimento TCC/Reunião Dia 09-04.md",
+    "8 Período/Desenvolvimento TCC/Reunião Dia 19-03.md",
+    "8 Período/Desenvolvimento TCC/Reunião Dia 19-02.md",
+    "8 Período/Desenvolvimento TCC/Reunião Dia 12-03.md",
+    "3 Periodo/Calculo Diferencial e Integral II.md",
     "Pasted image 20250611173758.png",
     "Pasted image 20250611121803.png",
     "Pasted image 20250611121439.png",
     "Pasted image 20250611121116.png",
-    "Fichamentos/SkinGPT-4.md",
-    "Fichamentos/Proteção da privacidade em dispositivos IOT de acordo com a LGPD.md",
     "Pasted image 20250609151529.png",
     "Pasted image 20250609145305.png",
-    "8 Período/Desenvolvimento TCC/Reunião Dia 02-04.md",
-    "8 Período/Desenvolvimento TCC/Reunião Dia 12-01.md",
-    "8 Período/Desenvolvimento TCC/Reunião Dia 09-04.md",
     "Pasted image 20250522154926.png",
     "Pasted image 20250522154747.png",
     "Pasted image 20250521110215.png",
     "Pasted image 20250520074820.png",
     "Estat e prob.pdf",
     "5 Período",
-    "3 Periodo",
-    "Universidade Pessoal.md",
-    "Ferramentas de Pesquisa Científica.md",
-    "Fichamentos/Integrated Image and Location Analysis for Wound Classification.md",
-    "Fichamentos/Image-Based Artificial Intelligence in Wound Assessment A Systematic Review.md"
+    "3 Periodo"
   ]
 }

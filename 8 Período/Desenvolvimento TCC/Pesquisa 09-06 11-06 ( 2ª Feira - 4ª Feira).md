@@ -46,17 +46,59 @@ As estruturas mais comuns de aprendizado de máquinas para visão computacional 
 
 
 * Comportamento das Tecnologias em Nuvem
+``` 
+As tecnologias em nuvem (cloud computing) são uma forma de disponibilizar recursos computacionais — como servidores, armazenamento, bancos de dados, redes, software e inteligência artificial — pela internet, sob demanda e com pagamento conforme o uso.
 
+Como funciona ?
+
+a computação em nuvem funciona através de data centers(centros de processamento de dados) distribuídos globalmente por empresa como Amazon(AWS), Microsoft(Azure), Google(GCP), entre outas. Esses datas centers fornecem recursos virtualizados aos usuários por meio de:
+
+1. Virtualização: Servidores físicos são particionados em várias máquinas virtuais.
+2. Automação: Permite escalar recursos automaticamente conforme a necessidade.
+3. Gerenciamento Remoto: Os usuários acessam e gerenciam recursos via navegador ou APIs.
+4. Redes seguras: Comunicação entre cleintes e data centers por meio de redes criptografadas e seguras.
+
+Características :
+
+1. Elasticidade : se adapta automaticamente á demanda : aumenta ou diminui recursos conforme necesário.
+
+2. Escalabilidade : pode escalar verticalmente ( mais potência ) ou horizontalmente ( mais instânicas);
+
+3. Alta disponibilidade : Serviços são projetados para continuar funcionando mesmo com falhas em partes da infraestrutura.
+
+Redundância geográfica e comum ( dados replicaods em várias regiões).
+
+4. Pay-as-you-go (Pague pelo uso) : Recursos utilizados =  CPU, GPU GB de armazenamento ou quantidade de acessos.
+
+5. Self-service sob demanda : Usuários podem criar, configurar e gerenciar seus própios recursos sem depender de intervenção humana.
+
+6. Acesso amplo á rede: Recursos estão acessíveis por meioda internet em qualquer dispositivo autorizado.
+
+7. Multitenancy (multiusuário) : vários usuários compartilham os mesmo recursos físicos, mas com isolamento lógico.
+
+
+
+```
 
 [[CONTROLE DE UM SISTEMA DE LEVITAÇÃO PNEUMÁTICA UTILIZANDO VISÃO COMPUTACIONAL E ARMAZENAMENTO DE DADOS NA NUVEM]]
 
 * Processamentos Distribuídos 
+
+```
+O processamento distribuído refere-se à execução de tarefas computacionais em múltiplos computadores interconectados, permitindo lidar com grandes volumes de dados e demandas de processamento que superam a capacidade de uma única máquina. Essa abordagem é fundamental em ambientes de computação em nuvem e na borda, sendo aplicada em áreas como Internet das Coisas, inteligência artificial e redes veiculares, onde a descentralização traz vantagens de escalabilidade, resiliência e eficiência 1065. O processamento distribuído pode ser realizado por meio de diferentes arquiteturas e frameworks, como Flink, Kafka Streams e Spark Streaming, que facilitam a distribuição e o balanceamento de carga entre os nós do sistema 3. Fatores como o design do pipeline, alocação de recursos e características dos dados influenciam diretamente a eficiência e a escalabilidade dessas soluções 3. Estratégias modernas também incluem técnicas de aprendizado distribuído e computação codificada, que otimizam o uso de recursos e minimizam atrasos, especialmente em sistemas heterogêneos e dinâmicos 275. Apesar dos avanços, desafios persistem, como a padronização de métricas de desempenho, a complexidade de integração e a necessidade de políticas de gestão adequadas para evitar armadilhas comuns 694. O futuro do processamento distribuído aponta para soluções cada vez mais autônomas, econômicas e adaptáveis, capazes de atender às crescentes demandas de dados e aplicações em tempo real 8102.
+```
+
+
 
 [[SEGURANÇA DO AMBIENTE USANDO DISPOSITIVO IOT COM PROCESSAMENTO DISTRIBUÍDO]]
 
 
 * Níveis de Processamento
 
+```
+ os “níveis de processamento” referem-se a diferentes camadas ou etapas pelas quais os dados passam dentro de um sistema computacional, cada uma com funções e complexidades distintas. Uma classificação comum divide o processamento em quatro níveis: processamento de dados (operações básicas como cálculos e manipulação de dados brutos), processamento de informações (organização e interpretação dos dados para gerar informações úteis), processamento de conhecimento (aplicação de regras e inferências para gerar conhecimento a partir das informações) e processamento de inteligência (capacidade de tomar decisões autônomas e aprender com experiências, como em sistemas de inteligência artificial) 46. Essa hierarquia reflete a evolução dos sistemas computacionais, desde tarefas simples até operações complexas que simulam aspectos do raciocínio humano. Além disso, abordagens como a de David Marr propõem três níveis para analisar sistemas de processamento de informação: o nível computacional (o que o sistema faz e por quê), o nível algorítmico (como o sistema faz) e o nível de implementação (em que meio físico o sistema é realizado), sendo amplamente utilizados para entender tanto cérebros quanto computadores 2. Esses modelos ajudam a estruturar o desenvolvimento de hardware, software e algoritmos, além de orientar pesquisas em inteligência artificial e ciência cognitiva 26.
+
+```
 
 
 
@@ -170,8 +212,8 @@ Em arquitetura de sistemas ou de dados, “níveis de processamento” (camadas)
 
 ### 📌 Resumo Comparativo
 
-|Tema|Objetivo|Benefícios principais|
-|---|---|---|
-|Tecnologias em nuvem|Fornecer TI como serviço justo sob demanda|Elasticidade, confiabilidade, redução de custos|
-|Processamento distribuído|Dividir tarefas para execução paralela em rede|Paralelismo, resiliência e economia com hardware simples|
-|Níveis de processamento|Organizar arquitetura em camadas separadas|Modularidade, escalabilidade e manutenção independente|
+| Tema                      | Objetivo                                       | Benefícios principais                                    |
+| ------------------------- | ---------------------------------------------- | -------------------------------------------------------- |
+| Tecnologias em nuvem      | Fornecer TI como serviço justo sob demanda     | Elasticidade, confiabilidade, redução de custos          |
+| Processamento distribuído | Dividir tarefas para execução paralela em rede | Paralelismo, resiliência e economia com hardware simples |
+| Níveis de processamento   | Organizar arquitetura em camadas separadas     | Modularidade, escalabilidade e manutenção independente   |

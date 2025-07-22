@@ -9,7 +9,7 @@ O processo de avaliação da ferida deve ser
 realizado por profissionais experientes por meio da medição
 da ferida ou úlcera em seu comprimento, largura e profundidade para calcular
 área e volume; avaliando quantidade e tipos de tecido; quantidade
-e cor do exsudato; pele da borda e peri-ferida; sinais e
+e cor do exsudato; pele da borda e periferia; sinais e
 sintomas infecção e dor.
 
 Feridas crônicas são um problema crescente relacionado com as doenças crônicas e representam um fardo pesado de custos de saúde. A avaliação e a cicatrização de feridas são muito
