@@ -1,0 +1,1 @@
+Trazer dúvidas relacionadas a visão computacional para Suzana [ ]
