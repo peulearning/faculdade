@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 10-09.md",
+                "file": "Fichamentos/Integrated Image and Location Analysis for Wound Classification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reunião Dia 10-09"
+              "title": "Integrated Image and Location Analysis for Wound Classification"
+            }
+          },
+          {
+            "id": "4329cbb7c03f9ae5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 15-09.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Reunião Dia 15-09"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.5
+    "width": 216.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "a3a788e0072b571c",
@@ -180,10 +196,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5f24a1d3cff4161b",
+  "active": "4329cbb7c03f9ae5",
   "lastOpenFiles": [
-    "Fichamentos/Integrated Image and Location Analysis for Wound Classification.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 10-09.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 15-09.md",
+    "Fichamentos/Integrated Image and Location Analysis for Wound Classification.md",
+    "Fichamentos/Image-Based Artificial Intelligence in Wound Assessment A Systematic Review.md",
     "Fichamentos/Internet of Things (IoT) A review of its enabling technologies in healthcare applications, standards protocols, security and market opportunities.md",
     "Fichamentos/LLMs-Healthcare.md",
     "Fichamentos/Prospecção Tecnológica de Soluções de Internet.md",
@@ -191,7 +209,6 @@
     "Fichamentos/SkinGPT-4.md",
     "Fichamentos/SEGURANÇA DO AMBIENTE USANDO DISPOSITIVO IOT COM PROCESSAMENTO DISTRIBUÍDO.md",
     "Ferramentas de Pesquisa Científica.md",
-    "Fichamentos/Image-Based Artificial Intelligence in Wound Assessment A Systematic Review.md",
     "Fichamentos/Experimental Study on Wound Area Measurement with Mobile Devices.md",
     "Fichamentos/Conectividade e saúde uma revisão crítica da literatura sobre a inserção da IOT no contexto médico. ( UFScar ).md",
     "Fichamentos/Computer Vision Challenges for Chronic Wounds Assessment.md",
@@ -202,14 +219,14 @@
     "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Seg 03-08.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro",
     "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Reunião 15-08.md",
-    "8 Período/Reunião Fevereiro/Reunião Dia 19-02.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Fevereiro/Reunião Dia 19-02.md",
     "Livros/Estat e prob.pdf",
     "8 Período/Desenvolvimento TCC 2025/Materiais e Metódos.md",
     "Livros",
     "Prints",
     "8 Período/Desenvolvimento TCC 2025/Reunião Março/Reunião Dia 19-03.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Janeiro",
-    "8 Período/Reunião Fevereiro",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Fevereiro",
     "8 Período/Desenvolvimento TCC 2025/Reunião Março",
     "8 Período/Desenvolvimento TCC 2025/Reunião Junho",
     "8 Período/Desenvolvimento TCC 2025/Reunião Abril/Reunião Dia 09-04.md",
@@ -217,7 +234,6 @@
     "8 Período/Desenvolvimento TCC 2025/Reunião Abril",
     "8 Período/Desenvolvimento TCC 2025/Reunião Julho",
     "8 Período/Desenvolvimento TCC 2025/Reunião Julho/Reunião 25-07.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Julho/Reunião 15-07.md",
     "Prints/Pasted image 20250611173758.png",
     "Prints/Pasted image 20250611121803.png",
     "Prints/Pasted image 20250611121439.png",

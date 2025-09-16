@@ -49,32 +49,31 @@ pegar os dois arquivos em csv: ground truth e o predict ✅
 
 * Abaixo, são voltados para tecnologia.
 
-|Título|O que faz / como ajuda|Pontos de destaque úteis para seu protótipo|
-|---|---|---|
-|**WoundAIssist: A Patient-Centered Mobile App for AI-Assisted Wound Care** (2025) [arXiv](https://arxiv.org/abs/2506.06104?utm_source=chatgpt.com)|App móvel com modelo leve para segmentação de feridas _on-device_, telemonitoramento com pacientes, feedback de médicos; inclui captura de imagens e uso remoto.|Mostra parte de UX/UI, usabilidade, como envolver paciente + profissional; útil pra pensar interface e arquitetura móvel.|
-|**WoundAmbit: Bridging State-of-the-Art Semantic Segmentation and Real-World Wound Care** (2025) [arXiv](https://arxiv.org/abs/2504.06185?utm_source=chatgpt.com)|Avalia modelos de segmentação de feridas (wound segmentation) usando dados reais (“out-of-distribution”) e eficiência computacional para uso prático.|Serve muito pra comparar modelos, ver trade-offs entre precisão vs custo computacional, ideal para mobile.|
-|**Wound3DAssist: A Practical Framework for 3D Wound Assessment** (2025) [arXiv](https://arxiv.org/abs/2508.17635?utm_source=chatgpt.com)|Usa vídeo curto de smartphone para gerar modelos 3D da ferida — mede profundidade, bordas, etc.|Se quiser ir além do plano 2D, mostra como capturar mais informação visual; bom para discussão de limitações do protótipo clássico.|
-|**Diagnosis of Pressure Ulcer Stage Using On-Device AI** (2024) [OUCI](https://ouci.dntb.gov.ua/en/works/4YEZG064/?utm_source=chatgpt.com)|App móvel com YOLOv8 para detectar regiões de úlceras por pressão e classificar em estágios (1-4, deep tissue, não avaliável). Tempo de resposta ~3s.|Bom exemplo direto do que seu protótipo poderia fazer: detecção + classificação + interface móvel.|
-|**Mobile Application for Diabetic Foot Ulcer Detection (ISDA 2023-2024)** [SpringerLink](https://link.springer.com/chapter/10.1007/978-3-031-64776-5_15?utm_source=chatgpt.com)|Constrói app para profissionais detectarem DFU usando CNN, compara versões de YOLO; resultados bons de mAP; avaliação de usabilidade.|Excelente para base de como treinar, medir desempenho, validar com profissionais; muito parecida com seu escopo.|
-|**Artificial Intelligence in Wound Care: A Narrative Review of the Currently Available Mobile Apps for Automatic Ulcer Segmentation** (2024) [MDPI](https://www.mdpi.com/2673-7426/4/4/126?utm_source=chatgpt.com)|Revisão de apps móveis que fazem segmentação automática de úlceras; analisa quão prático é, métricas usadas, transparência, usabilidade.|Ótima para parte de fundamentação teórica / estado da arte; também para mostrar lacunas (por exemplo, muitos apps não são publicamente disponíveis).|
-|**YOLO-Based Deep Learning Model for Pressure Ulcer Detection and Classification** (2023) [app.scinito.ai+1](https://app.scinito.ai/article/W4367189201?utm_source=chatgpt.com)|Usa YOLOv5 para detectar úlceras de pressão em quatro estágios (e distinguir de não-úlcera). Obtém mAP razoável.|Serve para base de comparação de desempenho; pode inspirar escolha do modelo para o seu protótipo.|
+| Título                                                                                                                                                                                                             | O que faz / como ajuda                                                                                                                                           | Pontos de destaque úteis para seu protótipo                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **WoundAIssist: A Patient-Centered Mobile App for AI-Assisted Wound Care** (2025) [arXiv](https://arxiv.org/abs/2506.06104?utm_source=chatgpt.com)                                                                 | App móvel com modelo leve para segmentação de feridas _on-device_, telemonitoramento com pacientes, feedback de médicos; inclui captura de imagens e uso remoto. | Mostra parte de UX/UI, usabilidade, como envolver paciente + profissional; útil pra pensar interface e arquitetura móvel.                            |
+| **WoundAmbit: Bridging State-of-the-Art Semantic Segmentation and Real-World Wound Care** (2025) [arXiv](https://arxiv.org/abs/2504.06185?utm_source=chatgpt.com)                                                  | Avalia modelos de segmentação de feridas (wound segmentation) usando dados reais (“out-of-distribution”) e eficiência computacional para uso prático.            | Serve muito pra comparar modelos, ver trade-offs entre precisão vs custo computacional, ideal para mobile.                                           |
+| **Wound3DAssist: A Practical Framework for 3D Wound Assessment** (2025) [arXiv](https://arxiv.org/abs/2508.17635?utm_source=chatgpt.com)                                                                           | Usa vídeo curto de smartphone para gerar modelos 3D da ferida — mede profundidade, bordas, etc.                                                                  | Se quiser ir além do plano 2D, mostra como capturar mais informação visual; bom para discussão de limitações do protótipo clássico.                  |
+| **Diagnosis of Pressure Ulcer Stage Using On-Device AI** (2024) [OUCI](https://ouci.dntb.gov.ua/en/works/4YEZG064/?utm_source=chatgpt.com)                                                                         | App móvel com YOLOv8 para detectar regiões de úlceras por pressão e classificar em estágios (1-4, deep tissue, não avaliável). Tempo de resposta ~3s.            | Bom exemplo direto do que seu protótipo poderia fazer: detecção + classificação + interface móvel.                                                   |
+| **Mobile Application for Diabetic Foot Ulcer Detection (ISDA 2023-2024)** [SpringerLink](https://link.springer.com/chapter/10.1007/978-3-031-64776-5_15?utm_source=chatgpt.com)                                    | Constrói app para profissionais detectarem DFU usando CNN, compara versões de YOLO; resultados bons de mAP; avaliação de usabilidade.                            | Excelente para base de como treinar, medir desempenho, validar com profissionais; muito parecida com seu escopo.                                     |
+| **Artificial Intelligence in Wound Care: A Narrative Review of the Currently Available Mobile Apps for Automatic Ulcer Segmentation** (2024) [MDPI](https://www.mdpi.com/2673-7426/4/4/126?utm_source=chatgpt.com) | Revisão de apps móveis que fazem segmentação automática de úlceras; analisa quão prático é, métricas usadas, transparência, usabilidade.                         | Ótima para parte de fundamentação teórica / estado da arte; também para mostrar lacunas (por exemplo, muitos apps não são publicamente disponíveis). |
+| **YOLO-Based Deep Learning Model for Pressure Ulcer Detection and Classification** (2023) [app.scinito.ai+1](https://app.scinito.ai/article/W4367189201?utm_source=chatgpt.com)                                    | Usa YOLOv5 para detectar úlceras de pressão em quatro estágios (e distinguir de não-úlcera). Obtém mAP razoável.                                                 | Serve para base de comparação de desempenho; pode inspirar escolha do modelo para o seu protótipo.                                                   |
 
 ---
 
 ## ⚠️ Limitações
 
-- Muitos desses estudos focam **só em úlcera por pressão** ou **pé diabético**, não incluem todas as classes que você mencionou (venous, surgical, “normal”).
+- Muitos desses estudos focam **só em úlcera por pressão** ou **pé diabético**, não incluem todas as classes que  (venous, surgical, “normal”).
     
 - Alguns modelos exigem equipamentos ou condições de imagem boas (boa iluminação, boa câmera), o que pode ser difícil em áreas remotas.
     
 - Raramente há validação “em campo” do app (pacientes usando no dia a dia, com disparidades de luz, ângulo, fundo da imagem etc.).
 
 
-
 ## 🔧 Como usar isso ao meu favor
 
 
-1. **Fundamentar a escolha do modelo e técnica** — explicar por que usar YOLO, ou segmentação, ou modelos leves, baseado nos que funcionam bem.
+1. **Fundamentar a escolha do modelo e técnica** — explicar por que usar YOLO, ou segmentação, ou modelos leves, baseado nos que funcionam bem. ( Carros Autônomos )
     
 2. **Inspirar métricas de avaliação** — erro, tempo de resposta, precisão, usabilidade, generalização (como fora do dataset de treino).
     
@@ -104,12 +103,12 @@ pegar os dois arquivos em csv: ground truth e o predict ✅
     - **Quintas:** Aula de Cálculo 2 (9:25 - 11:00).
         
 
-|Semana|Foco Principal da Semana|Sugestões de Tarefas|
-|---|---|---|
-|**Semana 1 (01-07/Set)**|**Levantamento Bibliográfico**|• **Seg/Qua/Sex:** Focar na busca intensiva por artigos e teses recentes.<br>• **Ter/Qui (após a aula):** Organizar os artigos baixados, ler resumos e fichar os mais importantes.|
-|**Semana 2 (08-14/Set)**|**Revisão de Aprendizado Profundo**|• **Seg/Qua/Sex:** Dedicar blocos de tempo para a leitura aprofundada dos materiais sobre Deep Learning em saúde.<br>• **Ter/Qui (após a aula):** Fazer anotações e criar mapas mentais sobre as técnicas.|
-|**Semana 3 (15-21/Set)**|**Definição dos Datasets**|• **Seg/Qua/Sex:** Analisar os datasets pré-selecionados, documentar suas características e bater o martelo sobre quais serão usados.<br>• **Ter/Qui (após a aula):** Começar a baixar e organizar os dados dos datasets finais.|
-|**Semana 4 (22-30/Set)**|**Padronização das Classes e Revisão**|• **Seg/Qua/Sex:** Escrever os scripts para a padronização das classes dos datasets.<br>• **Ter/Qui (após a aula):** Validar a padronização e revisar o planejamento para Outubro.|
+| Semana                   | Foco Principal da Semana               | Sugestões de Tarefas                                                                                                                                                                                                             |
+| ------------------------ | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Semana 1 (01-07/Set)** | **Levantamento Bibliográfico**         | • **Seg/Qua/Sex:** Focar na busca intensiva por artigos e teses recentes.<br>• **Ter/Qui (após a aula):** Organizar os artigos baixados, ler resumos e fichar os mais importantes.                                               |
+| **Semana 2 (08-14/Set)** | **Revisão de Aprendizado Profundo**    | • **Seg/Qua/Sex:** Dedicar blocos de tempo para a leitura aprofundada dos materiais sobre Deep Learning em saúde.<br>• **Ter/Qui (após a aula):** Fazer anotações e criar mapas mentais sobre as técnicas.                       |
+| **Semana 3 (15-21/Set)** | **Definição dos Datasets**             | • **Seg/Qua/Sex:** Analisar os datasets pré-selecionados, documentar suas características e bater o martelo sobre quais serão usados.<br>• **Ter/Qui (após a aula):** Começar a baixar e organizar os dados dos datasets finais. |
+| **Semana 4 (22-30/Set)** | **Padronização das Classes e Revisão** | • **Seg/Qua/Sex:** Escrever os scripts para a padronização das classes dos datasets.<br>• **Ter/Qui (após a aula):** Validar a padronização e revisar o planejamento para Outubro.                                               |
 
 Anotações : 
 
