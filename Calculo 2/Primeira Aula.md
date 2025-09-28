@@ -16,4 +16,5 @@ Exemplos do livro a serem resolvidos :
 ![[Pasted image 20250924172121.png]]
 
 
+
 ![[Pasted image 20250924202002.png]]

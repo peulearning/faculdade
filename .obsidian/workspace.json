@@ -49,7 +49,8 @@
               "title": "Integrated image and location analysis for wound classification a deep learning approach"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -209,13 +210,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "bbd2688bed65b203",
+  "active": "b5f63ea76aa0120d",
   "lastOpenFiles": [
+    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Multi‑modal wound classification using wound image and location by deep neural network.md",
+    "Calculo 2/Primeira Aula.md",
     "Pasted image 20250924202002.png",
     "Pasted image 20250924172121.png",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Integrated image and location analysis for wound classification a deep learning approach.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Multi‑modal wound classification using wound image and location by deep neural network.md",
-    "Calculo 2/Primeira Aula.md",
     "Pasted image 20250923223149.png",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro",
     "Pasted image 20250923134546.png",
@@ -229,7 +230,6 @@
     "Pasted image 20250918185625.png",
     "Pasted image 20250918185529.png",
     "Pasted image 20250918185448.png",
-    "Pasted image 20250918185426.png",
     "Fichamentos/Integrated Image and Location Analysis for Wound Classification.md",
     "Fichamentos/Image-Based Artificial Intelligence in Wound Assessment A Systematic Review.md",
     "Fichamentos/Internet of Things (IoT) A review of its enabling technologies in healthcare applications, standards protocols, security and market opportunities.md",
