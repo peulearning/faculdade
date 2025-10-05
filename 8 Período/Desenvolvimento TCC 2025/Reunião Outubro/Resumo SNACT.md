@@ -1,0 +1,11 @@
+**CLASSIFICAÇÃO DE FERIDAS CUTÂNEAS COM REDES NEURAIS CONVOLUCIONAIS PARA APLICAÇÕES COM AUXÍLIO DE TECNOLOGIA MOBILE**
+
+Pedro Henrique Araújo Mattos Ribeiro¹*
+
+¹Instituto Federal do Norte de Minas Gerais – IFNMG, Campus Januária – Bacharelado em Sistemas de Informação
+
+*Autor: phamr@aluno.ifnmg.edu.br
+
+**Resumo:** Este estudo apresenta o desenvolvimento e a validação de um sistema de visão computacional voltado à classificação automática de feridas cutâneas, projetado para futura integração em uma plataforma móvel de apoio à formação educacional e à prática profissional em enfermagem. A metodologia adotada compreendeu a implementação de um pipeline de pré-processamento de imagens, envolvendo etapas de padronização, aumento de dados (_data augmentation_) e normalização, com o objetivo de otimizar a qualidade e a consistência dos dados de entrada. Em seguida, foi desenvolvido e treinado um modelo de Rede Neural Convolucional (CNN) avaliado em dois cenários distintos: um com cinco classes de feridas (diabética, normal, por pressão, cirúrgica e venosa) e outro com três classes (diabética, normal e por pressão). O modelo apresentou desempenho robusto, alcançando acurácia de 88% no cenário de cinco classes e 94% no de três classes, evidenciando boa capacidade de generalização e eficiência na diferenciação dos padrões de feridas. Os resultados obtidos demonstram a viabilidade e o potencial do modelo como ferramenta de apoio ao ensino-aprendizagem e à prática diagnóstica, destacando a relevância da integração entre inteligência artificial e tecnologias móveis na formação e capacitação de futuros profissionais da área da saúde.
+
+**Palavras-chave:** Educação em Enfermagem, Feridas, Inteligência Artificial, Tecnologia Móvel, Visão Computacional.
