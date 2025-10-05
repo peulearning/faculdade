@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "c9d154590ae859f2",
+        "id": "0f329e7a86d41499",
         "type": "tabs",
         "children": [
           {
-            "id": "5ae544d66b2f1fac",
+            "id": "12b5fb938b136ca3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Resumo SNACT.md",
-                "mode": "source",
-                "source": false
+                "file": "Prints/Pasted image 20250918164640.png"
               },
-              "icon": "lucide-file",
-              "title": "Resumo SNACT"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250918164640"
             }
           }
         ]
@@ -180,24 +178,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5ae544d66b2f1fac",
+  "active": "84fdbe6bada7bb76",
   "lastOpenFiles": [
+    "Prints/Ferramentas de Pesquisa Científica.md",
+    "Prints/Pasted image 20250929161147.png",
+    "Prints/Pasted image 20250929161121.png",
+    "Prints/Pasted image 20250929161053.png",
+    "Prints/Pasted image 20250929161035.png",
+    "Prints/Pasted image 20250929160837.png",
+    "Prints/Pasted image 20250929160820.png",
+    "Prints/Pasted image 20250929150403.png",
+    "Prints/Pasted image 20250929150355.png",
+    "Prints/Pasted image 20250929135341.png",
+    "Prints/Pasted image 20250929135237.png",
+    "Ferramentas de Pesquisa Científica.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Integrated image and location analysis for wound classification a deep learning approach.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Multi‑modal wound classification using wound image and location by deep neural network.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Resumo SNACT.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Integrated image and location analysis for wound classification a deep learning approach.md",
     "8 Período/Desenvolvimento TCC 2025/Materiais e Metódos.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 10-09.md",
-    "Pasted image 20250918164640.png",
-    "Ferramentas de Pesquisa Científica.md",
-    "Pasted image 20250922205516.png",
-    "Pasted image 20250923134546.png",
-    "Pasted image 20250922180653.png",
-    "Pasted image 20250929134628.png",
-    "Pasted image 20250923223149.png",
-    "Pasted image 20250929134641.png",
-    "Pasted image 20250924172121.png",
-    "Pasted image 20250924202002.png",
-    "Pasted image 20250929135237.png",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Resumo Semana Nacional de Ciência e Tecnologia do Campus Januária 2025.md",
     "Calculo 2/Terceira Aula.md",
     "Calculo 2/Segunda Aula.md",
@@ -220,7 +219,6 @@
     "Fichamentos/Proteção da privacidade em dispositivos IOT de acordo com a LGPD.md",
     "Fichamentos/SkinGPT-4.md",
     "Fichamentos/SEGURANÇA DO AMBIENTE USANDO DISPOSITIVO IOT COM PROCESSAMENTO DISTRIBUÍDO.md",
-    "Prints/Ferramentas de Pesquisa Científica.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro",
     "Livros/Estat e prob.pdf",
     "Livros",
