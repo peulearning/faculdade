@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0f329e7a86d41499",
+        "id": "83640ca09d1b88c2",
         "type": "tabs",
         "children": [
           {
-            "id": "12b5fb938b136ca3",
+            "id": "41841e6f804a9691",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Prints/Pasted image 20250918164640.png"
+                "file": "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Resumo SNACT.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250918164640"
+              "icon": "lucide-file",
+              "title": "Resumo SNACT"
             }
           }
         ]
@@ -76,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5110321044922
+    "width": 216.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "a3a788e0072b571c",
@@ -178,8 +181,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "84fdbe6bada7bb76",
+  "active": "41841e6f804a9691",
   "lastOpenFiles": [
+    "Prints/Pasted image 20250918164640.png",
     "Prints/Ferramentas de Pesquisa Científica.md",
     "Prints/Pasted image 20250929161147.png",
     "Prints/Pasted image 20250929161121.png",
@@ -218,7 +222,6 @@
     "Fichamentos/Prospecção Tecnológica de Soluções de Internet.md",
     "Fichamentos/Proteção da privacidade em dispositivos IOT de acordo com a LGPD.md",
     "Fichamentos/SkinGPT-4.md",
-    "Fichamentos/SEGURANÇA DO AMBIENTE USANDO DISPOSITIVO IOT COM PROCESSAMENTO DISTRIBUÍDO.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro",
     "Livros/Estat e prob.pdf",
     "Livros",
