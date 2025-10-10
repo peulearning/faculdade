@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "83640ca09d1b88c2",
+        "id": "18a33e565cc39c62",
         "type": "tabs",
         "children": [
           {
-            "id": "41841e6f804a9691",
+            "id": "d359d59523019fa9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5110321044922,
-    "collapsed": true
+    "width": 216.5110321044922
   },
   "right": {
     "id": "a3a788e0072b571c",
@@ -181,8 +180,26 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "41841e6f804a9691",
+  "active": "d359d59523019fa9",
   "lastOpenFiles": [
+    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 10-09.md",
+    "8 Período/Desenvolvimento TCC 2025/Materiais e Metódos.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Multi‑modal wound classification using wound image and location by deep neural network.md",
+    "8 Período/Segurança e Auditoria de Sistemas de Informação.md",
+    "8 Período/Sistemas de Apoio à Decisão.md",
+    "8 Período/Avaliação SASI.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Abril/Reunião Dia 09-04.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Abril/Reunião Dia 02-04.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Seg 03-08.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Reunião 15-08.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Fevereiro/Reunião Dia 12-02.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Fevereiro/Reunião Dia 19-02.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Janeiro/Reunião Dia 12-01.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Junho/Pesquisa 09-06 11-06 ( 2ª Feira - 4ª Feira).md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Junho/Reunião 26-06.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Resumo SNACT.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Integrated image and location analysis for wound classification a deep learning approach.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 15-09.md",
     "Prints/Pasted image 20250918164640.png",
     "Prints/Ferramentas de Pesquisa Científica.md",
     "Prints/Pasted image 20250929161147.png",
@@ -194,13 +211,7 @@
     "Prints/Pasted image 20250929150403.png",
     "Prints/Pasted image 20250929150355.png",
     "Prints/Pasted image 20250929135341.png",
-    "Prints/Pasted image 20250929135237.png",
     "Ferramentas de Pesquisa Científica.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Integrated image and location analysis for wound classification a deep learning approach.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Multi‑modal wound classification using wound image and location by deep neural network.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Resumo SNACT.md",
-    "8 Período/Desenvolvimento TCC 2025/Materiais e Metódos.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 10-09.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Resumo Semana Nacional de Ciência e Tecnologia do Campus Januária 2025.md",
     "Calculo 2/Terceira Aula.md",
     "Calculo 2/Segunda Aula.md",
@@ -208,20 +219,8 @@
     "Livros/Cálculo Vol 1 9Ed - James Stewart, Daniel Clegg, Saleem Watson - Cengage (2022).pdf",
     "8 Período/Desenvolvimento TCC 2025/Reunião Julho/Reunião 15-07.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Julho/Reunião 17-07.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Julho/Reunião 25-07.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 15-09.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Reunião 15-08.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Seg 03-08.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro",
     "Calculo 2",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Integrated.md",
-    "Fichamentos/Integrated Image and Location Analysis for Wound Classification.md",
-    "Fichamentos/Image-Based Artificial Intelligence in Wound Assessment A Systematic Review.md",
-    "Fichamentos/Internet of Things (IoT) A review of its enabling technologies in healthcare applications, standards protocols, security and market opportunities.md",
-    "Fichamentos/LLMs-Healthcare.md",
-    "Fichamentos/Prospecção Tecnológica de Soluções de Internet.md",
-    "Fichamentos/Proteção da privacidade em dispositivos IOT de acordo com a LGPD.md",
-    "Fichamentos/SkinGPT-4.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro",
     "Livros/Estat e prob.pdf",
     "Livros",
