@@ -1,0 +1,1 @@
+Ainda sobre primitivas foi nos ensinados como resolver diferentes tipos de questões. 

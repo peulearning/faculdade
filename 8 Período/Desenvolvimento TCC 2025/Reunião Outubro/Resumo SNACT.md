@@ -1,6 +1,6 @@
 **CLASSIFICAÇÃO DE FERIDAS CUTÂNEAS COM REDES NEURAIS CONVOLUCIONAIS PARA APLICAÇÕES COM AUXÍLIO DE TECNOLOGIA MOBILE**
 
-Pedro Henrique Araújo Mattos Ribeiro¹*
+Pedro Henrique Araújo Mattos Ribeiro¹, Felipe  Augusto Oliveira Mota ², Suzana Vieira Mota ³.
 
 ¹Instituto Federal do Norte de Minas Gerais – IFNMG, Campus Januária – Bacharelado em Sistemas de Informação
 
