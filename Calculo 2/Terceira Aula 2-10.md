@@ -20,4 +20,3 @@ Além disso vemos um exercício de Exemplo que envolve Função Quadrática
 
 ![[Pasted image 20251010155227.png]]
 
-q
