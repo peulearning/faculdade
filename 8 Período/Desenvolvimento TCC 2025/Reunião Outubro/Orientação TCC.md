@@ -74,7 +74,7 @@ Com ferramentas como **TensorFlow Lite Micro**, é possível realizar **inferên
 
 ## Próximos Passos
 
-- [ ] Estudar a implementação do MobileNetV2 no **TensorFlow e PyTorch**.  
+- [x] Estudar a implementação do MobileNetV2 no **TensorFlow e PyTorch**.  
 - [ ] Criar um **protótipo de classificação de lesões cutâneas** com base no modelo.  
 - [ ] Testar **deploy em ambiente mobile (TensorFlow Lite)** e **embarcado (ESP32)**.  
 - [ ] Preparar material didático para **ofertar minicurso no Maker Day**.
