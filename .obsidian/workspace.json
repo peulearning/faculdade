@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c59d38e78ede69bf",
+        "id": "e299c125a3334162",
         "type": "tabs",
         "children": [
           {
-            "id": "38c0b133cac27c19",
+            "id": "a24180e74a6b0da6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2/Implementação Notebook Colab.md",
+                "file": "Calculo 2/Aula Seis 21-10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Implementação Notebook Colab"
+              "title": "Aula Seis 21-10"
             }
           }
         ]
@@ -180,10 +180,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "38c0b133cac27c19",
+  "active": "a24180e74a6b0da6",
   "lastOpenFiles": [
-    "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Orientação TCC.md",
+    "Pasted image 20251021170929.png",
+    "Pasted image 20251021170852.png",
+    "Pasted image 20251021170823.png",
+    "Pasted image 20251021170713.png",
+    "Prints/Pasted image 20251021170654.png",
+    "Calculo 2/Aula Seis 21-10.md",
+    "8 Período/Sistemas de Apoio à Decisão.md",
+    "Fichamento.md",
+    "Fichamentos/Artigos.md",
+    "Fichamento 2.md",
+    "Fichamentos/Artificial Intelligence of Things for Smarter Healthcare A Survey of Advancements, Challenges, and Opportunities.md",
+    "Fichamentos/A method for embedding a computer vision application into a wearable device ( Um método para incorporar uma aplicação de visão computacional em um dispositivo vestível ).md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2/Implementação Notebook Colab.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Orientação TCC.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Resumo SNACT.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2/MobileNetV2 Inverted Residuals and Linear Bottlenecks.md",
     "Prints/Pasted image 20251019233444.png",
@@ -192,10 +204,6 @@
     "Prints/Pasted image 20251019233525.png",
     "Prints/Pasted image 20251019233455.png",
     "Prints/Pasted image 20251019233249.png",
-    "Prints/Pasted image 20251019232842.png",
-    "Prints/Pasted image 20251019232416.png",
-    "Prints/Pasted image 20251019151013.png",
-    "Prints/Pasted image 20251019144246.png",
     "Calculo 2/Aula Cinco 16-10.md",
     "Calculo 2/Aula Quatro 14-10.md",
     "Calculo 2/Aula Três 2-10.md",
@@ -209,17 +217,9 @@
     "8 Período/Desenvolvimento TCC 2025/Materiais e Metódos.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Multi‑modal wound classification using wound image and location by deep neural network.md",
     "8 Período/Segurança e Auditoria de Sistemas de Informação.md",
-    "8 Período/Sistemas de Apoio à Decisão.md",
     "8 Período/Avaliação SASI.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Abril/Reunião Dia 09-04.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Abril/Reunião Dia 02-04.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Seg 03-08.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Reunião 15-08.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Fevereiro/Reunião Dia 12-02.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Fevereiro/Reunião Dia 19-02.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Janeiro/Reunião Dia 12-01.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Junho/Pesquisa 09-06 11-06 ( 2ª Feira - 4ª Feira).md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Junho/Reunião 26-06.md",
     "Livros/Cálculo Vol 1 9Ed - James Stewart, Daniel Clegg, Saleem Watson - Cengage (2022).pdf",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro",
     "Calculo 2",
