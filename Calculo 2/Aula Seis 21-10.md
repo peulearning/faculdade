@@ -21,3 +21,9 @@ Dos conceitos vistos hoje  :
 O que fica pra ser feito ? Iniciar os Exercícios. Pág ( 399 PDF ) e 363 Livro
 
 ![[Pasted image 20251021170929.png]] 
+
+
+Entramos na parte do Teorema Fundamental do Cálculo e foi possível verificar as duas novas propriedades. O que sugere que possamos avançar nos exercícios.
+
+1.  A relação entre derivada e integral
+2. Cálculo de integrais definida 
