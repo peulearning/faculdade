@@ -1,3 +1,5 @@
+Página 389 Seção 5.2
+
 Nesta aula relembramos um pouco sobre a aula cinco, cujo vimos o conceito teórico e na prática da "Integral Definida", além de algumas propriedades.  
 
 1. ∫a  e dx = e ( b - a), onde e é qualquer constante
