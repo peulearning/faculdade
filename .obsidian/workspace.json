@@ -11,14 +11,12 @@
             "id": "722c09232ad6260a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Calculo 2/Aula Nove 04-11.md",
-                "mode": "source",
-                "source": false
+                "file": "Prints/Pasted image 20251104101302.png"
               },
-              "icon": "lucide-file",
-              "title": "Aula Nove 04-11"
+              "icon": "lucide-image",
+              "title": "Pasted image 20251104101302"
             }
           }
         ]
@@ -78,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5110321044922,
-    "collapsed": true
+    "width": 216.5110321044922
   },
   "right": {
     "id": "a3a788e0072b571c",
@@ -181,22 +178,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "722c09232ad6260a",
+  "active": "84fdbe6bada7bb76",
   "lastOpenFiles": [
-    "Pasted image 20251104101401.png",
-    "Pasted image 20251104101318.png",
-    "Pasted image 20251104101302.png",
-    "Pasted image 20251104101220.png",
-    "Pasted image 20251104101159.png",
-    "Pasted image 20251104101136.png",
+    "Prints/Pasted image 20251028131830.png",
     "Calculo 2/Aula Nove 04-11.md",
+    "Prints/Pasted image 20251104101401.png",
+    "Prints/Pasted image 20251104101318.png",
+    "Prints/Pasted image 20251104101302.png",
+    "Prints/Pasted image 20251104101220.png",
+    "Prints/Pasted image 20251104101159.png",
+    "Prints/Pasted image 20251104101136.png",
     "Calculo 2/Aula Oito 28-10.md",
     "Calculo 2/Aula Sete 23-10.md",
-    "Pasted image 20251028131854.png",
-    "Pasted image 20251028131830.png",
-    "Pasted image 20251028131807.png",
-    "Pasted image 20251028131701.png",
-    "Pasted image 20251028131634.png",
+    "Prints/Pasted image 20251028131854.png",
+    "Prints/Pasted image 20251028131807.png",
+    "Prints/Pasted image 20251028131701.png",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2/Artigos x Modelo.md",
     "Calculo 2/Aula Três 2-10.md",
     "Calculo 2/Aula Seis 21-10.md",
