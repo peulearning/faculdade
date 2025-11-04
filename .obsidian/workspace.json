@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ab01d81f253c96e7",
+        "id": "469aba9874e0307e",
         "type": "tabs",
         "children": [
           {
-            "id": "578623705360e80b",
+            "id": "722c09232ad6260a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculo 2/Aula Sete 23-10.md",
+                "file": "Calculo 2/Aula Nove 04-11.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Aula Sete 23-10"
+              "title": "Aula Nove 04-11"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5110321044922
+    "width": 216.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "a3a788e0072b571c",
@@ -180,16 +181,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "578623705360e80b",
+  "active": "722c09232ad6260a",
   "lastOpenFiles": [
+    "Pasted image 20251104101401.png",
+    "Pasted image 20251104101318.png",
+    "Pasted image 20251104101302.png",
+    "Pasted image 20251104101220.png",
+    "Pasted image 20251104101159.png",
+    "Pasted image 20251104101136.png",
+    "Calculo 2/Aula Nove 04-11.md",
     "Calculo 2/Aula Oito 28-10.md",
+    "Calculo 2/Aula Sete 23-10.md",
     "Pasted image 20251028131854.png",
     "Pasted image 20251028131830.png",
     "Pasted image 20251028131807.png",
     "Pasted image 20251028131701.png",
     "Pasted image 20251028131634.png",
-    "Pasted image 20251028131623.png",
-    "Calculo 2/Aula Sete 23-10.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2/Artigos x Modelo.md",
     "Calculo 2/Aula Três 2-10.md",
     "Calculo 2/Aula Seis 21-10.md",
@@ -200,11 +207,7 @@
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Multi‑modal wound classification using wound image and location by deep neural network.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Orientação TCC.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2/Implementação Notebook Colab.md",
-    "Prints/Pasted image 20251021170823.png",
     "Excalidraw/Drawing 2025-10-21 21.20.53.excalidraw.md",
-    "Prints/Pasted image 20251021170929.png",
-    "Prints/Pasted image 20251021170852.png",
-    "Prints/Pasted image 20251021170713.png",
     "8 Período/Sistemas de Apoio à Decisão.md",
     "Fichamento.md",
     "Fichamentos/Artigos.md",
@@ -218,7 +221,6 @@
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2",
     "Excalidraw/system_design.excalidraw.md",
     "Excalidraw/Drawing 2025-03-21 12.03.29.excalidraw.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 10-09.md",
     "Livros/Cálculo Vol 1 9Ed - James Stewart, Daniel Clegg, Saleem Watson - Cengage (2022).pdf",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro",
     "Calculo 2",
