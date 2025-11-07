@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "469aba9874e0307e",
+        "id": "bc044374a87b30a8",
         "type": "tabs",
         "children": [
           {
-            "id": "722c09232ad6260a",
+            "id": "6fed599798d0e2ab",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Prints/Pasted image 20251106155938.png"
+                "file": "Calculo 2/Aula Dez 06-11.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251106155938"
+              "icon": "lucide-file",
+              "title": "Aula Dez 06-11"
             }
           }
         ]
@@ -178,13 +180,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "84fdbe6bada7bb76",
+  "active": "6fed599798d0e2ab",
   "lastOpenFiles": [
-    "Calculo 2/Aula Dez 06-11.md",
+    "Calculo 2/Aula Dois 30-09.md",
+    "Calculo 2/Lista 1 Cálculo 2 Primitivas.pdf",
+    "Calculo 2/Aula Sete 23-10.md",
+    "Calculo 2/Aula Seis 21-10.md",
     "Prints/Pasted image 20251106155938.png",
+    "Calculo 2/Aula Dez 06-11.md",
     "Prints/Pasted image 20251106155927.png",
     "Prints/Pasted image 20251106155326.png",
-    "Calculo 2/Aula Sete 23-10.md",
     "Prints/Pasted image 20251104101302.png",
     "Prints/Pasted image 20251028131830.png",
     "Calculo 2/Aula Nove 04-11.md",
@@ -196,10 +201,8 @@
     "Calculo 2/Aula Oito 28-10.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2/Artigos x Modelo.md",
     "Calculo 2/Aula Três 2-10.md",
-    "Calculo 2/Aula Seis 21-10.md",
     "Calculo 2/Aula Quatro 14-10.md",
     "Calculo 2/Aula Cinco 16-10.md",
-    "Calculo 2/Aula Dois 30-09.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Integrated image and location analysis for wound classification a deep learning approach.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Multi‑modal wound classification using wound image and location by deep neural network.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Orientação TCC.md",
@@ -214,7 +217,6 @@
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Resumo SNACT.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2/MobileNetV2 Inverted Residuals and Linear Bottlenecks.md",
     "Calculo 2/Aula Um 23-09.md",
-    "Calculo 2/Lista 1 Cálculo 2 Primitivas.pdf",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2",
     "Excalidraw/system_design.excalidraw.md",
     "Livros/Cálculo Vol 1 9Ed - James Stewart, Daniel Clegg, Saleem Watson - Cengage (2022).pdf",

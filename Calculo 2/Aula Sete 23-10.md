@@ -73,6 +73,8 @@ Inclui ângulos em **graus** e **radianos**, com valores exatos.
   `Graus → Radianos: rad = graus × π / 180`  
   `Radianos → Graus: graus = rad × 180 / π`
 
+- **Identidades adicionais:** - `sen/cos²x = sen x / (cos x * cos x)` - `tan²x + 1 = sec²x` - `1 + cot²x = csc²x`
+
 ---
 
 ## 📘 Observações

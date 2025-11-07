@@ -6,3 +6,4 @@ Nesta aula, finalizamos o conteúdo de Integral com técnica de substituição i
 	
 ![[Pasted image 20251106155326.png]]
 
+Peguei para fazer vários exercícios e fazendo e hoje ainda irei refazer a prova 
