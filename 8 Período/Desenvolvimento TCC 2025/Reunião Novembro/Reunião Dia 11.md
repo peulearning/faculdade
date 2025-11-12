@@ -4,14 +4,13 @@
 "Aplicação de Visão Computacional com Apoio de Tecnologia Mobile para Detecção de Feridas"
 ```
 
-|Modelo|Tipo|Características principais|Possível aplicação|
-|---|---|---|---|
-|**CNN Sequencial (ConvNet clássica)**|Rede convolucional simples|Estrutura manual, ideal para experimentos controlados e compreensão de fundamentos|Benchmark inicial (base comparativa)|
-|**MobileNetV2**|Rede pré-treinada (transfer learning)|Leve, eficiente e otimizada para dispositivos móveis|Implementação no app Android (execução local)|
-|**YOLOv3**|Detector de objetos|Realiza **detecção + classificação** simultânea|Reconhecimento de múltiplas lesões em tempo real|
+| Modelo                                | Tipo                                  | Características principais                                                         | Possível aplicação                               |
+| ------------------------------------- | ------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------ |
+| **CNN Sequencial (ConvNet clássica)** | Rede convolucional simples            | Estrutura manual, ideal para experimentos controlados e compreensão de fundamentos | Benchmark inicial (base comparativa)             |
+| **MobileNetV2**                       | Rede pré-treinada (transfer learning) | Leve, eficiente e otimizada para dispositivos móveis                               | Implementação no app Android (execução local)    |
+| **YOLOv3**                            | Detector de objetos                   | Realiza **detecção + classificação** simultânea                                    | Reconhecimento de múltiplas lesões em tempo real |
 # 📱 2. Integração com ESP32 e Aplicativo Mobile
 
-Minha ideia de integrar o sistema com uma **ESP32** e um **aplicativo mobile** . 
 
 ### 🔹 Abordagem A — Processamento **em nuvem**
 
@@ -30,6 +29,9 @@ Minha ideia de integrar o sistema com uma **ESP32** e um **aplicativo mobile** .
 - O app (feito em Flutter, React Native ou Android nativo) roda o modelo localmente.
     
 - Assim, pode funcionar **offline** e com latência mínima.
+
+### 🔹 Abordagem C — Comparação dos **Modelos e Artigos**
+
 
 # 💬 3. Perguntas
 
