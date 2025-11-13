@@ -19,7 +19,7 @@ Calcule a integral indicada:
 
 Considere as seguintes afirmações, coloque V ou F conforme sejam verdadeiras ou falsas. Quando verdadeira justifique e se for falsa, corrija ou dê um exemplo que mostre que é falsa. 
 
-- a) Se f e g forem contínuas em $f(x) \ge g(x)$, para $a \le x \le b$ então: $\int_{a}^{b}f(x)dx \ge \int_{a}^{b}g(x)dx$ 8888
+- a) Se f e g forem contínuas em $f(x) \ge g(x)$, para $a \le x \le b$ então: $\int_{a}^{b}f(x)dx \ge \int_{a}^{b}g(x)dx$ 
     
 - b) $\int_{-3}^{3}(x^{2}+1)dx = 2\int_{0}^{3}(x^{2}+1)dx$ 9
     
@@ -64,3 +64,48 @@ Calcule as seguintes integrais:
 - c) $\int_{0}^{\frac{\pi}{2}}\frac{\cos x}{\sqrt{4+3\sin x}}dx$ 
     
 	- d) $\int x\sqrt{1+x}dx$ 
+
+ 
+
+# Estimativas numéricas
+
+### Cenário Pessimista (professora dá pouco crédito parcial)
+
+- Q1 = 3,0
+    
+- Q2 = 1,5
+    
+- Q3 = 4,5 (75% do total de 6, por pequenos erros)
+    
+- Q4 = 2,25 (75% de 3,0)
+    
+- Q5 = 9,0 (três itens completos = 9,0; c com 0 ponto nesse cenário)  
+    **Total = 20,25 / 30 → 67,5%**
+    
+
+### Cenário Provável (crédito parcial razoável)
+
+- Q1 = 3,0
+    
+- Q2 = 1,5
+    
+- Q3 = 5,0 (≈83% do total)
+    
+- Q4 = 2,5 (≈83% de 3,0)
+    
+- Q5 = 10,5 (a,b,d corretos = 9,0; c com ~50% = 1,5)  
+    **Total = 22,5 / 30 → 75,0%**
+    
+
+### Cenário Otimista (professora é generosa com pequenos erros)
+
+- Q1 = 3,0
+    
+- Q2 = 1,5
+    
+- Q3 = 5,4 (90% do total de 6)
+    
+- Q4 = 2,7 (90% de 3,0)
+    
+- Q5 = 11,1 (a,b,d corretos = 9,0; c com 70% = 2,1)  
+    **Total ≈ 23,7 / 30 → 79,0%**
