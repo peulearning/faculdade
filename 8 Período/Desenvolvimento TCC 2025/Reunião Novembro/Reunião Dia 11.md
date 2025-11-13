@@ -32,39 +32,48 @@
 
 ### 🔹 Abordagem C — Comparação dos **Modelos e Artigos**
 
+- Exporta o modelo do Colab em formato **Notebook Colab  (.colab)**.
+    
+- Capturar os resultados mais importantes para rede convulsionais.
 
+- Storytelling 
 # 💬 3. Perguntas
 
 ### 🔸 Sobre os modelos:
 
 1. **“Acha válido manter os três modelos (CNN simples, MobileNetV2 e YOLOv3) para comparação no artigo, ou devo focar em um e aprofundar mais a parte de desempenho e aplicabilidade?”**
-    
-2. **“Deveríamos incluir métricas específicas de detecção como _mAP_ e IoU para o YOLOv3, além da acurácia e F1-score usadas na classificação?”**
-    
-3. **“Na sua visão, seria mais interessante treinar o MobileNetV2 totalmente com nosso dataset ou usar apenas fine-tuning parcial?”**
+     Sim.
+
 ### 🔸 Sobre a integração (ESP32 + App):
 
 4. **“Você acha mais viável rodar o modelo no app (via TensorFlow Lite) ou enviar as imagens da ESP32 para uma API e processar na nuvem?”**
-    
-5. **“Seria interessante usar o ESP32 apenas como coletor de imagens, ou também como elemento educacional (ex: feedback visual via LED quando o modelo detecta algo)?”**
-    
-6. **“Como podemos garantir privacidade e segurança dos dados das imagens capturadas por pacientes/alunos?”**
+	 Salvar o modelo e usa-lo no Tensor Flow Lite.
+
 ### 🔸 Sobre a pesquisa e metodologia:
 
 7. **“Seria válido realizar um estudo comparativo entre os modelos (tempo de inferência, precisão e aplicabilidade prática) e usar isso como base da análise de resultados?”**
-    
-8. **“Podemos incluir uma etapa de validação com estudantes de enfermagem usando o app para medir impacto educacional?”**
-    
-9. **“Você sugere priorizar o foco técnico (modelos e desempenho) ou educacional (usabilidade e impacto no aprendizado) na redação final?”**
+ Sim , interessantíssimo.
 
-## 🚀 Sugestão de próximos passos 
+9. **“Você sugere priorizar o foco técnico (modelos e desempenho) ou  (usabilidade e impacto no aprendizado) na redação final?”**
+Abraçar a trajetória e também a sua usabilidade.
 
-1. **Consolidar os resultados** dos modelos (gráficos de precisão, perda e matriz de confusão).
-    
-2. **Escolher um modelo principal** (provavelmente MobileNetV2 ou YOLOv3).
-    
-3. **Planejar o app mobile** (definir stack e integração).
-    
-4. **Prototipar o fluxo com ESP32 + servidor/API ou app local.**
-    
-5. **Preparar o capítulo de resultados e discussão** com foco nas métricas e aplicabilidade.
+# 🦾 4. Dicas para Futuras Reuniões
+
+## 1. Salvar Modelos
+- **Formato**: Salve os modelos ao término da execução em formatos como `.h5`, TensorFlow Lite, etc.
+- **Métricas**: Exiba as métricas através de um carregamento para comparação entre os modelos:
+  - Precisão
+  - Recall
+  - F1-Score
+- **Visualização de Erros**: Tente visualizar imagens de erros e acertos, se possível.
+
+## 2. Obter Métricas dos Modelos
+- **Dados de Teste**: Coletar métricas com base nos dados de teste (embasamento através das características observáveis):
+  - Comparar o que foi identificado ou predito pelo modelo.
+  - Analisar acertos e erros.
+
+## 3.Decisão com Orientador
+- **Consulta**: Decidir, em conjunto com o orientador, quais próximos passos serão seguidos.
+
+## 4. Escrita do Projeto
+- **Reflexão**: Pense na escrita do projeto e no desenvolvimento do aplicativo mobile.
