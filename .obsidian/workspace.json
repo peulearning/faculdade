@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculo 2/Prova 1/Primeira Prova I - Calculo 2  l 13-11.md",
+                "file": "Calculo 2/Segunda Parte/Aula Treze 18-11.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Primeira Prova I - Calculo 2  l 13-11"
+              "title": "Aula Treze 18-11"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 216.5110321044922,
-    "collapsed": true
+    "width": 216.5110321044922
   },
   "right": {
     "id": "a3a788e0072b571c",
@@ -183,14 +182,16 @@
   },
   "active": "7996919b2b20c3ee",
   "lastOpenFiles": [
+    "Calculo 2/Aula Onze 11-11.md",
+    "Calculo 2/Aula Oito 28-10.md",
+    "Calculo 2/Segunda Parte/Aula Treze 18-11.md",
+    "Calculo 2/Segunda Parte",
     "8 Período/Desenvolvimento TCC 2025/Reunião Novembro/Reunião Dia 11.md",
     "Calculo 2/Prova 1/Prova I - Calculo 2.md",
     "Calculo 2/Aula Sete 23-10.md",
-    "Calculo 2/Aula Onze 11-11.md",
     "Calculo 2/Prova 1",
     "8 Período/Desenvolvimento TCC 2025/Reunião Novembro",
     "Calculo 2/Aula Seis 21-10.md",
-    "Calculo 2/Aula Oito 28-10.md",
     "Calculo 2/Aula Quatro 14-10.md",
     "Calculo 2/Aula Nove 04-11.md",
     "Calculo 2/Aula Dois 30-09.md",
@@ -221,13 +222,11 @@
     "Fichamento 2.md",
     "Fichamentos/Artificial Intelligence of Things for Smarter Healthcare A Survey of Advancements, Challenges, and Opportunities.md",
     "Fichamentos/A method for embedding a computer vision application into a wearable device ( Um método para incorporar uma aplicação de visão computacional em um dispositivo vestível ).md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Resumo SNACT.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2",
     "Livros/Cálculo Vol 1 9Ed - James Stewart, Daniel Clegg, Saleem Watson - Cengage (2022).pdf",
     "8 Período/Desenvolvimento TCC 2025/Reunião Outubro",
     "Calculo 2",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro",
-    "Livros/Estat e prob.pdf",
-    "Livros"
+    "Livros/Estat e prob.pdf"
   ]
 }
