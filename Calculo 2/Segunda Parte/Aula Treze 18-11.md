@@ -89,4 +89,4 @@ Calcule a integral:
 ---
 
 ## Conclusão
-A escolha entre substituição e integral por partes depende da forma da função integral. Pratique com exercícios variados para dominar essas técnicas e saber aplicá-las de forma eficaz em diferentes situações.
+A escolha entre substituição e integral por partes depende da forma da função integral. Pratique com exercícios variados para dominar essas técnicas e saber aplicá-las de forma eficaz em diferentes situações.   ✅
