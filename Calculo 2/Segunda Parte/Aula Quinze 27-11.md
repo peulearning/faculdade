@@ -17,10 +17,10 @@ A chave é **isolar um fator $\text{sen} \ x$ ou $\text{cos} \ x$** (da função
 - $\text{cos}^2 x = 1 - \text{sen}^2 x$
     
 
-|**Condição**|**Estratégia**|**Substituição Recomendada**|
-|---|---|---|
-|**$n$** é **ímpar** ($\text{cos}^n x$)|Isole $\text{cos} \ x$ e use $\text{cos}^2 x = 1 - \text{sen}^2 x$|$u = \text{sen} \ x$|
-|**$m$** é **ímpar** ($\text{sen}^m x$)|Isole $\text{sen} \ x$ e use $\text{sen}^2 x = 1 - \text{cos}^2 x$|$u = \text{cos} \ x$|
+| **Condição**                           | **Estratégia**                                                     | **Substituição Recomendada** |
+| -------------------------------------- | ------------------------------------------------------------------ | ---------------------------- |
+| **$n$** é **ímpar** ($\text{cos}^n x$) | Isole $\text{cos} \ x$ e use $\text{cos}^2 x = 1 - \text{sen}^2 x$ | $u = \text{sen} \ x$         |
+| **$m$** é **ímpar** ($\text{sen}^m x$) | Isole $\text{sen} \ x$ e use $\text{sen}^2 x = 1 - \text{cos}^2 x$ | $u = \text{cos} \ x$         |
 
 ---
 

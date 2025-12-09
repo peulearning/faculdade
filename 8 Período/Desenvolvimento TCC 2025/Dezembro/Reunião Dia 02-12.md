@@ -40,7 +40,7 @@ A classe **'Diabete'** realmente é uma das que apresenta mais erros de classifi
 
 feridas diabéticas podem ser visualmente ambíguas, apresentando características que se assemelham a estágios de pressão (úlceras de pressão) ou a feridas cirúrgicas/venosas, dependendo do estágio, infecção, e presença de tecido necrótico. O modelo pode estar se confundindo com características como profundidade, presença de bordas irregulares ou exsudato, que são comuns em diferentes tipos de úlceras.
 
-- [ ] Entender o comportamento do modelo, para identificar nas imagens. Conhecer como ele decompõe as imagens.  cada um dos modelos, quais foram os tempos de respostas, qual e mais fidedigno,  oque vai ser melhor precisão ou sensibilidade.
+- [ ] Entender o comportamento do modelo, para identificar as imagens. Conhecer como ele decompõe as imagens.  cada um dos modelos, quais foram os tempos de respostas, qual e mais fidedigno,  oque vai ser melhor precisão ou sensibilidade.
 
 - [ ] Entender também como eu fiz parametrizar ou como é parametrizado o meu modelo.
 ### 2. Padrões de Cada Tipo de Ferida
