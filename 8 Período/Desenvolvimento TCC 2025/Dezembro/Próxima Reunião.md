@@ -6,14 +6,29 @@ O coração de qualquer CNN é a **Camada Convolucional**, que atua como um dete
 
 Os modelos não veem a imagem como um todo de uma vez, mas a decompõem em uma hierarquia de complexidade:
 
+| **Princípio**              | **Descrição**                                                                                                                                                                                                                                            |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **A. Visão Hierárquica**   | Todos decompõem a imagem em uma série de camadas que aprendem _features_ de complexidade crescente: **Bordas** (camadas iniciais) $\rightarrow$ **Texturas/Padrões** (camadas intermediárias) $\rightarrow$ **Partes da Ferida/Forma** (camadas finais). |
+| **B. Funções de Ativação** | Todos utilizam funções de ativação não-lineares (como **ReLU**) nas camadas convolucionais para introduzir complexidade e permitir o aprendizado de relações complexas.                                                                                  |
+| **C. Camada de Decisão**   | Todos finalizam o processo de decomposição e extração com o achatamento dos _feature maps_ (camada **Flatten**), seguidos por camadas **Densa** (Fully Connected) para a tomada de decisão final.                                                        |
+| **D. Saída (Softmax)**     | Todos utilizam a função **Softmax** na última camada para gerar um vetor de probabilidades, escolhendo a classe com a maior probabilidade entre as 6 possíveis (**Diabete, Pressure, Venous, etc.**).                                                    |
+
 | **Camada da CNN**          | **O que o Modelo "Vê" (Decompõe)**                                       | **Aplicação em Imagens de Feridas**                                                                                                                                         |
 | -------------------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Camadas Iniciais**       | **Características Simples:** Bordas, linhas, curvas, gradientes de cor.  | Detecção da **borda da ferida** (forma), separação entre o tecido necrótico (cor escura) e o tecido de granulação (cor vermelha viva).                                      |
 | **Camadas Intermediárias** | **Características Complexas:** Texturas, padrões, combinações de formas. | Detecção de **tecidos específicos** (esfacelo, necrose, granulação), padrões de **hiperpigmentação perilesional** (venosa), ou a **linearidade de uma sutura** (cirúrgica). |
 | **Camadas Finais**         | **Características Semânticas:** Partes do objeto (ferida completa).      | Reconhecimento do **padrão de uma úlcera de pressão** em proeminência óssea ou o **formato de saca-bocado** da úlcera diabética.                                            |
+
+*Esfacelo : ==é um **tecido morto, necrótico e inviável** que se acumula no leito de uma ferida, aparecendo como uma massa **amarelada, esbranquiçada ou acinzentada**, úmida e que dificulta a cicatrização, impedindo o crescimento de tecido novo==.* 
+
+*Granulação em feridas :  é o ==processo natural de formação de um tecido novo, vermelho e granular (como "carne moída") que preenche a lesão, rico em pequenos vasos sanguíneos (angiogênese) e colágeno==, sendo um sinal vital da fase proliferativa da cicatrização, que preenche o "buraco" e prepara para a formação de pele nova, mas precisa de umidade e nutrientes para ocorrer bem, com excesso podendo indicar infecção ou má circulação.*
+
+*A **hiperpigmentação perilesional** refere-se ao ==**escurecimento da pele que ocorre ao redor de uma lesão** ou área de inflamação existente==.*
+
 ### B. O Papel do _Feature Map_
 
 A cada camada convolucional, a imagem de entrada é transformada em um **mapa de características** (_Feature Map_). Esse mapa é a representação numérica da intensidade com que um _feature_ específico (por exemplo, uma borda vertical) está presente em diferentes regiões da imagem. O modelo está, literalmente, **decompondo** a imagem em milhares de mapas de características.
+
 
 ## 2. 🎯 Como Cada Modelo Decompõe de Forma Diferente
 

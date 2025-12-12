@@ -1,92 +1,127 @@
 # Técnicas de Integração: Substituição vs. Integral por Partes
 
 ## Introdução
-Ao resolver integrais, duas técnicas são frequentemente utilizadas: a *substituição* e a *integral por partes*. Saber quando aplicar cada uma pode facilitar o processo de integração e levar a uma solução mais simples.
+Ao resolver integrais, duas técnicas são fundamentais: a **Substituição** (regra da cadeia inversa) e a **Integral por Partes** (regra do produto inversa).
 
 ---
 
 ## 1. Integração por Substituição
 
-### Definição
-A técnica de substituição é usada quando a integral contém uma função composta. Nessa técnica, substituímos uma parte da integral por uma nova variável, simplificando o processo.
+### 💡 Conceito
+Usada quando a integral contém uma função composta $f(g(x))$ e a derivada da função interna $g'(x)$ aparece multiplicando no integrando (ou pode ser ajustada).
 
-### Quando Usar
-- Quando a integral contém uma função dentro de outra função (ex: \( f(g(x)) \)).
-- Quando podemos derivar a função interna, tornando a substituição viável.
+### 📝 Algoritmo
+1. **Escolha:** Defina $u = g(x)$ (a função "de dentro").
+2. **Diferencial:** Calcule $du = g'(x) \, dx$.
+3. **Substituição:** Reescreva a integral inteira em termos de $u$.
+4. **Integração:** Resolva em $u$.
+5. **Retorno:** Substitua $u$ de volta por $g(x)$.
 
-### Passos
-1. **Escolha a Substituição**: Defina \( u = g(x) \).
-2. **Calcule \( du \)**: Derive \( u \) para encontrar \( du = g'(x)dx \).
-3. **Substitua**: Troque \( g(x) \) e \( dx \) na integral original.
-4. **Integre**: Resolva a nova integral em termos de \( u \).
-5. **Substitua de Volta**: Converta para a variável original \( x \).
-
-### Exemplo
+### 🔎 Exemplo Prático
 Calcule:
-\[
-\int 2x \cdot e^{x^2} \, dx
-\]
+$$\int 2x \cdot e^{x^2} \, dx$$
 
-**Solução**:
-1. **Escolha \( u = x^2 \)**, então \( du = 2x \, dx \).
-2. A integral se transforma em:
-   \[
-   \int e^u \, du = e^u + C = e^{x^2} + C
-   \]
+**Solução:**
+1. Escolhemos a função interna (o expoente) para ser $u$:
+   $$u = x^2 \quad \Longrightarrow \quad du = 2x \, dx$$
+
+2. Substituímos na integral original:
+   $$
+   \begin{aligned}
+   \int e^{\underbrace{x^2}_{u}} \cdot \underbrace{2x \, dx}_{du} &= \int e^u \, du \\
+   &= e^u + C
+   \end{aligned}
+   $$
+
+3. Voltamos para a variável $x$:
+   $$\boxed{e^{x^2} + C}$$
 
 ---
 
 ## 2. Integral por Partes
 
-### Definição
-A integral por partes é baseada na fórmula \( \int u \, dv = uv - \int v \, du \) e é útil quando a integral é um produto de duas funções.
+### 💡 Conceito
+Baseada na regra do produto, é usada para integrar produtos de funções de naturezas diferentes (ex: polinômio $\times$ exponencial).
 
-### Quando Usar
-- Quando a integral envolve o produto de funções que podem ser derivadas (ex: \( x \cdot \sin(x) \)).
-- Quando uma das funções pode ser facilmente integrada.
+> [!INFO] A Fórmula
+> $$\int u \, dv = u \cdot v - \int v \, du$$
+> *"Um dia vi um velho menos a integral de v du"*
 
-### Passos
-1. **Escolha \( u \) e \( dv \)**: Identifique uma parte da integral como \( u \) (frequentemente a parte que se torna mais simples quando derivada) e a outra como \( dv \).
-2. **Derive \( u \)**: Encontre \( du \).
-3. **Integre \( dv \)**: Encontre \( v \).
-4. **Aplique a Fórmula**: Utilize \( \int u \, dv = uv - \int v \, du \).
-5. **Resolva**: Simplifique e integre a nova integral.
+### 🧠 Dica: Como escolher o $u$? (Regra LIATE)
+A prioridade para escolher quem será o **$u$** segue esta ordem:
+1. **L**ogos (Logarítmicas: $\ln x$)
+2. **I**nversas (Trigonométricas Inversas: $\arctan x$)
+3. **A**lgébricas (Polinômios: $x^2, 3x$)
+4. **T**rigonométricas ($\sin x, \cos x$)
+5. **E**xponenciais ($e^x$)
 
-### Exemplo
+### 🔎 Exemplo Prático
 Calcule:
-\[
-\int x \cdot e^x \, dx
-\]
+$$\int x \cdot e^x \, dx$$
 
-**Solução**:
-1. **Escolha \( u = x \)** e \( dv = e^x \, dx \).
-2. **Derive**: \( du = dx \); **Integre**: \( v = e^x \).
-3. Aplique a fórmula:
-   \[
-   \int x \cdot e^x \, dx = x \cdot e^x - \int e^x \, dx = x \cdot e^x - e^x + C
-   \]
+**Solução:**
+1. **Setup:** Usando LIATE, Algébrica ($x$) tem preferência sobre Exponencial ($e^x$) para ser o $u$.
+
+$$
+\begin{aligned}
+\text{Derivar } (\downarrow) \quad & \quad \text{Integrar } (\uparrow) \\
+u = x \quad & \quad dv = e^x \, dx \\
+du = dx \quad & \quad v = e^x
+\end{aligned}
+$$
+
+2. **Aplicação da Fórmula:**
+   $$
+   \begin{aligned}
+   \int \underbrace{x}_{u} \underbrace{e^x \, dx}_{dv} &= \underbrace{x}_{u} \cdot \underbrace{e^x}_{v} - \int \underbrace{e^x}_{v} \underbrace{\, dx}_{du} \\
+   &= x e^x - \int e^x \, dx \\
+   &= x e^x - e^x + C
+   \end{aligned}
+   $$
+
+3. **Resultado:**
+   $$\boxed{e^x(x - 1) + C}$$
 
 ---
 
-## Exercícios
+## 3. Exercícios de Fixação
 
-### Exercício 1: Substituição
-Calcule a integral:
-\[
-\int \frac{3x^2}{1 + x^3} \, dx
-\]
+### Exercício 1 (Substituição)
+$$\int \frac{3x^2}{1 + x^3} \, dx$$
 
-### Exercício 2: Integral por Partes
-Calcule a integral:
-\[
-\int x \ln(x) \, dx
-\]
+> [!success]- Ver Solução
+> **Escolha:** $u = 1 + x^3 \Rightarrow du = 3x^2 \, dx$.
+>
+> $$
+> \begin{aligned}
+> \int \frac{1}{u} \, du &= \ln|u| + C \\
+> &= \ln|1 + x^3| + C
+> \end{aligned}
+> $$
 
-### Respostas
-1. **Exercício 1**: A solução envolve fazer a substituição \( u = 1 + x^3 \).
-2. **Exercício 2**: Use \( u = \ln(x) \) e \( dv = x \, dx \) na integral por partes.
+### Exercício 2 (Por Partes)
+$$\int x \ln(x) \, dx$$
+
+> [!success]- Ver Solução
+> **Escolha (LIATE):** Logarítmica tem prioridade.
+> $$
+> \begin{aligned}
+> u &= \ln(x) & dv &= x \, dx \\
+> du &= \frac{1}{x} \, dx & v &= \frac{x^2}{2}
+> \end{aligned}
+> $$
+>
+> **Aplicação:**
+> $$
+> \begin{aligned}
+> \int x \ln(x) \, dx &= \frac{x^2}{2}\ln(x) - \int \frac{x^2}{2} \cdot \frac{1}{x} \, dx \\
+> &= \frac{x^2}{2}\ln(x) - \frac{1}{2}\int x \, dx \\
+> &= \frac{x^2}{2}\ln(x) - \frac{x^2}{4} + C
+> \end{aligned}
+> $$
 
 ---
 
 ## Conclusão
-A escolha entre substituição e integral por partes depende da forma da função integral. Pratique com exercícios variados para dominar essas técnicas e saber aplicá-las de forma eficaz em diferentes situações.   ✅
+* Use **Substituição** para "desfazer" a Regra da Cadeia.
+* Use **Por Partes** para "desfazer" a Regra do Produto.
