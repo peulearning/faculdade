@@ -89,15 +89,15 @@ $$
 ### Exercício 1 (Substituição)
 $$\int \frac{3x^2}{1 + x^3} \, dx$$
 
-> [!success]- Ver Solução
-> **Escolha:** $u = 1 + x^3 \Rightarrow du = 3x^2 \, dx$.
->
-> $$
-> \begin{aligned}
-> \int \frac{1}{u} \, du &= \ln|u| + C \\
-> &= \ln|1 + x^3| + C
-> \end{aligned}
-> $$
+> 	[!success]- Ver Solução
+> 	**Escolha:** $u = 1 + x^3 \Rightarrow du = 3x^2 \, dx$.
+>	
+> 	$$
+> 	\begin{aligned}
+> 	\int \frac{1}{u} \, du &= \ln|u| + C \\
+> 	&= \ln|1 + x^3| + C
+> 	\end{aligned}
+> 	$$
 
 ### Exercício 2 (Por Partes)
 $$\int x \ln(x) \, dx$$
