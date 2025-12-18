@@ -95,9 +95,22 @@ Aqui é onde o MobileNet e o YOLO mudam a equação para serem especiais:
 
 #### **MobileNetV2 (Matemática Econômica)**
 
+#####  Depthwise Separable Convolutions (Convolução Separável em Profundidade)
+
+Imagine que você é um chef de cozinha e precisa cortar legumes (cebola, tomate, pimentão) e depois misturá-los para fazer um molho.
+
+- **Na Convolução "Normal" (Clássica):** Você corta um pedaço de cebola, um de tomate, um de pimentão e já mistura tudo na mesma facada. Você faz o corte (espacial) e a mistura (profundidade) ao mesmo tempo. Isso é **muito cansativo** (computacionalmente pesado).
+    
+- **Na Convolução Separável (A Mágica):** Você divide o trabalho em dois passos:
+    
+    1. **Depthwise (Corte):** Primeiro, você corta _só_ as cebolas. Depois, _só_ os tomates. Depois, _só_ os pimentões. Cada canal de cor é tratado separadamente.
+        
+    2. **Pointwise (Mistura):** Agora que está tudo cortado, você joga tudo numa panela e mistura. Isso é feito com um filtro $1 \times 1$.
+        
+
+**O Ganho:** O resultado final é praticamente o mesmo (o molho), mas matematicamente você faz cerca de **9 vezes menos cálculos**. É uma estratégia de "dividir para conquistar".
+
 Na convolução normal (acima), se a imagem for colorida (RGB - 3 canais), o filtro também tem que ser 3D (3x3x3). Isso gera muitas multiplicações.
-
-
 
 - **O Truque Matemático (Depthwise):** O MobileNet diz: "Não misture as cores ainda".
     
@@ -111,6 +124,31 @@ Na convolução normal (acima), se a imagem for colorida (RGB - 3 canais), o fil
         
     - **Resultado:** Reduz o número de multiplicações em até 8 ou 9 vezes, mantendo o resultado muito parecido.
         
+
+
+##### Inverted Residual Blocks (Blocos Residuais Invertidos)
+
+Para entender o "Invertido", precisamos lembrar do padrão (ResNet). O padrão antigo era como uma ampulheta: largo nas pontas e estreito no meio (Grosso $\rightarrow$ Fino $\rightarrow$ Grosso).
+
+O MobileNetV2 **inverteu** isso. O bloco dele é **Fino $\rightarrow$ Grosso $\rightarrow$ Fino**.
+
+**Como funciona o processo dentro do bloco (A "Expansão"):**
+
+1. **Entrada "Fina" (Comprimida):** Os dados chegam compactados na memória (poucos canais) para economizar espaço.
+    
+2. **Expansão (Fica "Grosso"):** A rede "infla" esses dados multiplicando os canais (ex: de 24 canais para 144).
+    
+    - _Por que?_ Imagine que você está numa oficina pequena. Para trabalhar bem, você pega as peças e espalha tudo numa bancada grande. A rede precisa de espaço (mais dimensões) para encontrar características complexas sem perder informação.
+        
+3. **Processamento (Depthwise):** Agora que os dados estão "espalhados" na bancada, ela aplica os filtros leves (que expliquei acima) para extrair as características.
+    
+4. **Compressão/Projeção (Volta a ficar "Fino"):** Depois de extrair o que precisava, a rede "arruma a bancada", comprime as informações importantes de volta num pacote pequeno e manda para o próximo bloco.
+    
+
+O "Residual" (O Atalho):
+
+Existe um "fio" que conecta o início do bloco direto ao final (pula o processamento). Se a rede perceber que aquele bloco não está ajudando em nada, ela pode simplesmente passar a informação original direto pelo atalho. Isso evita que a rede "esqueça" o que aprendeu nas camadas anteriores.
+
 
 #### **YOLOv3 (Matemática de Regressão)**
 
