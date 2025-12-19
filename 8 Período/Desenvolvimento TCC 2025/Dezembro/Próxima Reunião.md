@@ -1,4 +1,4 @@
-## 1. 🖼️ O Processo de Decomposição (Extração de Características)
+ ## 1. 🖼️ O Processo de Decomposição (Extração de Características)
 
 O coração de qualquer CNN é a **Camada Convolucional**, que atua como um detector de _features_ (características) por meio de **filtros** (ou _kernels_).
 
