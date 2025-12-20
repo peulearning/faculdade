@@ -1,4 +1,5 @@
 
+*Página 437 PDF*
 # Aplicações de Integrais: Áreas entre Curvas
 
 ## 1. Conceito Fundamental
