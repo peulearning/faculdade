@@ -79,3 +79,116 @@ $$V = \frac{3\pi}{5} (32)$$
 
 > [!SUCCESS] Resultado
 > $$V = \frac{96\pi}{5} \, \text{u.v.}$$
+
+
+---
+## 🔄 Mais Exemplos Resolvidos
+
+### Exemplo 2: Rotação no Eixo X (Mesma região anterior)
+
+> [!EXAMPLE] Enunciado
+> Calcule o volume da região delimitada por **$y = x^3$**, **$y = 8$** e **$x = 0$**, rotacionada agora em torno do **eixo X**.
+
+**1. Análise Visual**
+A região é a mesma, mas o eixo de rotação mudou. Agora a "fatia" é vertical ($dx$).
+* A reta $y=8$ está "por cima" (mais longe do eixo X).
+* A curva $y=x^3$ está "por baixo" (mais perto do eixo X).
+* Isso cria um buraco no meio do sólido $\rightarrow$ **Método das Arruelas**.
+
+**2. Limites de Integração ($dx$)**
+Precisamos saber onde $y=x^3$ encontra $y=8$:
+$$x^3 = 8 \implies x = 2$$
+Limites: $a=0$ e $b=2$.
+
+**3. Identificação dos Raios**
+* **Raio Externo ($R$):** É a distância do eixo até o teto. $R = 8$.
+* **Raio Interno ($r$):** É a distância do eixo até a curva. $r = x^3$.
+
+**4. Montagem e Cálculo**
+$$V = \pi \int_{0}^{2} (R^2 - r^2) \, dx$$
+$$V = \pi \int_{0}^{2} (8^2 - (x^3)^2) \, dx$$
+$$V = \pi \int_{0}^{2} (64 - x^6) \, dx$$
+
+Integrando:
+$$V = \pi \left[ 64x - \frac{x^7}{7} \right]_{0}^{2}$$
+$$V = \pi \left( (128 - \frac{128}{7}) - 0 \right)$$
+$$V = 128\pi \left( 1 - \frac{1}{7} \right) = 128\pi \left(\frac{6}{7}\right)$$
+
+> [!SUCCESS] Resultado
+> $$V = \frac{768\pi}{7} \, \text{u.v.}$$
+
+---
+
+### Exemplo 3: Intersecção de Curvas (Eixo X)
+
+> [!EXAMPLE] Enunciado
+> Volume da região entre **$y = x$** e **$y = x^2$** rotacionada em torno do **eixo X**.
+
+**1. Pontos de Intersecção**
+Igualamos as funções para achar os limites:
+$$x = x^2 \implies x^2 - x = 0 \implies x(x-1)=0$$
+Pontos: $x=0$ e $x=1$.
+
+**2. Quem é quem? (No intervalo 0 a 1)**
+Teste um valor, ex: $x=0,5$.
+* $y = 0,5$ (Reta)
+* $y = (0,5)^2 = 0,25$ (Parábola)
+Logo, a **reta está por cima** da parábola.
+
+**3. Raios (Arruela)**
+* **Raio Maior ($R$):** $y = x$
+* **Raio Menor ($r$):** $y = x^2$
+
+**4. Cálculo**
+$$V = \pi \int_{0}^{1} (x^2 - (x^2)^2) \, dx$$
+$$V = \pi \int_{0}^{1} (x^2 - x^4) \, dx$$
+$$V = \pi \left[ \frac{x^3}{3} - \frac{x^5}{5} \right]_{0}^{1}$$
+$$V = \pi \left( \frac{1}{3} - \frac{1}{5} \right) = \pi \left( \frac{5-3}{15} \right)$$
+
+> [!SUCCESS] Resultado
+> $$V = \frac{2\pi}{15} \, \text{u.v.}$$
+
+---
+
+### Exemplo 4: Eixo de Rotação Deslocado ($y=2$)
+
+> [!EXAMPLE] Enunciado
+> Volume da região entre **$y = x$** e **$y = x^2$** rotacionada em torno da reta **$y = 2$**.
+
+> [!DANGER] Atenção!
+> O eixo de rotação não é mais o zero! O raio é a distância entre a curva e a reta $y=2$.
+> A fórmula do raio muda para: $R = \text{Eixo} - \text{Curva}$ (ou vice-versa, o importante é a distância positiva).
+
+**1. Análise Geométrica**
+A região está entre $y=0$ e $y=1$. A reta $y=2$ está **acima** da região.
+* A curva mais **longe** do eixo $y=2$ é a parábola $y=x^2$ (fundo).
+* A curva mais **perto** do eixo $y=2$ é a reta $y=x$ (topo).
+
+**2. Definindo os Raios**
+* **Raio Externo ($R$):** Distância de $y=2$ até $y=x^2$.
+  $$R = 2 - x^2$$
+* **Raio Interno ($r$):** Distância de $y=2$ até $y=x$.
+  $$r = 2 - x$$
+
+**3. Montagem da Integral**
+$$V = \pi \int_{0}^{1} ([2 - x^2]^2 - [2 - x]^2) \, dx$$
+
+Expandindo os produtos notáveis:
+1. $(2 - x^2)^2 = 4 - 4x^2 + x^4$
+2. $(2 - x)^2 = 4 - 4x + x^2$
+
+Subtraindo ($1 - 2$):
+$$(4 - 4x^2 + x^4) - (4 - 4x + x^2) = x^4 - 5x^2 + 4x$$
+
+**4. Resolução Final**
+$$V = \pi \int_{0}^{1} (x^4 - 5x^2 + 4x) \, dx$$
+$$V = \pi \left[ \frac{x^5}{5} - \frac{5x^3}{3} + \frac{4x^2}{2} \right]_{0}^{1}$$
+$$V = \pi \left( \frac{1}{5} - \frac{5}{3} + 2 \right)$$
+
+MMC entre 5 e 3 é 15:
+$$V = \pi \left( \frac{3 - 25 + 30}{15} \right) = \pi \left( \frac{8}{15} \right)$$
+
+> [!SUCCESS] Resultado
+> $$V = \frac{8\pi}{15} \, \text{u.v.}$$
+
+
