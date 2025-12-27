@@ -192,3 +192,4 @@ $$V = \pi \left( \frac{3 - 25 + 30}{15} \right) = \pi \left( \frac{8}{15} \right
 > $$V = \frac{8\pi}{15} \, \text{u.v.}$$
 
 
+Além disso, estou resolvendo exercícios do livro e vídeos de playlists para me auxiliar.
