@@ -47,7 +47,7 @@ $+ (10 \times 1) + (10 \times 0) + (10 \times -1)$
 $+ (10 \times 1) + (10 \times 0) + (10 \times -1)$
 
 $= (10 + 0 - 10) + (10 + 0 - 10) + (10 + 0 - 10)$
-
+	
 $= 0 + 0 + 0 = \mathbf{0}$
 
 > **Interpretação:** O resultado é **0**. Isso diz para a rede: "Não há nada interessante aqui (região lisa)".

@@ -154,7 +154,6 @@ Pontos que devem constar na metodologia:
 
 ## 🧪 **6. Metodologia Inicial de Testes (TCC)**
 
-Aqui está a parte pronta para você colar no Overleaf:
 
 > A metodologia inicial consistiu em treinar e avaliar três modelos de classificação de imagens de feridas cutâneas: uma rede CNN sequencial, a MobileNetV2 e o YOLOv3 associado à ResNet-50.  
 > Para cada arquitetura, foram registrados e comparados os seguintes indicadores:  
