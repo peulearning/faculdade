@@ -178,8 +178,8 @@ OU
         
     - Identificar os parâmetros que estão sendo utilizados e os que podem ser modificados para trazer melhorias.
         
-    - Testar pré-processamento nas imagens (ex: mudar escala para cinza, alterar cores) e verificar se afeta o modelo positivamente.
-        
+    - Testar pré-processamento nas imagens (ex: mudar escala para cinza, alterar cores) e verificar se afeta o modelo positivamente.    
+
 - [x] **Comparativo de Arquiteturas:**
     
     - Esboçar um comparativo estruturado entre as arquiteturas.
@@ -199,3 +199,6 @@ OU
 - [ ] **Teste de Combinação de Modelos (YOLO + MobileNetV2):**
     
     - Investigar se é possível/viável utilizar o **YOLO** para a detecção (gerando as _bounding boxes_) e passar o recorte para a **MobileNetV2** fazer a classificação (identificação).
+	    
+	 - Buscar em literaturas,  qual método mais utilizado e mais indicado na questão de identificação e detecção de feridas. 
+

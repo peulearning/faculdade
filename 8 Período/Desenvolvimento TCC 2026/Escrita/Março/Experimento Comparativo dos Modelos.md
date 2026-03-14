@@ -107,3 +107,58 @@
 - **YOLOv3 + ResNet apresentou maior custo computacional**, com modelo significativamente maior.
     
 - **CNN Sequencial treinada do zero apresentou desempenho inferior**, possivelmente devido à ausência de pré-treinamento.
+
+
+---
+
+# 📊 Tabela Comparativa dos Modelos
+
+## Comparação de Arquiteturas de Classificação de Feridas  
+  
+| Modelo            | Framework  | Tamanho (Original) | Tempo de Inferência | Quantização FP16 | Quantização INT8 |
+| ----------------- | ---------- | ------------------ | ------------------- | ---------------- | ---------------- |
+| CNN Sequencial    | TensorFlow | 42.61 MB           | 0.024 s             | 21.31 MB         | 10.67 MB         |
+| MobileNetV2       | TensorFlow | **9.08 MB**        | **0.013 s**         | 4.57 MB          | **2.74 MB**      |
+| YOLOv3 + ResNet50 | PyTorch    | 90.98 MB           | 0.552 s             | —                | 90.23 MB         |
+
+---
+
+# 📌 Análise dos Resultados
+
+## Análise Comparativa das Arquiteturas  
+  
+A comparação entre os modelos demonstrou diferenças significativas em termos de custo computacional, tamanho do modelo e tempo de inferência.  
+  
+### Arquitetura Sequencial  
+  
+A rede convolucional sequencial apresentou desempenho intermediário em relação aos demais modelos analisados. Apesar de possuir tamanho consideravelmente maior que o MobileNetV2, a aplicação de técnicas de quantização permitiu reduzir significativamente o tamanho do modelo, alcançando uma redução de aproximadamente 75% no formato INT8.  
+  
+### MobileNetV2  
+  
+O MobileNetV2 apresentou o melhor desempenho geral para aplicações em dispositivos móveis. O modelo possui arquitetura otimizada para dispositivos com restrições de hardware, utilizando convoluções separáveis em profundidade (Depthwise Separable Convolutions). Após a quantização, o modelo atingiu apenas 2.74 MB, mantendo alta eficiência e baixo tempo de inferência.  
+  
+### YOLOv3 + ResNet50  
+  
+O modelo baseado em YOLOv3 apresentou o maior custo computacional entre as arquiteturas testadas. Apesar de apresentar boas métricas de classificação, o tamanho elevado do modelo e o tempo de inferência significativamente maior indicam menor adequação para aplicações em dispositivos móveis.  
+  
+Além disso, a quantização dinâmica aplicada ao modelo resultou em redução mínima no tamanho do modelo, uma vez que grande parte das operações do YOLOv3 é composta por camadas convolucionais, que não são totalmente beneficiadas por esse tipo de otimização.  
+  
+### Considerações Gerais  
+  
+Os resultados indicam que arquiteturas projetadas especificamente para dispositivos móveis, como o MobileNetV2, apresentam desempenho superior quando comparadas a arquiteturas mais complexas. A quantização mostrou-se uma técnica eficaz para reduzir o tamanho dos modelos e melhorar a eficiência computacional, especialmente em arquiteturas leves.
+
+# 📊 Resposta
+
+> **Após a quantização os modelos permanecem com a mesma eficiência?**
+
+Resposta técnica:
+
+❌ **Nem sempre exatamente a mesma.**
+
+✔️ Normalmente ocorre:
+
+- grande redução de tamanho
+    
+- melhora na inferência
+    
+- **pequena perda de precisão (dependendo do modelo)**

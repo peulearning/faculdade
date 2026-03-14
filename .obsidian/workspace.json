@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5cb478c2f6b6471b",
+            "id": "4e5e8b526ff2306b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Fevereiro/reuniao 05-02.md",
+                "file": "8 Período/Desenvolvimento TCC 2025/Reunião Dezembro/Reunião Dia 02-12.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "reuniao 05-02"
+              "title": "Reunião Dia 02-12"
             }
           },
           {
-            "id": "5ed4a712d8e21546",
+            "id": "43e3f91aa9cba667",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Experimento Comparativo dos Modelos.md",
+                "file": "8 Período/Desenvolvimento TCC 2025/Reunião Dezembro/Próxima Reunião.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Experimento Comparativo dos Modelos"
+              "title": "Próxima Reunião"
             }
           },
           {
@@ -47,6 +47,20 @@
               },
               "icon": "lucide-file",
               "title": "Reunião 11-03"
+            }
+          },
+          {
+            "id": "5ed4a712d8e21546",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Experimento Comparativo dos Modelos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Experimento Comparativo dos Modelos"
             }
           }
         ],
@@ -214,13 +228,14 @@
   "lastOpenFiles": [
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Experimento Comparativo dos Modelos.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 11-03.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Dezembro/Reunião Dia 02-12.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Dezembro/Próxima Reunião.md",
+    "8 Período/Desenvolvimento TCC 2025/Materiais e Metódos.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Fevereiro/reuniao 05-02.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 04-03.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 18-03.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Janeiro/Salvar Registros de Modificações nos arquivos.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Fichando Artigos para Reunião.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Dezembro/Próxima Reunião.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Dezembro/Reunião Dia 02-12.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março",
     "Calculo 2/Terceira Parte/Prova 3.md",
     "Calculo 2/Terceira Parte/Prova Semestre Passado.md",
@@ -239,7 +254,6 @@
     "8 Período/Desenvolvimento TCC 2025/Reunião Março/Reunião Dia 12-03.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Fevereiro",
     "8 Período/Desenvolvimento TCC 2025/Reunião Março/Reunião Dia 19-03.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Novembro/Reunião dia 27.md",
     "Pasted image 20260202130939.png",
     "Pasted image 20251215172701.png",
     "Pasted image 20251127124148.png",
