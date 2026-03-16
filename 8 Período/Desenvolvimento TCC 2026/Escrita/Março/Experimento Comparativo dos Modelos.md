@@ -92,11 +92,11 @@
 
 # 📊 Comparação Geral dos Modelos
 
-|Modelo|Accuracy|Inferência|Tamanho|
-|---|---|---|---|
-|YOLOv3 + ResNet|0.95|0.451 s|90.98 MB|
-|MobileNetV2|**0.98**|**0.011 s**|**9.08 MB**|
-|CNN Sequencial|0.89|0.018 s|42.61 MB|
+| Modelo          | Accuracy | Inferência  | Tamanho     |
+| --------------- | -------- | ----------- | ----------- |
+| YOLOv3 + ResNet | 0.95     | 0.451 s     | 90.98 MB    |
+| MobileNetV2     | **0.98** | **0.011 s** | **9.08 MB** |
+| CNN Sequencial  | 0.89     | 0.018 s     | 127.87 MB   |
 
 ---
 
@@ -162,3 +162,199 @@ Resposta técnica:
 - melhora na inferência
     
 - **pequena perda de precisão (dependendo do modelo)**
+
+---
+
+Foi feito a seguinte questão : "Qual método mais indicado ou mais usado no contexto de identificação e detecção de feridas nesse contexto do trabalho. Apresentar Literaturas (Artigos) emergentes e que comprovem o estado da arte."
+# 1. Método mais utilizado atualmente: **Deep Learning com CNN (Segmentação de imagem)**
+
+O método dominante hoje é o uso de **Redes Neurais Convolucionais (CNN)** para **detectar e segmentar a área da ferida em imagens clínicas**.
+
+Essas redes aprendem automaticamente padrões visuais como:
+
+- bordas da ferida
+    
+- tecidos (granulação, necrose, fibrina)
+    
+- coloração
+    
+- textura da pele
+    
+
+A tarefa principal normalmente é chamada de **wound segmentation** (segmentação da ferida).
+
+### Modelos mais usados
+
+Os modelos mais citados na literatura são:
+
+|Modelo|Tipo|Uso|
+|---|---|---|
+|**U-Net**|CNN|Segmentação médica|
+|**Mask R-CNN**|Detecção + Segmentação|Identificação da região da ferida|
+|**DeepLabV3+**|Segmentação semântica|Alta precisão|
+|**FPN (Feature Pyramid Network)**|Segmentação|Detecção multi-escala|
+|**SegNet**|CNN encoder-decoder|Segmentação|
+
+Estudos mostram que modelos como **DeepLabV3** podem atingir **acurácia acima de 99% em segmentação de úlceras de pressão** em datasets clínicos.
+
+---
+
+# 2. Arquitetura mais usada em pesquisas: **U-Net**
+
+A arquitetura **U-Net** é considerada o **padrão ouro em segmentação biomédica**.
+
+Características:
+
+- arquitetura **encoder–decoder**
+    
+- captura **contexto global + detalhes locais**
+    
+- funciona bem com **datasets pequenos** (comum em medicina)
+    
+
+Diversos estudos de feridas utilizam **U-Net ou variantes (ResNet-UNet)** para segmentar automaticamente a região da lesão.
+
+Exemplo de desempenho:
+
+- **IoU ≈ 89–90%**
+    
+- **Dice Score > 0.85**
+    
+
+---
+
+# 3. Abordagem mais moderna: **Modelos híbridos (CNN + Transformer)**
+
+Pesquisas mais recentes estão migrando para modelos híbridos como:
+
+- **CNN + Vision Transformer**
+    
+- **MiT (Mix Transformer) + CNN**
+    
+- **Attention Networks**
+    
+
+Esses modelos conseguem:
+
+- melhorar a **detecção de bordas da ferida**
+    
+- lidar com **variação de iluminação e textura**
+    
+- segmentar **múltiplos tecidos simultaneamente**
+    
+
+Alguns trabalhos recentes mostram **Dice Score acima de 0.92 para segmentação da área da ferida** usando essas arquiteturas híbridas.
+
+---
+
+# 4. Outras abordagens usadas (menos comuns)
+
+Além do Deep Learning, também aparecem:
+
+### 1️⃣ Processamento de imagem tradicional
+
+Métodos clássicos:
+
+- Thresholding
+    
+- K-means clustering
+    
+- Edge detection
+    
+- Watershed
+    
+
+Problema:  
+❌ baixa robustez em iluminação variável.
+
+---
+
+### 2️⃣ Modelos multimodais (imagem + sensores)
+
+Alguns estudos combinam:
+
+- câmera RGB
+    
+- **LiDAR** para profundidade
+    
+- imagens térmicas
+    
+
+Isso permite calcular:
+
+- **área da ferida**
+    
+- **volume**
+    
+- **profundidade** da lesão.
+    
+
+---
+
+# 5. Pipeline padrão usado na literatura
+
+Quase todos os artigos seguem um pipeline parecido:
+
+Imagem da ferida (RGB)  
+        ↓  
+Pré-processamento  
+- normalização  
+- remoção de ruído  
+- data augmentation  
+        ↓  
+Modelo Deep Learning  
+(CNN / U-Net / Transformer)  
+        ↓  
+Segmentação da ferida  
+        ↓  
+Extração de características  
+- área  
+- tecidos  
+- estágio da ferida  
+        ↓  
+Classificação clínica
+
+---
+
+# 6. O método **mais indicado hoje (consenso na literatura)**
+
+Segundo revisões recentes de segmentação de feridas crônicas:
+
+**1️⃣ U-Net e suas variantes**  
+→ método mais utilizado.
+
+**2️⃣ DeepLabV3+ e Mask R-CNN**  
+→ melhores resultados em detecção automática.
+
+**3️⃣ CNN + Transformer**  
+→ tendência mais recente (state-of-the-art).
+
+---
+
+# 7. Qual método seria ideal para um sistema tipo _HealScan_
+
+Considerando seu projeto (detecção de feridas por imagem):
+
+A arquitetura mais recomendada hoje seria:
+
+**MobileNetV2 + U-Net (ou DeepLabV3+)**
+
+Motivo:
+
+- leve
+    
+- funciona em **smartphones ou edge devices**
+    
+- boa precisão.
+    
+
+---
+
+✅ **Resumo final**
+
+|Método|Situação|
+|---|---|
+|CNN + U-Net|MAIS UTILIZADO|
+|DeepLabV3+ / Mask R-CNN|Alta precisão|
+|CNN + Transformer|Estado da arte|
+|Processamento clássico|Pouco usado hoje|
