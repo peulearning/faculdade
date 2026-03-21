@@ -172,7 +172,7 @@ OU
 
 # 📌 To-Do List  2 do Projeto
 
-- [ ] **Otimização e Compreensão do Modelo:**
+- [x] **Otimização e Compreensão do Modelo:**
     
     - Entender a fundo o comportamento e como o modelo atual funciona.
         
@@ -190,13 +190,13 @@ OU
     
     - Validar a ideia de _apenas coletar_ imagens de bases prontas em vez de realizar a captura diretamente (fotografar pacientes), removendo assim a funcionalidade de captura para não esbarrar em burocracias do conselho de ética.
         
-- [ ] **Análise de Características (Feridas):**
+- [x] **Análise de Características (Feridas):**
     
     - Explicar tecnicamente o que diferencia uma "ferida" de uma "não ferida" para a rede.
         
     - Documentar as semelhanças encontradas nas feridas que o modelo já classifica/identifica corretamente.
         
-- [ ] **Teste de Combinação de Modelos (YOLO + MobileNetV2):**
+- [x] **Teste de Combinação de Modelos (YOLO + MobileNetV2):**
     
     - Investigar se é possível/viável utilizar o **YOLO** para a detecção (gerando as _bounding boxes_) e passar o recorte para a **MobileNetV2** fazer a classificação (identificação).
 	    

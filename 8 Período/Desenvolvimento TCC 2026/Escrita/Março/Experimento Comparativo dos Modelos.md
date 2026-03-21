@@ -33,14 +33,14 @@
 
 ## Métricas
 
-|Classe|Precisão|Recall|F1-score|
-|---|---|---|---|
-|Background|1.00|1.00|1.00|
-|Diabetic|0.94|0.98|0.96|
-|Normal|1.00|1.00|1.00|
-|Pressure|0.97|0.96|0.96|
-|Sirurgical|0.99|0.98|0.99|
-|Venous|0.98|0.97|0.97|
+| Classe     | Precisão | Recall | F1-score |
+| ---------- | -------- | ------ | -------- |
+| Background | 1.00     | 1.00   | 1.00     |
+| Diabetic   | 0.94     | 0.98   | 0.96     |
+| Normal     | 1.00     | 1.00   | 1.00     |
+| Pressure   | 0.97     | 0.96   | 0.96     |
+| Sirurgical | 0.99     | 0.98   | 0.99     |
+| Venous     | 0.98     | 0.97   | 0.97     |
 
 ### Resultados Gerais
 
@@ -106,7 +106,7 @@
     
 - **YOLOv3 + ResNet apresentou maior custo computacional**, com modelo significativamente maior.
     
-- **CNN Sequencial treinada do zero apresentou desempenho inferior**, possivelmente devido à ausência de pré-treinamento.
+- **CNN Sequencial treinada do zero apresentou desempenho inferior**, possivelmente devido à ausência de transferência de aprendizado.
 
 
 ---
@@ -333,7 +333,6 @@ Segundo revisões recentes de segmentação de feridas crônicas:
 
 # 7. Qual método seria ideal para um sistema tipo _HealScan_
 
-Considerando seu projeto (detecção de feridas por imagem):
 
 A arquitetura mais recomendada hoje seria:
 
