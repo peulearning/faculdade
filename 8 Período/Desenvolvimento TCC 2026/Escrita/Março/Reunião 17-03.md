@@ -8,12 +8,12 @@
 ## 📋 Plano de Ação (Para a Próxima Reunião)
 
 - [x] Levantar e trazer as métricas utilizadas nos artigos de referência da literatura.
-- [ ] Estudar e documentar o conceito de **Quantização em visão computacional** aplicada a imagens complexas.
+- [x] Estudar e documentar o conceito de **Quantização em visão computacional** aplicada a imagens complexas.
 - [x] Descrever detalhadamente o processo de construção do conhecimento da Rede Sequencial.
 - [x] Pesquisar e definir quais são os valores de métricas (ex: Acurácia) considerados **aceitáveis**:
 	- [x] No contexto geral de Visão Computacional.
 	- [x] No contexto específico de Saúde / Feridas.
-- [ ] Estruturar a justificativa técnica: **Por que não utilizar outras versões da [[MobileNetV2]]?**
+- [x] Estruturar a justificativa técnica: **Por que não utilizar outras versões da [[MobileNetV2]]?**
 
 ---
 
@@ -257,7 +257,7 @@ Artigo 3  [s10916-025-02153-8.pdf](file:///C:/Users/peuja/Downloads/s10916-025-0
 
 
 
-## 5. Arquitetura Sequencial ( Construindo Aprendizado )
+##  🧩 5. Arquitetura Sequencial ( Construindo Aprendizado )
 
 A arquitetura do modelo foi desenvolvida de forma incremental, por meio de estudo autodidata e experimentação prática. Inicialmente, foram explorados conceitos fundamentais de redes neurais convolucionais, como definição de parâmetros de entrada, ajuste de hiperparâmetros e organização de camadas.
 
@@ -558,3 +558,115 @@ x=x255x = \frac{x}{255}x=255x​
 
 - menos dados necessários
 - melhor desempenho
+
+## ☕ 6. Justificando o uso do MobileNetV2
+
+### 📌 Contextualização
+
+> A família MobileNet foi projetada para eficiência computacional em dispositivos com recursos limitados.
+
+---
+
+### 🔍 Comparação técnica
+
+### ✔️ MobileNetV1
+
+### 📉 Limitações:
+
+- arquitetura mais simples
+- menor eficiência
+- menor desempenho
+
+📌 Problema:
+
+- não utiliza inverted residuals
+
+---
+
+### ✔️ MobileNetV2 
+
+### ✔️ Vantagens:
+
+- inverted residual blocks
+- linear bottlenecks
+- melhor eficiência computacional
+- bom equilíbrio precisão vs custo
+
+👉 **padrão em aplicações reais**
+
+---
+
+### ✔️ MobileNetV3
+
+### ✔️ Melhorias:
+
+- otimizações com NAS (Neural Architecture Search)
+- melhor performance
+
+### ⚠️ Problemas:
+
+- mais complexa
+- menos interpretável
+- otimizada para casos específicos
+
+---
+
+### 📊 RESUMO COMPARATIVO
+
+| Modelo | Precisão   | Custo   | Complexidade | Uso ideal         |
+| ------ | ---------- | ------- | ------------ | ----------------- |
+| V1     | Média      | Baixo   | Baixa        | Básico            |
+| V2     | ⭐ Alta     | ⭐ Baixo | ⭐ Média      | ✔️ Melhor escolha |
+| V3     | Muito alta | Médio   | Alta         | Produção avançada |
+
+---
+
+### 🎯 ARGUMENTO
+
+> “A escolha da MobileNetV2 se justifica por apresentar um equilíbrio adequado entre desempenho e eficiência computacional, sendo amplamente utilizada em aplicações de visão computacional embarcadas.
+> 
+> A versão V1 apresenta limitações estruturais, enquanto a V3, embora mais recente, introduz maior complexidade e otimizações específicas que não são essenciais para o escopo deste trabalho.”
+
+
+## 👨‍🔬 7.  Definindo Padrões Visuais 
+
+Na prática, isso significa que o modelo não "vê" uma ferida, mas sim variações de intensidade de pixels, agrupadas nas seguintes categorias:
+
+- **Bordas e Contornos (Delimitação espacial):** Transições abruptas de contraste que separam a pele íntegra do leito da ferida.
+    
+- **Colorimetria (Classificação de tecidos):** Padrões RGB que definem o tipo de tecido presente. Por exemplo, vermelho vivo para tecido de granulação, amarelo para esfacelo/exsudato e preto para tecido necrótico.
+    
+- **Textura (Topografia e profundidade):** Variações de alta frequência espacial que indicam a presença de relevo, crostas ou umidade na área lesionada.
+
+![[Pasted image 20260322114010.png]]
+
+
+### A Decomposição da Imagem: Arquiteturas Diferentes
+
+ Embora o princípio fundamental seja o mesmo (usar filtros convolucionais para extrair características hierárquicas, começando por linhas simples até chegar a formas complexas), a _mecânica_ matemática de como essa decomposição ocorre e o objetivo final variam drasticamente entre os modelos.
+
+**1. Arquitetura Sequencial (Vanilla CNN)**
+
+Em uma CNN tradicional, a imagem passa por blocos lineares de convolução padrão e _pooling_. A decomposição é "força bruta": o filtro espacial e a combinação de canais (profundidade) são processados simultaneamente em cada camada. A imagem é gradativamente reduzida em tamanho espacial, mas aumentada em profundidade de características, culminando em uma camada densa que cospe uma probabilidade única (ex: "Isso é uma ferida com necrose").
+
+**2. MobileNetV2**
+
+Aqui a decomposição é fatorada para ser extremamente leve, ideal para operar de forma offline e diretamente no dispositivo. Em vez de uma convolução padrão pesada, a MobileNetV2 utiliza **Convoluções Separáveis em Profundidade** (_Depthwise Separable Convolutions_).
+
+Ela quebra o processo em duas etapas: primeiro aplica um filtro espacial em cada canal individualmente (_depthwise_), e depois usa uma convolução 1x1 (_pointwise_) para combinar esses canais. Isso extrai os mesmos padrões visuais da ferida (bordas, cores), mas com uma fração do custo computacional.
+
+**3. YOLOv3 (You Only Look Once)**
+
+O foco do YOLO não é apenas classificar se há uma ferida na imagem, mas dizer **onde** e o **que** é cada elemento dela simultaneamente. A decomposição é feita dividindo a imagem em um grid.
+
+Para cada célula do grid, a arquitetura (usando o _backbone_ Darknet-53) tenta prever caixas delimitadoras (_bounding boxes_) e probabilidades de classe ao mesmo tempo, avaliando o contexto global da imagem em diferentes escalas. Ele não apenas classifica a imagem inteira, mas delimita espacialmente o tecido.
+
+---
+
+### Comparativo de Processamento Visão Computacional
+
+|**Arquitetura**|**Método de Decomposição**|**Foco do Processamento**|**Saída Final**|
+|---|---|---|---|
+|**Sequencial Clássica**|Convolução padrão (Espacial + Canais juntos)|Extração direta e linear de características.|Probabilidade de classificação da imagem inteira.|
+|**MobileNetV2**|Convolução separável em profundidade|Eficiência computacional e baixo uso de memória.|Probabilidade de classificação da imagem inteira.|
+|**YOLOv3**|Divisão em Grid + Múltiplas Escalas|Contexto global para localização e classificação simultânea.|Coordenadas da lesão (caixa) + Classificação do tecido.|
