@@ -665,8 +665,44 @@ Para cada célula do grid, a arquitetura (usando o _backbone_ Darknet-53) tenta 
 
 ### Comparativo de Processamento Visão Computacional
 
-|**Arquitetura**|**Método de Decomposição**|**Foco do Processamento**|**Saída Final**|
-|---|---|---|---|
-|**Sequencial Clássica**|Convolução padrão (Espacial + Canais juntos)|Extração direta e linear de características.|Probabilidade de classificação da imagem inteira.|
-|**MobileNetV2**|Convolução separável em profundidade|Eficiência computacional e baixo uso de memória.|Probabilidade de classificação da imagem inteira.|
-|**YOLOv3**|Divisão em Grid + Múltiplas Escalas|Contexto global para localização e classificação simultânea.|Coordenadas da lesão (caixa) + Classificação do tecido.|
+| **Arquitetura**         | **Método de Decomposição**                   | **Foco do Processamento**                                    | **Saída Final**                                         |
+| ----------------------- | -------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------- |
+| **Sequencial Clássica** | Convolução padrão (Espacial + Canais juntos) | Extração direta e linear de características.                 | Probabilidade de classificação da imagem inteira.       |
+| **MobileNetV2**         | Convolução separável em profundidade         | Eficiência computacional e baixo uso de memória.             | Probabilidade de classificação da imagem inteira.       |
+| **YOLOv3**              | Divisão em Grid + Múltiplas Escalas          | Contexto global para localização e classificação simultânea. | Coordenadas da lesão (caixa) + Classificação do tecido. |
+
+
+#### 📄 7.2 Aprendizado Hierárquico 
+
+Em visão computacional, chamamos isso de **aprendizado hierárquico de características** (Hierarchical Feature Learning).
+
+A pequena correção conceitual é que **borda e coloração não acontecem em etapas separadas**, elas são extraídas simultaneamente logo no início. Já a "profundidade" (ou seja, a textura e o relevo da ferida) vem logo em seguida.
+
+Todas as arquiteturas que mencionamos (Sequencial, MobileNetV2 e YOLOv3) seguem exatamente essa mesma ordem lógica de aprendizado. O que muda entre elas é apenas a matemática usada para fazer o cálculo, mas o que elas "enxergam" segue esta hierarquia:
+
+### A Ordem de Extração nas Camadas (Hierarquia)
+
+**1. Camadas Iniciais (Baixo Nível): Bordas e Cores Juntas** Assim que a imagem da ferida entra na rede, os primeiros filtros convolucionais olham para os canais RGB (Vermelho, Verde e Azul) ao mesmo tempo.
+
+- O que a rede busca aqui são padrões primários: linhas verticais, horizontais, diagonais (bordas) e manchas de cor (contrastes).
+    
+- Ela identifica, por exemplo, um agrupamento de pixels muito vermelhos ao lado de pixels mais claros (a borda entre a pele e a lesão), mas ainda não sabe o que isso significa.
+    
+
+**2. Camadas Intermediárias (Médio Nível): Textura e "Profundidade"** Conforme a informação avança, a rede começa a combinar aquelas linhas e manchas de cor. É aqui que a "profundidade" visual que você mencionou começa a ser percebida.
+
+- As redes não enxergam profundidade 3D real em uma foto 2D, mas elas inferem o relevo através das **texturas** e do jogo de luz e sombra.
+    
+- A combinação de bordas irregulares com tons de amarelo e preto começa a formar o aspecto "rugoso" de um tecido necrótico ou a aparência úmida do esfacelo.
+    
+
+**3. Camadas Profundas (Alto Nível): Significado Semântico** Nas últimas camadas, a rede já não olha para pixels ou texturas isoladas. Ela junta tudo o que aprendeu nas camadas anteriores para formar conceitos complexos.
+
+- É aqui que a arquitetura finalmente diz: "Essa combinação de borda bem delimitada + cor vermelha viva + textura granulada úmida = **Tecido de Granulação**".
+    
+
+---
+
+### Resumindo o conceito
+
+Independentemente de  usar uma CNN Vanilla para testar ou a MobileNetV2 para rodar offline, o **caminho visual** é o mesmo: do simples (cor e linha) para o complexo (textura e conceito). A MobileNetV2 só faz isso gastando menos bateria e memória porque separa os cálculos de cor/espaço, mas a ordem de descoberta das características da ferida permanece intacta.
