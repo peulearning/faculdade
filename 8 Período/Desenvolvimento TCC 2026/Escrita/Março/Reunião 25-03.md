@@ -104,3 +104,38 @@ Na saúde, a tolerância a erro é menor, então os termos mudam para focar em s
 
 *  Gostei deste artigo a sua estrutura, deixa bem claro vários pontos além das métricas obtidas.
 
+---
+
+
+## 🧩  Resposta do Pipeline de Experimentos 2 Classes
+
+
+### Arquitetura Sequencial 
+
+- Parâmetros da Rede
+
+
+![[Pasted image 20260329152427.png]]
+
+*  Épocas de treinamento 
+
+![[Pasted image 20260329161027.png]]
+
+* Acurácia 
+
+![[Pasted image 20260329161050.png]]
+
+
+
+
+* Matriz de Confusão
+
+![[Pasted image 20260329161109.png]]
+
+
+* Resultados da Matriz
+
+![[Pasted image 20260329161755.png]]
+
+
+Link do Notebook :  [Archiceture Sequencial 2 Classes.ipynb - Colab](https://colab.research.google.com/drive/1Po3TYLkytLOaqzzR1mzIMCjxvxIT3NFi#scrollTo=JxF-LCGalwzD)
