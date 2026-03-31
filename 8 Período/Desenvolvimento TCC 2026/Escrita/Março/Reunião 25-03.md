@@ -110,7 +110,7 @@ Na saúde, a tolerância a erro é menor, então os termos mudam para focar em s
 ## 🧩  Resposta do Pipeline de Experimentos 2 Classes
 
 
-### Arquitetura Sequencial 
+### Arquitetura Sequencial  2 Classes
 
 - Parâmetros da Rede
 
@@ -139,3 +139,97 @@ Na saúde, a tolerância a erro é menor, então os termos mudam para focar em s
 
 
 Link do Notebook :  [Archiceture Sequencial 2 Classes.ipynb - Colab](https://colab.research.google.com/drive/1Po3TYLkytLOaqzzR1mzIMCjxvxIT3NFi#scrollTo=JxF-LCGalwzD)
+
+### Arquitetura Sequencial  4 Classes
+
+* Parâmetros  das Rede
+
+![[Pasted image 20260330005348.png]]
+
+* Épocas de Treinamento
+
+![[Pasted image 20260330005430.png]]
+
+* Acurácia por Época
+![[Pasted image 20260330005511.png]]
+
+* Matriz de Confusão
+
+![[Pasted image 20260330005619.png]]
+
+* Resultados da Matriz
+
+![[Pasted image 20260330005627.png]]
+
+
+* Curva AUC - ROC
+
+![[Pasted image 20260330010334.png]]
+
+Link do Notebook : [Archiceture Sequencial 4 Classes.ipynb - Colab](https://colab.research.google.com/drive/16egOWvOuY6xhz1kSyknrVpcGt3FyE786#scrollTo=d21uBrBEl7KS)
+
+
+
+Atenção : Até aqui posso concluir através das observações e comparação com a tabela do artigo principal, que o modelo de arquitetura sequencial atingiu acurácia superior em relação ás 4 classes e valores inferiores para 2 classes. 
+
+
+
+### Arquitetura MobileNetV2 2 Classes
+
+*  Parâmetros da Rede 
+* Treinamento ( Os pesos se dão pela Imagenet ou seja rede pré-treinada , e congela a base  começando pela cabeça, e no fine-tuning vai para as camadas da base )
+
+![[Pasted image 20260331092616.png]]
+
+![[Pasted image 20260331092820.png]]
+
+* Gráfico da Acurácia
+![[Pasted image 20260331092909.png]]
+
+* Relatório de Matriz de Confusão
+![[Pasted image 20260331092931.png]]
+
+* Matriz de Confusão 
+![[Pasted image 20260331092949.png]]
+
+* Acurácia de T/V  e Perca 
+![[Pasted image 20260331093433.png]]
+
+* Curva AUC - ROC
+
+![[Pasted image 20260331093518.png]]
+
+### Arquitetura MobileNetV2  4 Classes
+
+* Parâmetros do Modelo
+
+![[Pasted image 20260331114948.png]]
+
+* Treinamento do modelo 
+
+![[Pasted image 20260331115020.png]]
+
+![[Pasted image 20260331115029.png]]
+
+
+* Acurácia de Treinamento
+* 
+![[Pasted image 20260331163419.png]]
+
+* Relatório da Matriz de Confusão
+
+![[Pasted image 20260331163442.png]]
+
+* Matriz de Confusão
+
+![[Pasted image 20260331163458.png]]
+
+
+* Acurácia de Treinamento & Validação
+
+![[Pasted image 20260331163519.png]]
+
+
+* AUC - ROC 
+
+![[Pasted image 20260331164049.png]]

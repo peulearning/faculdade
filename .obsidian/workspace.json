@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 17-03.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Reunião 17-03"
+            }
+          },
+          {
+            "id": "14724ef3ad17509e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 25-03.md",
                 "mode": "source",
                 "source": false
@@ -21,7 +35,8 @@
               "title": "Reunião 25-03"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -95,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Integrated image and location analysis for wound classification a deep learning approach.md",
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 25-03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Integrated image and location analysis for wound classification a deep learning approach"
+              "title": "Links inversos para Reunião 25-03"
             }
           },
           {
@@ -181,24 +196,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b65bd4cba8212279",
+  "active": "14724ef3ad17509e",
   "lastOpenFiles": [
-    "Pasted image 20260329161755.png",
-    "Pasted image 20260329161109.png",
-    "Pasted image 20260329161050.png",
-    "Pasted image 20260329161027.png",
-    "Pasted image 20260329152427.png",
+    "Pasted image 20260331164049.png",
+    "Pasted image 20260331163519.png",
+    "Pasted image 20260331163458.png",
+    "Pasted image 20260331163442.png",
+    "Pasted image 20260331163419.png",
+    "Pasted image 20260331163408.png",
+    "Pasted image 20260331115029.png",
+    "Pasted image 20260331115020.png",
+    "Pasted image 20260331114948.png",
+    "Pasted image 20260331093518.png",
+    "Pasted image 20260331093433.png",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 17-03.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 25-03.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Sem título 1.md",
-    "Pasted image 20260322114010.png",
-    "Pasted image 20260320214543.png",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 11-03.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Prints/Testes.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Experimento Comparativo dos Modelos.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Dezembro/Reunião Dia 02-12.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Literatura.md",
-    "Pasted image 20260316141357.png",
     "8 Período/Desenvolvimento TCC 2025/Reunião Dezembro/Próxima Reunião.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Prints",
     "8 Período/Desenvolvimento TCC 2025/Materiais e Metódos.md",
@@ -219,9 +237,6 @@
     "Fichamentos/Experimental Study on Wound Area Measurement with Mobile Devices.md",
     "Fichamentos/Image-Based Artificial Intelligence in Wound Assessment A Systematic Review.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Fevereiro",
-    "Pasted image 20260202130939.png",
-    "Pasted image 20251215172701.png",
-    "Pasted image 20251127124148.png",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Janeiro",
     "8 Período/Desenvolvimento TCC 2026/Escrita",
     "8 Período/Desenvolvimento TCC 2026",
