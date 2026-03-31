@@ -1,4 +1,4 @@
-+# 📝 Plano de Orientação
+# 📝 Plano de Orientação
 
 ## 🎯 Prioridades de Pesquisa (Revisão Bibliográfica)
 
@@ -6,7 +6,7 @@
     
 - [ ] **2. Estado da Arte (Saúde + Mobile):** Levantar as discussões atuais sobre Visão Computacional na saúde, fazendo um recorte específico sobre a aplicação em **ambientes móveis**.
     
-- [ ] **3. Mitigação de Erros:** Pesquisar estratégias técnicas sobre como evitar **falsos negativos** (um ponto crítico em aplicações voltadas para a saúde).
+- [x] **3. Mitigação de Erros:** Pesquisar estratégias técnicas sobre como evitar **falsos negativos** (um ponto crítico em aplicações voltadas para a saúde).
     
 
 ---
@@ -15,11 +15,11 @@
 
  - [x] **4. Arquitetura:** MobileNetV2.  ( Se mostrou a melhor até o determinado momento .)
     
-- [ ]  **5. Meta de Desempenho:** Os resultados do modelo devem ser comparados e chegar muito próximos aos relatados nos artigos de referência. ( Tabela na Reunião 17-03 )
+- [x]  **5. Meta de Desempenho:** Os resultados do modelo devem ser comparados e chegar muito próximos aos relatados nos artigos de referência. ( Tabela na Reunião 17-03 )
     
 - [ ] **6. Justificativa Temática:** A discussão sobre diabetes está em alta. É essencial embasar a relevância do projeto na necessidade de diferenciar com precisão a ferida diabética, a lesão por pressão e a pele normal.
     
-- [ ] **7.Pré-processamento:** Aplicar técnicas para remover o _background_ das imagens (dataset) , garantindo que a rede neural foque apenas na área de interesse.
+- [x] **7.Pré-processamento:** Aplicar técnicas para remover o _background_ das imagens (dataset) , garantindo que a rede neural foque apenas na área de interesse.
     
 
 ---
@@ -30,19 +30,19 @@ A evolução dos testes de classificação deve seguir esta ordem rigorosa:
 
 **Fase 1: Escopo Reduzido**
 
-- [ ] **2 Classes:** `Pressure` vs. `Diabetic`
+- [x] **2 Classes:** `Pressure` vs. `Diabetic`
     
 
 **Fase 2: Cenário de Teste com Ruído**
 
-- [ ] **4 Classes:** `Normal`, `Background`, `Diabetic`, `Pressure`
+- [x] **4 Classes:** `Normal`, `Background`, `Diabetic`, `Pressure`
     
 
 > ⚠️ **Atenção:** Analisar criticamente os resultados obtidos nesta configuração antes de validar a passagem para a etapa final.
 
 **Fase 3: Cenário Alvo (Pós-tratamento)**
 
-- [ ] **3 Classes:** `Normal`, `Diabetic`, `Pressure`
+- [x] **3 Classes:** `Normal`, `Diabetic`, `Pressure`
 
 
 ---  
@@ -107,8 +107,7 @@ Na saúde, a tolerância a erro é menor, então os termos mudam para focar em s
 ---
 
 
-## 🧩  Resposta do Pipeline de Experimentos 2 Classes
-
+## 🧩  Resposta do Pipeline de Experimentos
 
 ### Arquitetura Sequencial  2 Classes
 
@@ -174,9 +173,15 @@ Atenção : Até aqui posso concluir através das observações e comparação c
 
 
 
+### Arquitetura Sequencial 3 Classes
+
+
+Link do Notebook :  [Archiceture Sequencial 3 Classes.ipynb - Colab](https://colab.research.google.com/drive/1t-_Y5a3d4lvcId1C3BN_8M1P72iv77sF#scrollTo=JxF-LCGalwzD)
 ### Arquitetura MobileNetV2 2 Classes
 
 *  Parâmetros da Rede 
+
+
 * Treinamento ( Os pesos se dão pela Imagenet ou seja rede pré-treinada , e congela a base  começando pela cabeça, e no fine-tuning vai para as camadas da base )
 
 ![[Pasted image 20260331092616.png]]
@@ -199,6 +204,8 @@ Atenção : Até aqui posso concluir através das observações e comparação c
 
 ![[Pasted image 20260331093518.png]]
 
+Link do Notebook : [Google Colab](https://colab.research.google.com/drive/1YlaVKvoTJAH4B10OsnvZXnyHvsYByL0f#scrollTo=y0b9gs76meMW)
+
 ### Arquitetura MobileNetV2  4 Classes
 
 * Parâmetros do Modelo
@@ -213,7 +220,7 @@ Atenção : Até aqui posso concluir através das observações e comparação c
 
 
 * Acurácia de Treinamento
-* 
+*
 ![[Pasted image 20260331163419.png]]
 
 * Relatório da Matriz de Confusão
@@ -233,3 +240,12 @@ Atenção : Até aqui posso concluir através das observações e comparação c
 * AUC - ROC 
 
 ![[Pasted image 20260331164049.png]]
+
+
+Link do Notebook :  [Archictecture MobileNetV2 4 Classes.ipynb - Colab](https://colab.research.google.com/drive/18yvVmrL5HaAs4ya-kLaAsBHg_NDL0iF-#scrollTo=QT-4-InWXRtA)
+
+Conclui-se então portanto que para arquitetura "MobileNetV2" o modelo conseguiu ser superior a tabela de 4 classes, cujo valor alcançou 87.50%  e nosso modelo atingiu 99,81% e quanto ao experimento de 2 Classes o nosso resultado também foi superior em comparação a tabela atingindo 99,56% de resultado.
+
+### Arquitetura MobileNetV2 3 Classes
+
+Link do Notebook : https://colab.research.google.com/drive/1vU-cAZFRS28BWuuDOTxYJULCtoPwUswj#scrollTo=gfoyf_PYATSE
