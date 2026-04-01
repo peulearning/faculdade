@@ -7,13 +7,13 @@
 
 ## 📋 Plano de Ação (Para a Próxima Reunião)
 
-- [ ] Levantar e trazer as métricas utilizadas nos artigos de referência da literatura.
-- [ ] Estudar e documentar o conceito de **Quantização em visão computacional** aplicada a imagens complexas.
-- [ ] Descrever detalhadamente o processo de construção do conhecimento da Rede Sequencial.
-- [ ] Pesquisar e definir quais são os valores de métricas (ex: Acurácia) considerados **aceitáveis**:
-	- [ ] No contexto geral de Visão Computacional.
-	- [ ] No contexto específico de Saúde / Feridas.
-- [ ] Estruturar a justificativa técnica: **Por que não utilizar outras versões da [[MobileNetV2]]?**
+- [x] Levantar e trazer as métricas utilizadas nos artigos de referência da literatura.
+- [x] Estudar e documentar o conceito de **Quantização em visão computacional** aplicada a imagens complexas.
+- [x] Descrever detalhadamente o processo de construção do conhecimento da Rede Sequencial.
+- [x] Pesquisar e definir quais são os valores de métricas (ex: Acurácia) considerados **aceitáveis**:
+	- [x] No contexto geral de Visão Computacional.
+	- [x] No contexto específico de Saúde / Feridas.
+- [x] Estruturar a justificativa técnica: **Por que não utilizar outras versões da [[MobileNetV2]]?**
 
 ---
 

@@ -49,7 +49,7 @@ A evolução dos testes de classificação deve seguir esta ordem rigorosa:
 
 ## 📌 Pesquisa Pós-Reunião
 
-## O que eu usei pra resolver o item 1 do To-Do  ? 
+## O que eu usei para pesquisar e responder os itens do TO-DO ? 
 
 #### 1. Visão Computacional Geral (Benchmarks)
 
@@ -83,6 +83,7 @@ Na saúde, a tolerância a erro é menor, então os termos mudam para focar em s
 |**Saúde**|Inteligência artificial em feridas crônicas|AI-based chronic wound classification performance|
 |**Padrão**|Valores de referência visão computacional|Performance benchmarks computer vision classification|
 
+
 ---
 
 #### Artigos Lidos
@@ -103,6 +104,12 @@ Na saúde, a tolerância a erro é menor, então os termos mudam para focar em s
 4. [View of Classification of Foot Wound Severity in Type 2 Diabetes Mellitus Patients Using MobileNetV2-Based Convolutional Neural Network](https://jurnal.polibatam.ac.id/index.php/JAIC/article/view/11015/3046)
 
 *  Gostei deste artigo a sua estrutura, deixa bem claro vários pontos além das métricas obtidas.
+
+
+5.  https://www.mdpi.com/2673-2688/5/3/56 
+
+ * Avaliação de mais de 200 modelos repositório : https://github.com/krishnateja95/COVID19_Benchmarking/tree/main
+
 
 ---
 
