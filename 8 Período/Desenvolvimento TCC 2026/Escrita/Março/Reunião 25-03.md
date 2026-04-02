@@ -4,7 +4,7 @@
 
 - [x] **1. Métricas de Visão Computacional:** Mapear na literatura quais são os valores de avaliação aceitáveis e esperadas para modelos de classificação de imagens através das métricas.
     
-- [ ] **2. Estado da Arte (Saúde + Mobile):** Levantar as discussões atuais sobre Visão Computacional na saúde, fazendo um recorte específico sobre a aplicação em **ambientes móveis**.
+- [x] **2. Estado da Arte (Saúde + Mobile):** Levantar as discussões atuais sobre Visão Computacional na saúde, fazendo um recorte específico sobre a aplicação em **ambientes móveis**.
     
 - [x] **3. Mitigação de Erros:** Pesquisar estratégias técnicas sobre como evitar **falsos negativos** (um ponto crítico em aplicações voltadas para a saúde).
     
@@ -17,7 +17,7 @@
     
 - [x]  **5. Meta de Desempenho:** Os resultados do modelo devem ser comparados e chegar muito próximos aos relatados nos artigos de referência. ( Tabela na Reunião 17-03 )
     
-- [ ] **6. Justificativa Temática:** A discussão sobre diabetes está em alta. É essencial embasar a relevância do projeto na necessidade de diferenciar com precisão a ferida diabética, a lesão por pressão e a pele normal.
+- [x] **6. Justificativa Temática:** A discussão sobre diabetes está em alta. É essencial embasar a relevância do projeto na necessidade de diferenciar com precisão a ferida diabética, a lesão por pressão e a pele normal.
     
 - [x] **7.Pré-processamento:** Aplicar técnicas para remover o _background_ das imagens (dataset) , garantindo que a rede neural foque apenas na área de interesse.
     
@@ -73,6 +73,67 @@ Na saúde, a tolerância a erro é menor, então os termos mudam para focar em s
 - **Exemplo de busca:** `performance metrics "wound classification" deep learning clinical validation`
     
 
+
+
+### Artigos Fichados
+
+## 1. Métricas Aceitáveis e Implementação Mobile
+
+> O que foi dito: _O F1-Score ideal está acima de 0.90, e a latência (tempo de inferência) no celular precisa ser baixa para uso clínico real._
+
+### Artigo Comprobatório:
+
+- **Título:** _Vision Transformer-based diabetic foot ulcer classification for mobile deployment: development, validation, and implementation of an iOS clinical decision support tool_
+    
+- **Publicação:** ResearchGate / Pré-print (Dezembro de 2025)
+    
+- **O que o artigo prova:** Os autores desenvolveram um modelo _Vision Transformer_ (ViT-Small) para classificar feridas de pé diabético rodando nativamente em um aplicativo iOS (CoreML). O artigo relata um **Macro-F1 de 0.9015** e uma área sob a curva (AUC) de **0.9834**.
+    
+- **Sobre o Mobile:** O estudo prova a viabilidade do _Edge AI_, alcançando um tempo de inferência de **50 a 80 milissegundos** no smartphone (latência imperceptível), provando que é possível ter precisão de pesquisa no ponto de atendimento ("point-of-care") sem depender de nuvem.
+    
+
+### Artigo Comprobatório (Revisão Sistemática):
+
+- **Título:** _Advances in Image-Based Diagnosis of Diabetic Foot Ulcers Using Deep Learning and Machine Learning: A Systematic Review_
+    
+- **Publicação:** PubMed Central (PMC12730623), 2024/2025.
+    
+- **O que o artigo prova:** Após revisar mais de 1.000 artigos recentes, os autores confirmam que os modelos de Deep Learning (como U-Net para segmentação) atingem métricas de **Acurácia entre 0.88 e 0.97**, e **Sensibilidade (Recall) entre 0.89 e 0.95**, estabelecendo o referencial de qualidade atual para a literatura.
+    
+
+---
+
+## 2. Cenário Geral de Visão Computacional na Saúde (Mobile e Explicação)
+
+> O que foi dito: _A discussão atual no mobile envolve IA Explicável (XAI), "overlays" para o médico e redução do tempo de medição em até 40%._
+
+### Artigo Comprobatório:
+
+- **Título:** _A Mobile AI-enhanced Platform for Standardized Wound Assessment and Clinical Decision Support_
+    
+- **Publicação:** medRxiv (Janeiro de 2026 - _DOI: 10.64898/2026.01.22.26344407_)
+    
+- **O que o artigo prova:** Este estudo discute exatamente o abismo entre o que é feito na pesquisa e o que chega ao paciente. O artigo cita o trabalho de autores como **Brima & Atemkeng (2024)** para enfatizar que métodos de **explicabilidade visual** ("overlays" sobre a imagem) são cruciais para aumentar a confiança do clínico.
+    
+- **Sobre o cenário de mercado (2024-2030):** Relatórios de mercado citados na literatura (como o _Digital Wound Measurement Devices Market_, 2024) comprovam que dispositivos não-contato via smartphone representam **61% do mercado atual**, e hospitais que os adotaram relataram uma **redução de 40% no tempo de avaliação de feridas** por paciente.
+    
+
+---
+
+## 3. Como Evitar Falsos Negativos e Diferenciar as Lesões
+
+> O que foi dito: _A diferenciação entre Pé Diabético, Lesão por Pressão e o uso de recursos termográficos para evitar falsos negativos em peles aparentemente normais._
+
+### Artigo Comprobatório:
+
+- **Título:** _Emerging technologies for the management of diabetic foot ulceration: a review_
+    
+- **Publicação:** Frontiers in Clinical Diabetes and Healthcare (Artigo fcdhc.2024.1440209)
+    
+- **O que o artigo prova:** Destaca as tecnologias emergentes no monitoramento de úlceras. A literatura de revisão de 2024 e 2025 (incluindo o artigo da PMC citado na seção 1) aponta especificamente para a **imagem infravermelha térmica** como uma técnica diagnóstica promissora acoplada aos modelos móveis.
+    
+- **Evitando Falsos Negativos:** Como a temperatura da pele muda antes da úlcera de pressão ou do pé diabético se romper, a fusão de imagens visuais (RGB do celular) com dados térmicos ou histórico clínico é a solução defendida pela literatura para evitar que o modelo classifique uma pele em risco inflamatório como "Pele Normal" (o perigoso falso negativo).
+
 ---
 
 ### Tabela de Referência de Busca (Português vs. Inglês)
@@ -86,7 +147,7 @@ Na saúde, a tolerância a erro é menor, então os termos mudam para focar em s
 
 ---
 
-#### Artigos Lidos
+#### Outras Leituras de Artigos
 
 1. https://www.researchgate.net/profile/Guanis-Vilela-Junior/publication/359541310_METRICAS_UTILIZADAS_PARA_AVALIAR_A_EFICIENCIA_DE_CLASSIFICADORES_EM_ALGORITMOS_INTELIGENTES/links/634ec60312cbac6a3ed73448/METRICAS-UTILIZADAS-PARA-AVALIAR-A-EFICIENCIA-DE-CLASSIFICADORES-EM-ALGORITMOS-INTELIGENTES.pdf
 
@@ -111,6 +172,13 @@ Na saúde, a tolerância a erro é menor, então os termos mudam para focar em s
  * Avaliação de mais de 200 modelos repositório : https://github.com/krishnateja95/COVID19_Benchmarking/tree/main
 
 
+6. https://pmc.ncbi.nlm.nih.gov/articles/PMC12335118/pdf/12911_2025_Article_3144.pdf
+
+*  Descreveu o processo de treinamento  , 4000 imagens no dataset,  faz segmentação, dectecção, Máscara, verdade fundamental 
+
+
+
+
 ---
 
 
@@ -122,22 +190,27 @@ Na saúde, a tolerância a erro é menor, então os termos mudam para focar em s
 
 
 ![[Pasted image 20260329152427.png]]
-
+	Relembrar camadas ( Flatten ) ⚠️
+	
 *  Épocas de treinamento 
 
 ![[Pasted image 20260329161027.png]]
+Treinamento , Validação ❌, Teste // Momento em que a validação está entrando 
+
 
 * Acurácia 
 
 ![[Pasted image 20260329161050.png]]
+Corrigir na lib do matplot épocas para serem exatas.
+Verficar a interpretação de Erro por época  (Validação)
 
 
-
-
+Verificar o conceito de validação com acurácia e o conceito de validação com dataset
 * Matriz de Confusão
 
 ![[Pasted image 20260329161109.png]]
 
+Observar o balanceamento 
 
 * Resultados da Matriz
 
@@ -182,6 +255,23 @@ Atenção : Até aqui posso concluir através das observações e comparação c
 
 ### Arquitetura Sequencial 3 Classes
 
+* Parâmetros do Modelo
+
+![[Pasted image 20260401151605.png]]
+
+* Treinamento do Módelo 
+![[Pasted image 20260401151622.png]]
+
+*  Acurácia & Error por Época
+![[Pasted image 20260401151642.png]]
+
+* Matriz de Confusão 
+
+![[Pasted image 20260401151657.png]]
+
+* AUC-ROC
+
+![[Pasted image 20260401151729.png]]
 
 Link do Notebook :  [Archiceture Sequencial 3 Classes.ipynb - Colab](https://colab.research.google.com/drive/1t-_Y5a3d4lvcId1C3BN_8M1P72iv77sF#scrollTo=JxF-LCGalwzD)
 ### Arquitetura MobileNetV2 2 Classes
@@ -254,5 +344,39 @@ Link do Notebook :  [Archictecture MobileNetV2 4 Classes.ipynb - Colab](https://
 Conclui-se então portanto que para arquitetura "MobileNetV2" o modelo conseguiu ser superior a tabela de 4 classes, cujo valor alcançou 87.50%  e nosso modelo atingiu 99,81% e quanto ao experimento de 2 Classes o nosso resultado também foi superior em comparação a tabela atingindo 99,56% de resultado.
 
 ### Arquitetura MobileNetV2 3 Classes
+
+* Parâmetros da Rede 
+
+![[Pasted image 20260401203709.png]]
+
+
+* Treinamento da rede
+
+![[Pasted image 20260402075039.png]]
+
+
+* Evolução Acurácia ( Com épocas Ajustadas )
+
+![[Pasted image 20260402075100.png]]
+
+
+* Relatório da Matriz 
+
+![[Pasted image 20260402075140.png]]
+
+
+* Matriz de Confusão 
+
+![[Pasted image 20260402075202.png]]
+
+
+* Acurácia de Treinamento / Validação ( Épocas Ajustadas )
+
+![[Pasted image 20260402075210.png]]
+
+
+* AUC-ROC 
+
+![[Pasted image 20260402075243.png]]
 
 Link do Notebook : https://colab.research.google.com/drive/1vU-cAZFRS28BWuuDOTxYJULCtoPwUswj#scrollTo=gfoyf_PYATSE
