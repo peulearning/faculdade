@@ -10,14 +10,15 @@
 - [x] **Revisão de Arquiteturas de Redes Neurais**
   - [x] Revisar a estrutura de uma **Arquitetura Sequencial** padrão (como as camadas de Convolução, Pooling e Dense/Fully Connected se conectam).
   - [x] Revisar a arquitetura da **MobileNetV2**. Focar especialmente em como ela otimiza o processamento para dispositivos móveis:
-    - [ ] *Depthwise Separable Convolutions*
-    - [ ] *Inverted Residual Blocks*
-    - [ ] *Linear Bottlenecks*
+    - [x] *Depthwise Separable Convolutions*
+    - [x] *Inverted Residual Blocks*
+    - [x] *Linear Bottlenecks* 
+[[Próxima Reunião]] 
 
-- [ ] **Fundamentos de Separação de Dados**
-  - [ ] Documentar o conceito e o papel do conjunto de **Treinamento** (onde a rede ajusta os pesos).
-  - [ ] Documentar o conceito do conjunto de **Validação** (usado para ajustar hiperparâmetros e monitorar a rede durante o treino, evitando overfitting).
-  - [ ] Documentar o conceito do conjunto de **Teste** (dados nunca vistos, usados apenas no final para a métrica de vida real).
+- [x] **Fundamentos de Separação de Dados**
+  - [x] Documentar o conceito e o papel do conjunto de **Treinamento** (onde a rede ajusta os pesos).
+  - [x] Documentar o conceito do conjunto de **Validação** (usado para ajustar hiperparâmetros e monitorar a rede durante o treino, evitando overfitting).
+  - [x] Documentar o conceito do conjunto de **Teste** (dados nunca vistos, usados apenas no final para a métrica de vida real).
 
 ---
 
@@ -26,10 +27,10 @@
 - [ ] **Correção Visual de Épocas no Matplotlib**
   - [ ] Ajustar o eixo X (épocas) dos gráficos de treino e validação para mostrar apenas valores exatos/inteiros. (Ex: usar `plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))`).
 
-- [ ] **Interpretação do Erro (Loss) na Validação**
-  - [ ] Verificar a curva de **Erro por Época (Validação)**.
-  - [ ] Documentar a interpretação: o que significa quando a loss de treino cai, mas a loss de validação começa a subir? (Sinal clássico de *Overfitting*).
-  - [ ] Entender a diferença prática entre olhar para a métrica de Acurácia vs. a métrica de Loss (Erro) durante a validação do modelo.
+- [x] **Interpretação do Erro (Loss) na Validação**
+  - [x] Verificar a curva de **Erro por Época (Validação)**.
+  - [x] Documentar a interpretação: o que significa quando a loss de treino cai, mas a loss de validação começa a subir? (Sinal clássico de *Overfitting*).
+  - [x] Entender a diferença prática entre olhar para a métrica de Acurácia vs. a métrica de Loss (Erro) durante a validação do modelo.
 
 ---
 # Revisão das Camadas Arquiteturais
@@ -194,6 +195,77 @@ Esse número alto de "Non-trainable params" confirma que você **congelou** uma 
 
 # Fundamentos da Separação dos Dados 
 
+## 🟢 Conjunto de Treinamento (Training Set)
+
+O conjunto de treinamento é a porção dos dados utilizada para **ajustar os parâmetros internos do modelo**, como os pesos e vieses da rede neural.
+
+Durante o processo de aprendizado, o modelo recebe as entradas e seus respectivos rótulos, calculando o erro por meio de uma função de perda e atualizando seus parâmetros com o objetivo de minimizar esse erro.
+
+### 🎯 Papel principal:
+
+- Aprender padrões dos dados
+- Ajustar pesos da rede
+- Minimizar a função de erro (loss)
+
+---
+
+## 🟡 Conjunto de Validação (Validation Set)
+
+O conjunto de validação é utilizado durante o treinamento para **avaliar o desempenho do modelo em dados que não foram usados diretamente no ajuste dos pesos**.
+
+Ele permite monitorar a capacidade de generalização do modelo ao longo das épocas, sendo essencial para detectar problemas como o Overfitting.
+
+Além disso, o conjunto de validação é usado para **ajuste de hiperparâmetros**, como:
+
+- número de épocas
+- taxa de aprendizado
+- arquitetura da rede
+
+### 🎯 Papel principal:
+
+- Monitorar desempenho durante o treino
+- Detectar overfitting
+- Auxiliar na escolha de hiperparâmetros
+
+---
+
+## 🔵 Conjunto de Teste (Test Set)
+
+O conjunto de teste é composto por dados **completamente inéditos para o modelo**, sendo utilizado apenas ao final do treinamento para avaliar o desempenho real da rede.
+
+Diferente do conjunto de validação, ele não deve ser utilizado durante o treinamento ou ajuste do modelo, garantindo uma avaliação imparcial da capacidade de generalização.
+
+### 🎯 Papel principal:
+
+- Avaliação final do modelo
+- Simular dados do mundo real
+- Medir desempenho real (ex: acurácia, loss)
+
+---
+
+## ☕ Princípio Fundamental
+
+> Os conjuntos de treinamento, validação e teste devem ser mutuamente exclusivos, evitando qualquer tipo de vazamento de informação entre eles.
+
+Esse cuidado evita problemas como o Data Leakage, que pode comprometer a validade dos resultados.
+
+---
+
+## 📊 Resumo Geral
+
+|Conjunto|Função|Quando é usado|
+|---|---|---|
+|Treinamento|Aprender|Durante o treino|
+|Validação|Monitorar e ajustar|Durante o treino|
+|Teste|Avaliar|Após o treino|
+
+---
+
+## 🎯 Frase forte pra banca
+
+> A separação adequada dos dados em conjuntos de treinamento, validação e teste é essencial para garantir que o modelo seja capaz de generalizar corretamente, evitando avaliações enviesadas e assegurando a confiabilidade dos resultados obtidos.
+
+
 
 ---
 
@@ -204,3 +276,19 @@ Esse número alto de "Non-trainable params" confirma que você **congelou** uma 
 
 # Interpretação de Erro (Loss) Validação
 
+### ✔️ O que significa quando:
+
+- **Loss de treino ↓ (cai)**
+- **Loss de validação ↑ (sobe)**
+
+👉 Isso caracteriza **Overfitting**
+
+## 💡 📊 Interpretação prática
+
+|Situação|Interpretação|
+|---|---|
+|Loss treino ↓|Modelo está aprendendo|
+|Loss validação ↓|Modelo generaliza bem|
+|Loss validação ↑|Modelo começa a “decorar”|
+
+❌ O modelo começa a **decorar os dados de treino** e perde capacidade de generalização

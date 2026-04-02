@@ -150,6 +150,58 @@ O "Residual" (O Atalho):
 Existe um "fio" que conecta o início do bloco direto ao final (pula o processamento). Se a rede perceber que aquele bloco não está ajudando em nada, ela pode simplesmente passar a informação original direto pelo atalho. Isso evita que a rede "esqueça" o que aprendeu nas camadas anteriores.
 
 
+##### Linear Bottleneck
+
+No contexto do MobileNetV2:
+
+> **Linear Bottleneck** é uma camada de projeção (geralmente uma convolução 1x1) que reduz a dimensionalidade dos canais **sem aplicar função de ativação não linear**, mantendo uma transformação **linear** para preservar a informação.
+
+---
+
+##### 💡 Ideia central
+
+- Reduz os canais (**compressão**)
+- **Não usa ReLU**
+- Evita perda de informação em espaços de baixa dimensão
+
+---
+
+##### 🔹 🧠 Por que isso é necessário?
+
+Funções como ReLU:
+
+- Eliminam valores negativos
+- Em camadas comprimidas → podem **destruir informação importante**
+
+👉 Então o MobileNetV2 faz:
+
+- ReLU nas camadas **expandidas**
+- **Linear (sem ReLU)** na camada comprimida
+
+##### 🔹 🧠 Intuição simples (pra explicar fácil)
+
+Imagine assim:
+
+- Expansão → “abre espaço” pra aprender
+- Depthwise → extrai padrões
+- **Linear Bottleneck → comprime sem perder informação**
+
+---
+
+# 🔥 Resumo final (curto e forte)
+
+> Linear Bottleneck é uma camada linear de compressão de canais usada no MobileNetV2 que reduz a dimensionalidade sem aplicar funções de ativação, evitando perda de informação em representações de baixa dimensão.
+
+
+---
+
+###### 🔹 📊 Exemplo prático (intuitivo)
+
+##### 🎯 Situação:
+
+Você tem um tensor com **144 canais**
+
+
 #### **YOLOv3 (Matemática de Regressão)**
 
 O YOLO não termina com uma classificação simples (ex: "Gato: 90%"). A saída matemática dele é um vetor (uma lista de números) para cada célula do grid.
