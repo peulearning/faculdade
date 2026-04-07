@@ -198,14 +198,15 @@ Na saúde, a tolerância a erro é menor, então os termos mudam para focar em s
 Treinamento , Validação ❌, Teste // Momento em que a validação está entrando 
 
 
-* Acurácia 
+* Gráficos de Acurácia e Erro Epóca  
 
 ![[Pasted image 20260329161050.png]]
-Corrigir na lib do matplot épocas para serem exatas.
-Verficar a interpretação de Erro por época  (Validação)
+Corrigir na lib do matplot épocas para serem exatas. ✅
+Verficar a interpretação de Erro por época  (Validação) ❌
 
 
 Verificar o conceito de validação com acurácia e o conceito de validação com dataset
+
 * Matriz de Confusão
 
 ![[Pasted image 20260329161109.png]]

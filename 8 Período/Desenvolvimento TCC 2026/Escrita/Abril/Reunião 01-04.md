@@ -24,8 +24,8 @@
 
 ## 💻 Ajustes no Código (Implementação)
 
-- [ ] **Correção Visual de Épocas no Matplotlib**
-  - [ ] Ajustar o eixo X (épocas) dos gráficos de treino e validação para mostrar apenas valores exatos/inteiros. (Ex: usar `plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))`).
+- [x] **Correção Visual de Épocas no Matplotlib**
+  - [x] Ajustar o eixo X (épocas) dos gráficos de treino e validação para mostrar apenas valores exatos/inteiros. (Ex: usar `plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))`).
 
 - [x] **Interpretação do Erro (Loss) na Validação**
   - [x] Verificar a curva de **Erro por Época (Validação)**.
@@ -269,9 +269,7 @@ Esse cuidado evita problemas como o Data Leakage, que pode comprometer a validad
 
 ---
 
-# Correção Visual de Épocas
-
-
+# Correção Visual de Épocas 📌
 ----
 
 # Interpretação de Erro (Loss) Validação
@@ -285,10 +283,10 @@ Esse cuidado evita problemas como o Data Leakage, que pode comprometer a validad
 
 ## 💡 📊 Interpretação prática
 
-|Situação|Interpretação|
-|---|---|
-|Loss treino ↓|Modelo está aprendendo|
-|Loss validação ↓|Modelo generaliza bem|
-|Loss validação ↑|Modelo começa a “decorar”|
+| Situação         | Interpretação             |
+| ---------------- | ------------------------- |
+| Loss treino ↓    | Modelo está aprendendo    |
+| Loss validação ↓ | Modelo generaliza bem     |
+| Loss validação ↑ | Modelo começa a “decorar” |
 
 ❌ O modelo começa a **decorar os dados de treino** e perde capacidade de generalização
