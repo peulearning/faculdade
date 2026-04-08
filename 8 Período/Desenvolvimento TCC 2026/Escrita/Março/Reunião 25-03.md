@@ -182,7 +182,7 @@ Na saúde, a tolerância a erro é menor, então os termos mudam para focar em s
 ---
 
 
-## 🧩  Resposta do Pipeline de Experimentos
+## 🧩  Resposta do Pipeline de Experimentos (Augmentation)
 
 ### Arquitetura Sequencial  2 Classes
 

@@ -106,3 +106,182 @@ else:
 
 ---
 
+## 🧩  Resposta do Pipeline de Experimentos (Sem Augmentation)
+
+### Arquitetura Sequencial  2 Classes
+
+* Parâmetros da Rade 
+![[Pasted image 20260408101718.png]]
+
+* Treinamento 
+![[Pasted image 20260408101736.png]]
+
+* Acurácia / Perca
+![[Pasted image 20260408101750.png]]
+
+* Matriz 
+
+![[Pasted image 20260408101805.png]]
+
+* Relatório da Matriz
+
+![[Pasted image 20260408101819.png]]
+
+* Curva ROC
+![[Pasted image 20260408101835.png]]
+
+
+### Arquitetura Sequencial  4 Classes
+
+* Parâmetros da Rede
+![[Pasted image 20260408102143.png]]
+
+* Treinamento da Rede
+
+![[Pasted image 20260408102156.png]]
+
+* Acurácia / Perca
+![[Pasted image 20260408102206.png]]
+
+* Matriz
+
+![[Pasted image 20260408102218.png]]
+
+* Relatório 
+
+![[Pasted image 20260408102227.png]]
+
+* Curva ROC
+![[Pasted image 20260408102247.png]]
+### Arquitetura Sequencial 3 Classes
+
+* Parâmetros da Rede
+
+![[Pasted image 20260408102328.png]]
+
+
+* Treinamento da Rede
+
+![[Pasted image 20260408102344.png]]
+
+
+* Acurácia / Perca
+
+![[Pasted image 20260408102356.png]]
+
+
+* Matriz
+
+![[Pasted image 20260408102408.png]]
+
+
+* Relatório 
+
+![[Pasted image 20260408102418.png]]
+
+* Curva ROC
+![[Pasted image 20260408102435.png]]
+
+
+### Arquitetura MobileNetV2 2 Classes
+
+* Parâmetros da Rede
+
+![[Pasted image 20260408094646.png]]
+
+
+
+
+* Treinamento 
+
+![[Pasted image 20260408094617.png]]
+
+
+* Relatório da Rede
+![[Pasted image 20260408094927.png]]
+
+* Matriz de Confusão
+
+![[Pasted image 20260408094949.png]]
+
+* Análise 
+
+![[Pasted image 20260408095355.png]]
+
+
+* Acurácia / Perca
+
+![[Pasted image 20260408095413.png]]
+
+*  Curva ROC
+
+![[Pasted image 20260408095428.png]]
+
+
+### Arquitetura MobileNetV2  4 Classes
+
+* Parâmetros da Rede
+
+![[Pasted image 20260408080556.png]]
+
+* Treinamento da rede 
+
+![[Pasted image 20260408080625.png]]
+
+* Matriz de Confusão
+
+![[Pasted image 20260408080656.png]]
+
+
+* Relatório de Classificação
+
+![[Pasted image 20260408080713.png]]
+
+*  Análise das Imagens ( Diferencial ) 
+
+![[Pasted image 20260408080736.png]]
+
+
+* Acurácia / Perca
+
+![[Pasted image 20260408083838.png]]
+
+
+* Curva ROC
+
+![[Pasted image 20260408083858.png]]
+
+### Arquitetura MobileNetV2 3 Classes
+
+* Parâmetros da Rede
+
+![[Pasted image 20260408091155.png]]
+
+* Treinamento da Rede 
+
+![[Pasted image 20260408091320.png]]
+
+
+* Relatório da Matriz
+![[Pasted image 20260408091311.png]]
+
+* Matriz 
+
+![[Pasted image 20260408091344.png]]
+
+* Análises de Imagens
+
+![[Pasted image 20260408091403.png]]
+
+
+* Acurácia e Perca
+
+![[Pasted image 20260408091416.png]]
+
+*  Curva ROC 
+![[Pasted image 20260408091449.png]]
+
+
+--- 
+
+## Estudo de Caso sobre a Augmentation
