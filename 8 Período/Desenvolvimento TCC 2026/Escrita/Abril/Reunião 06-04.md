@@ -286,7 +286,7 @@ else:
 
 ## Estudo de Caso sobre a Augmentation
 
-Prompt Utilizado : 
+
 
 
 ![[Pasted image 20260408133745.png]]
@@ -333,15 +333,15 @@ O que eu preciso fazer ?
 
   
 
-- [ ] Quantificar os sub grupos que a gente observou.
+- [✅] Quantificar os sub grupos que a gente observou.
 
   
 
-- [ ] Do tipo, qual a porcentagem de erros são da feridas ( Necrosadas, Avermelhadas, Amareladas / Esbranquiçadas )
+- [✅] Do tipo, qual a porcentagem de erros são da feridas ( Necrosadas, Avermelhadas, Amareladas / Esbranquiçadas )
 
   
 
-- [ ] Para que possamos verificar a quantidade dessas variedades se tem alguma que é maior que a outra.
+- [✅] Para que possamos verificar a quantidade dessas variedades se tem alguma que é maior que a outra.
 
   
 
@@ -355,81 +355,94 @@ LEMBRANDO QUE ESTOU FALANDO DO GOOGLE COLAB , e estou utilizando o drive para vi
 --- 
 
 
-### 1. Isolar os Erros (Foco Inicial)
 
-Não tente classificar todas as imagens do dataset agora. Vamos focar apenas onde o modelo errou no conjunto de validação/teste para responder à sua primeira dúvida.
+## Lembrando que essa é uma análise baseada nas imagens de erro exibidas:
 
-Crie um DataFrame no Pandas com as imagens do seu teste, as predições e os rótulos reais, e filtre apenas os erros:
+### 1. Amareladas / Esbranquiçadas (Esfacelo/Exsudato)
 
-Python
+Este é o grupo mais frequente entre os erros. O modelo parece ter uma dificuldade enorme aqui, muitas vezes confundindo _Pressure_ com _Diabetic_ quando há esse tom.
 
-```
-import pandas as pd
-import os
-
-# Supondo que você já tenha listas com os caminhos, labels reais e predições
-# paths_teste = ['/content/drive/MyDrive/.../img1.jpg', ...]
-# y_real = ['diabetic', 'pressure', ...]
-# y_pred = ['pressure', 'diabetic', ...]
-
-df_resultados = pd.DataFrame({
-    'caminho_imagem': paths_teste,
-    'classe_real': y_real,
-    'classe_predita': y_pred
-})
-
-# Filtrar apenas as predições incorretas
-df_erros = df_resultados[df_resultados['classe_real'] != df_resultados['classe_predita']].copy()
-
-# Salvar no Drive para você inspecionar
-df_erros.to_csv('/content/drive/MyDrive/analise_erros_modelo.csv', index=False)
-```
-
-### 2. Quantificar os Subgrupos (Tagueamento Rápido)
-
-Agora você vai quantificar os perfis visuais. Vá no seu Google Drive, abra o arquivo `analise_erros_modelo.csv` (pode abrir com o Google Sheets mesmo) e adicione uma nova coluna chamada **`perfil_visual`**.
-
-Abra as imagens correspondentes e classifique-as manualmente usando um padrão simples:
-
-- `granulacao` (Avermelhadas)
+- **Quantidade estimada:** **10 a 11 imagens**.
     
-- `esfacelo` (Amareladas / Esbranquiçadas)
+- **Exemplos claros:** As imagens com IDs `119_0`, `11_0`, `27_0`, `145_0`, `89_0` e as três últimas da terceira fileira.
     
-- `necrose` (Escuras / Pretas)
-    
-- `iluminacao_ruim` (Muito escuras, reflexo de flash forte, etc.)
+- **Insight:** O esfacelo (tecido amarelo) é muito comum em ambos os tipos de ferida, o que explica por que a Augmentation de cor pode estar "melando" a distinção que o modelo tenta fazer.
     
 
-_Dica:_ Como você só está olhando para os erros (que devem ser algumas dezenas, pela sua matriz de confusão anterior), isso será feito muito rápido.
+### 2. Avermelhadas (Tecido de Granulação / Sangue)
 
-### 3. Calcular a Porcentagem de Erros (Cruzamento)
+Imagens onde o vermelho vivo predomina, indicando tecido vivo ou sangramento recente.
 
-Depois de preencher a coluna `perfil_visual` no Sheets, baixe o CSV atualizado, carregue-o novamente no Colab e cruze os dados para ver exatamente onde o modelo está sofrendo.
+- **Quantidade estimada:** **5 a 6 imagens**.
+    
+- **Exemplos claros:** `10_0`, `35_0`, `83_0` e a primeira da segunda fileira.
+    
+- **Insight:** Note que algumas feridas bem vermelhas (granulação limpa) estão sendo classificadas como _Pressure_ indevidamente.
+    
 
-Python
+### 3. Necrosadas (Escuras / Pretas)
 
-```
-# Carregar o CSV tagueado
-df_erros_tagueado = pd.read_csv('/content/drive/MyDrive/analise_erros_modelo_tagueado.csv')
+Tecido morto, geralmente preto ou marrom muito escuro.
 
-# Criar uma tabela de contingência para ver a porcentagem dos erros
-tabela_erros = pd.crosstab(
-    [df_erros_tagueado['classe_real'], df_erros_tagueado['classe_predita']], 
-    df_erros_tagueado['perfil_visual'],
-    normalize='index' # Transforma em porcentagem por linha
-) * 100
+- **Quantidade estimada:** **3 imagens**.
+    
+- **Exemplos claros:** `125_0` (claramente necrose no calcanhar), `101_0` (ponto central necrótico) e `138_0` (necrose parcial lateral).
+    
+- **Insight:** A necrose é um marcador forte. Se o seu dataset de treino tiver muito mais necrose em uma classe do que em outra, o modelo "vicia" nessa cor.
+    
 
-print(tabela_erros.round(2))
-```
+### 4. Variações de Iluminação / Background
 
-Isso vai te dar a resposta exata para a segunda etapa do seu checklist: _"Dos casos que eram Pressure mas o modelo disse Diabetic, 70% eram de feridas amareladas (esfacelo)?"_
+- **Quantidade estimada:** **1 a 2 imagens**.
+    
+- **Exemplos claros:** A primeira imagem da última fileira (fundo muito escuro e pele negra, o que altera o contraste) e a `25_3` (com flash forte).
+    
 
-### 4. Verificar o Desbalanceamento na Base de Treino
+---
 
-Se a etapa anterior mostrar que um perfil específico (ex: necrose) concentra a maioria dos erros, você precisa provar a sua hipótese de desbalanceamento no conjunto de treinamento.
+### 5.  A planilha (`HealScan_Analise_Erros.csv`):
 
-Você não precisa classificar todo o treino. Pegue uma amostra aleatória de umas 50 imagens da pasta de treino de `diabetic` e 50 de `pressure` no Drive e conte rapidamente quantas são necrosadas, amareladas, etc.
+Para o seu TCC, você pode usar esses números para montar um gráfico de barras. Com base no que vi, sua tabela ficaria mais ou menos assim:
 
-**O que isso significa para o seu projeto?** Se você confirmar que a classe _Diabetic_ tem muito mais imagens com necrose do que a classe _Pressure_, o modelo aprendeu um viés ("atalho"): _se tem necrose, chute Diabético_. Quando o Data Augmentation distorce as cores, ele ativa esse gatilho acidentalmente.
+|**Perfil Visual**|**Qtd de Erros**|**% Aproximada**|
+|---|---|---|
+|**Amareladas (Esfacelo)**|11|55%|
+|**Avermelhadas (Granulação)**|6|30%|
+|**Necrosadas (Tecido Morto)**|3|15%|
 
-Essa análise vai fortalecer imensamente a arquitetura do seu sistema. Modelos embarcados que operam de forma _offline-first_ em dispositivos móveis precisam ser extremamente robustos a variações de iluminação e cor do mundo real, já que você não terá um pré-processamento pesado de nuvem corrigindo as imagens enviadas pelos usuários. Remover augmentations que alteram a cor original da lesão (mantendo apenas rotação, _flip_ e _crop_) é uma decisão de engenharia muito madura que agora você poderá justificar com dados concretos.
+**Conclusão:**
+
+Os dados visuais confirmam que o **perfil amarelado** é o maior vilão. Se o _Data Augmentation_ que você usou estava alterando matiz (_hue_) ou saturação, ele provavelmente estava transformando feridas vermelhas em amareladas artificialmente durante o treino. Isso explica por que, ao remover o augmentation, o gráfico ficou mais "coerente": o modelo parou de ver "fantasmas amarelados" onde eles não existiam na vida real.
+
+
+-- -
+
+### 6. A Prova do Desbalanceamento e da Complexidade
+
+
+
+- No modelo Sequencial, o F1-Score (que equilibra Precisão e Recall) de `diabetic` foi **0.68**, contra **0.54** de `pressure`.
+    
+- No MobileNetV2, o F1-Score de `diabetic` subiu para **0.75**, contra **0.63** de `pressure`.
+    
+
+Isso prova categoricamente ao seu orientador que o problema não é _apenas_ a arquitetura da rede, mas a **natureza dos dados**. Independentemente do modelo ser simples ou complexo, ele sempre tem um desempenho cerca de 12 a 14 pontos pior na classe de pressão. Isso valida a nossa tese: a classe `pressure` tem menos imagens e uma variabilidade visual muito maior, tornando-a estatisticamente e visualmente mais difícil de ser aprendida.
+
+### 7. Dissecando a Classe de Pressão (O Calcanhar de Aquiles)
+
+Vamos olhar especificamente para o que a MobileNetV2 fez pela classe mais difícil (`pressure`):
+
+- **Recall (Sensibilidade) de 0.62:** O modelo conseguiu encontrar 62% de todas as úlceras de pressão reais do teste. O modelo Sequencial estava com **0.52** (praticamente jogando uma moeda, errando metade).
+    
+- **Precision (Precisão) de 0.65:** Quando a MobileNetV2 aponta e diz "Isso é uma úlcera de pressão!", ela está correta 65% das vezes. O modelo Sequencial acertava apenas 55%.
+
+![[Pasted image 20260409194618.png]]
+
+MobileNetV2 tirou o modelo do "chute cego" e começou a realmente traçar uma fronteira de decisão geométrica para as úlceras de pressão, graças aos pesos pré-treinados (Transfer Learning) que extraem texturas melhores.
+
+### 3. O Salto de Desempenho Geral (A Vitória do Transfer Learning)
+
+
+- **Acurácia e F1-Score:** O modelo pulou de uma acurácia de **62% para 70%**. O `macro avg` do F1-score (que calcula a média tratando as duas classes com o mesmo peso, ignorando o desbalanceamento) pulou de **0.61 para 0.69**.
+
+- **A Realidade:**  Uma acurácia de 70% no contexto da saúde  ainda não é ideal para um diagnóstico clínico final (onde esperaríamos algo acima de 85-90%). **No entanto**, para um dataset pequeno de apenas cerca de 50 imagens de teste e sem metadados clínicos (idade do paciente, local da ferida, diabetes confirmada), é um resultado **muito promissor**.
