@@ -21,10 +21,10 @@
 
 ## ✅ Checklist de Próximos Passos
 
-- [ ] Analisar os resultados das imagens antes e depois do *Data Augmentation* (usar o [Albumentations Explore](https://explore.albumentations.ai) como referência).
+- [x] Analisar os resultados das imagens antes e depois do *Data Augmentation* (usar o [Albumentations Explore](https://explore.albumentations.ai) como referência).
 - [ ] Investigar a fundo o motivo do *Augmentation* estar confundindo as classes **D** e **P**. (Talvez testar outras transformações ou remover as atuais para essas classes).
 - [ ] Validar a hipótese: mapear se os erros do modelo se concentram em imagens vermelhas, amareladas, necrosadas, claras ou escuras.
-- [ ] Implementar script para exibir lado a lado a imagem, o que foi predito e o rótulo real (análise a olho nu), com foco especial no cenário de 2 Classes.
+- [x] Implementar script para exibir lado a lado a imagem, o que foi predito e o rótulo real (análise a olho nu), com foco especial no cenário de 2 Classes.
 - [ ] Avaliar uma estratégia para lidar com a escassez de imagens da classe/perfil *Necrosadas* (ex: coleta de novos dados, pesos nas classes, oversampling).
 
 ---
@@ -285,3 +285,151 @@ else:
 --- 
 
 ## Estudo de Caso sobre a Augmentation
+
+Prompt Utilizado : 
+
+
+![[Pasted image 20260408133745.png]]
+
+e essa :
+
+
+![[Pasted image 20260408135740.png]] 
+
+
+```
+
+E possível Notar : Classes que estão sendo impactadas pela Augmentation ( Diabetic , Pressure) ou seja está ajudando confudir mais que esclarecer.
+
+  
+
+  
+
+Para valida oque foi notado eu removi a augmentation e o modelo caiu em relação a acurácia porém ficou mais coerente pelo gráfico. Oque me gerou a hipótese.
+
+  
+
+Hipótese :
+
+  
+
+Será que os erros que o modelo possui são de uma dessas sub classe em específico ?   
+
+  
+
+Perfil das Imagens identificadas diferentes perfis visuais :
+
+  
+
+Vermelhas, amareladas/ Esbranquiçadas , Necrosadas, Variações de Iluminação.
+
+  
+
+Desbalanceamento : Há mais imagens Necrosadas ? Ou mais Amareladas ? Ou mais vermelhadas ?
+
+  
+
+O que eu preciso fazer ?
+
+  
+
+- [ ] Quantificar os sub grupos que a gente observou.
+
+  
+
+- [ ] Do tipo, qual a porcentagem de erros são da feridas ( Necrosadas, Avermelhadas, Amareladas / Esbranquiçadas )
+
+  
+
+- [ ] Para que possamos verificar a quantidade dessas variedades se tem alguma que é maior que a outra.
+
+  
+
+  
+
+LEMBRANDO QUE ESTOU FALANDO DO GOOGLE COLAB , e estou utilizando o drive para visualizar as pastas após o treinamento de toda a a rede.
+
+```
+
+
+--- 
+
+
+### 1. Isolar os Erros (Foco Inicial)
+
+Não tente classificar todas as imagens do dataset agora. Vamos focar apenas onde o modelo errou no conjunto de validação/teste para responder à sua primeira dúvida.
+
+Crie um DataFrame no Pandas com as imagens do seu teste, as predições e os rótulos reais, e filtre apenas os erros:
+
+Python
+
+```
+import pandas as pd
+import os
+
+# Supondo que você já tenha listas com os caminhos, labels reais e predições
+# paths_teste = ['/content/drive/MyDrive/.../img1.jpg', ...]
+# y_real = ['diabetic', 'pressure', ...]
+# y_pred = ['pressure', 'diabetic', ...]
+
+df_resultados = pd.DataFrame({
+    'caminho_imagem': paths_teste,
+    'classe_real': y_real,
+    'classe_predita': y_pred
+})
+
+# Filtrar apenas as predições incorretas
+df_erros = df_resultados[df_resultados['classe_real'] != df_resultados['classe_predita']].copy()
+
+# Salvar no Drive para você inspecionar
+df_erros.to_csv('/content/drive/MyDrive/analise_erros_modelo.csv', index=False)
+```
+
+### 2. Quantificar os Subgrupos (Tagueamento Rápido)
+
+Agora você vai quantificar os perfis visuais. Vá no seu Google Drive, abra o arquivo `analise_erros_modelo.csv` (pode abrir com o Google Sheets mesmo) e adicione uma nova coluna chamada **`perfil_visual`**.
+
+Abra as imagens correspondentes e classifique-as manualmente usando um padrão simples:
+
+- `granulacao` (Avermelhadas)
+    
+- `esfacelo` (Amareladas / Esbranquiçadas)
+    
+- `necrose` (Escuras / Pretas)
+    
+- `iluminacao_ruim` (Muito escuras, reflexo de flash forte, etc.)
+    
+
+_Dica:_ Como você só está olhando para os erros (que devem ser algumas dezenas, pela sua matriz de confusão anterior), isso será feito muito rápido.
+
+### 3. Calcular a Porcentagem de Erros (Cruzamento)
+
+Depois de preencher a coluna `perfil_visual` no Sheets, baixe o CSV atualizado, carregue-o novamente no Colab e cruze os dados para ver exatamente onde o modelo está sofrendo.
+
+Python
+
+```
+# Carregar o CSV tagueado
+df_erros_tagueado = pd.read_csv('/content/drive/MyDrive/analise_erros_modelo_tagueado.csv')
+
+# Criar uma tabela de contingência para ver a porcentagem dos erros
+tabela_erros = pd.crosstab(
+    [df_erros_tagueado['classe_real'], df_erros_tagueado['classe_predita']], 
+    df_erros_tagueado['perfil_visual'],
+    normalize='index' # Transforma em porcentagem por linha
+) * 100
+
+print(tabela_erros.round(2))
+```
+
+Isso vai te dar a resposta exata para a segunda etapa do seu checklist: _"Dos casos que eram Pressure mas o modelo disse Diabetic, 70% eram de feridas amareladas (esfacelo)?"_
+
+### 4. Verificar o Desbalanceamento na Base de Treino
+
+Se a etapa anterior mostrar que um perfil específico (ex: necrose) concentra a maioria dos erros, você precisa provar a sua hipótese de desbalanceamento no conjunto de treinamento.
+
+Você não precisa classificar todo o treino. Pegue uma amostra aleatória de umas 50 imagens da pasta de treino de `diabetic` e 50 de `pressure` no Drive e conte rapidamente quantas são necrosadas, amareladas, etc.
+
+**O que isso significa para o seu projeto?** Se você confirmar que a classe _Diabetic_ tem muito mais imagens com necrose do que a classe _Pressure_, o modelo aprendeu um viés ("atalho"): _se tem necrose, chute Diabético_. Quando o Data Augmentation distorce as cores, ele ativa esse gatilho acidentalmente.
+
+Essa análise vai fortalecer imensamente a arquitetura do seu sistema. Modelos embarcados que operam de forma _offline-first_ em dispositivos móveis precisam ser extremamente robustos a variações de iluminação e cor do mundo real, já que você não terá um pré-processamento pesado de nuvem corrigindo as imagens enviadas pelos usuários. Remover augmentations que alteram a cor original da lesão (mantendo apenas rotação, _flip_ e _crop_) é uma decisão de engenharia muito madura que agora você poderá justificar com dados concretos.
