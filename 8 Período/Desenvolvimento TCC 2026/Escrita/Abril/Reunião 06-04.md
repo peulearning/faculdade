@@ -446,3 +446,8 @@ MobileNetV2 tirou o modelo do "chute cego" e começou a realmente traçar uma fr
 - **Acurácia e F1-Score:** O modelo pulou de uma acurácia de **62% para 70%**. O `macro avg` do F1-score (que calcula a média tratando as duas classes com o mesmo peso, ignorando o desbalanceamento) pulou de **0.61 para 0.69**.
 
 - **A Realidade:**  Uma acurácia de 70% no contexto da saúde  ainda não é ideal para um diagnóstico clínico final (onde esperaríamos algo acima de 85-90%). **No entanto**, para um dataset pequeno de apenas cerca de 50 imagens de teste e sem metadados clínicos (idade do paciente, local da ferida, diabetes confirmada), é um resultado **muito promissor**.
+
+## Analisando antes do SPLIT as imagens
+
+
+
