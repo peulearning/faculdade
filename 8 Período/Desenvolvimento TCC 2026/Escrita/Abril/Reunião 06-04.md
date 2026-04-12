@@ -449,5 +449,11 @@ MobileNetV2 tirou o modelo do "chute cego" e começou a realmente traçar uma fr
 
 ## Analisando antes do SPLIT as imagens
 
+Dentre os problemas encontrados alguns listados :
 
+- Primeiro modelo (CNN) sofreu com variação de luz artificial.
+    
+- O segundo modelo melhorou, mas você descobriu que as imagens estavam sofrendo distorção geométrica no pré-processamento.
+    
+- Você implementou o `ImageOps.pad` para preservar o formato real da lesão, o que refinou o aprendizado das características de borda (que é o que você testará na próxima rodada).
 
