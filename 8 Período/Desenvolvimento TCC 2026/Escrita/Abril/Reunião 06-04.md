@@ -17,6 +17,8 @@
 ## 🔬 Hipótese Principal
 > Será que os erros de predição que o modelo está cometendo estão concentrados em uma dessas subclasses de perfis visuais específicos (ex: apenas nas amareladas ou apenas nas mais escuras)?
 
+
+* Selecionado para o Artigo do Congresso de Enfermagem  ( MOC )
 ---
 
 ## ✅ Checklist de Próximos Passos
@@ -404,11 +406,11 @@ Tecido morto, geralmente preto ou marrom muito escuro.
 
 Para o seu TCC, você pode usar esses números para montar um gráfico de barras. Com base no que vi, sua tabela ficaria mais ou menos assim:
 
-|**Perfil Visual**|**Qtd de Erros**|**% Aproximada**|
-|---|---|---|
-|**Amareladas (Esfacelo)**|11|55%|
-|**Avermelhadas (Granulação)**|6|30%|
-|**Necrosadas (Tecido Morto)**|3|15%|
+| **Perfil Visual**             | **Qtd de Erros** | **% Aproximada** |
+| ----------------------------- | ---------------- | ---------------- |
+| **Amareladas (Esfacelo)**     | 11               | 55%              |
+| **Avermelhadas (Granulação)** | 6                | 30%              |
+| **Necrosadas (Tecido Morto)** | 3                | 15%              |
 
 **Conclusão:**
 
@@ -455,5 +457,5 @@ Dentre os problemas encontrados alguns listados :
     
 - O segundo modelo melhorou, mas você descobriu que as imagens estavam sofrendo distorção geométrica no pré-processamento.
     
-- Você implementou o `ImageOps.pad` para preservar o formato real da lesão, o que refinou o aprendizado das características de borda (que é o que você testará na próxima rodada).
+-  Implementei o `ImageOps.pad` para preservar o formato real da lesão, o que refinou o aprendizado das características de borda (que é o que você testará na próxima rodada).
 
