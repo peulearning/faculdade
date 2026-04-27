@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "ed9a5962c02a2187",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 27-04 ( Felipe, Suzana).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Reunião 27-04 ( Felipe, Suzana)"
+            }
+          },
+          {
             "id": "bfbf5f666c24f9a3",
             "type": "leaf",
             "state": {
@@ -196,11 +210,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "bfbf5f666c24f9a3",
+  "active": "ed9a5962c02a2187",
   "lastOpenFiles": [
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 06-04.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 27-04 ( Felipe, Suzana).md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 17-04 Karine.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos/XX MOSTRA CIENTÍFICA DE ENFERMAGEM.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 23-04 Karine.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos/XX MOSTRA CIENTÍFICA DE ENFERMAGEM.md",
     "Excalidraw/Drawing 2026-04-23 15.41.15.excalidraw.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 17-03.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Integrated image and location analysis for wound classification a deep learning approach.md",
@@ -213,7 +229,6 @@
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 11-03.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 04-03.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 01-04.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 06-04.md",
     "Infraestrura (  Docker & Traefik ).md",
     "8 Período/Avaliação SASI.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos",
@@ -236,7 +251,6 @@
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Sem título 1.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Prints",
     "8 Período/Desenvolvimento TCC 2025/Materiais e Metódos.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Janeiro/Salvar Registros de Modificações nos arquivos.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Fevereiro",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Janeiro",
