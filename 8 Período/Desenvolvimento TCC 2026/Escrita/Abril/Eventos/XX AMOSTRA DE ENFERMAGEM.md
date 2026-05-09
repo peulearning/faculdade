@@ -11,6 +11,10 @@ Objetivo: Esta pesquisa tem como objetivo desenvolver um modelo de Visão Comput
 
 Objetivo:   Desenvolver e prototipar um modelo de Visão Computacional leve, utilizando a arquitetura MobileNetV2, para a detecção e classificação de feridas em dispositivos móveis. O foco reside na viabilização da tecnologia para ambientes de recursos computacionais limitados como ferramenta de apoio à decisão aos profissionais da saúde.
 
+Objetivo: Investigar e desenvolver um protótipo de modelo de Visão Computacional de arquitetura leve, fundamentado na rede MobileNetV2, voltado para a triagem e classificação de feridas cutâneas em dispositivos móveis. A pesquisa busca analisar a viabilidade técnica dessa tecnologia em cenários de recursos computacionais limitados, visando fundamentar uma futura ferramenta de apoio à decisão clínica que auxilie profissionais da saúde na padronização e monitoramento de lesões, como úlceras diabéticas e por pressão.
+
+
+
 
 Dúvidas que surgiram durante a escrita dos Objetivos  : 
 
@@ -20,7 +24,11 @@ Quais objetivos do contexto geral ?  Sendo que eu fiz foi fazer um estudo experi
 **Métodos e Metodologia :** 
 
 
-Métodos:  A metodologia envolveu o treinamento da arquitetura MobileNetV2 utilizando as bases de dados públicas _AZH Wound Care_ e _Medetec Wound Database_. Foram aplicadas técnicas de _transfer learning_ e _data augmentation_ para a classificação das feridas. Paralelamente, desenvolveu-se um protótipo de aplicativo móvel projetado para integrar o modelo e operar de forma offline, garantindo o suporte à tomada de decisão em dispositivos com recursos computacionais limitados.
+Metodologia:  A metodologia envolveu o treinamento da arquitetura MobileNetV2 utilizando as bases de dados públicas _AZH Wound Care_ e _Medetec Wound Database_. Foram aplicadas técnicas de _transfer learning_ e _data augmentation_ para a classificação das feridas. Paralelamente, desenvolveu-se um protótipo de aplicativo móvel projetado para integrar o modelo e operar de forma offline, garantindo o suporte à tomada de decisão em dispositivos com recursos computacionais limitados.
+
+
+
+Metodologia: A metodologia adotada seguiu uma abordagem experimental e incremental, dividida em etapas de treinamento e teste de modelos. Inicialmente, explorou-se o desempenho de uma Rede Neural Convolucional (CNN) de estrutura sequencial para estabelecer parâmetros iniciais de classificação. Como base de dados, foram utilizadas as bibliotecas públicas _AZH Wound Care_ e _Medetec Wound Database_, que passaram por processos de pré-processamento e aumento de dados (_data augmentation_). Técnicas como rotação, ajuste de brilho e zoom foram aplicadas para diversificar as amostras e compensar as limitações quantitativas do dataset original. Visando otimizar a eficiência e adequar o sistema para dispositivos com hardware restrito, a pesquisa evoluiu para a implementação da arquitetura MobileNetV2. Esta transição permitiu explorar o aprendizado por transferência (_transfer learning_) e as camadas de convolução separáveis em profundidade, características que tornam o modelo mais leve e rápido. Paralelamente aos testes de arquitetura, iniciou-se a construção de um protótipo de aplicativo móvel para testar a integração dos modelos e avaliar a viabilidade do processamento local e offline, simulando condições reais de uso
 
 
 Dúvidas que surgiram durante a escrita dos métodos  : 
