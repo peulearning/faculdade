@@ -44,11 +44,11 @@
 
 ## 🎯 Metas e Prazos
 
-| **Entrega**                      | **Data Limite** | **Status**             |
-| -------------------------------- | --------------- | ---------------------- |
-| **Resumo Finalizado**            | 08/05 (Sexta)   | ✅ Entregue             |
-| **Resultados (Escala de Cinza)** | 13/05           | 🛠️ Em Desenvolvimento |
-| **Novas Metas de Trabalho**      | 13/05           | 📅 Agendado            |
+| **Entrega**                      | **Data Limite** | **Status**  |
+| -------------------------------- | --------------- | ----------- |
+| **Resumo Finalizado**            | 08/05 (Sexta)   | ✅ Entregue  |
+| **Resultados (Escala de Cinza)** | 13/05           | ✅Entregue   |
+| **Novas Metas de Trabalho**      | 13/05           | 📅 Agendado |
 
 ---
 
@@ -125,3 +125,96 @@ entre diferentes regiões de tecido são frequentemente imprecisos e altamente i
 **Implementação:**  
 
 **Referências:**
+
+
+
+--- 
+
+
+## Notebook em escala cinza : 
+
+*  **Link : [Cópia de Archictecture MobileNetV2 2 Classes Modify.ipynb - Colab](https://colab.research.google.com/drive/1JvCKHcAfUNI5Ihd8qsA01Wu8d-eLG4ef#scrollTo=LC5kihhpGkL0)**
+
+
+* **Comentários dos Resultados:**  
+
+ O Ponto Forte: Sensibilidade em Pé Diabético (`diabetic`)
+
+- **Recall de 0.90:** O modelo é um "rastreador" excelente para feridas diabéticas. De 29 imagens reais, ele acertou 26.
+    
+- **O que isso significa:** Ele raramente deixa passar uma ferida diabética sem percebê-la. Se o objetivo fosse triagem, seria ótimo.
+
+
+ O Ponto Crítico: O "Apagão" das Lesões por Pressão (`pressure`)
+
+- **Recall de 0.48:** Isso é preocupante. O modelo errou **mais da metade** das lesões por pressão (11 de 21).
+    
+- **A Confusão:** Olhando a matriz, esses 11 erros foram classificados como "diabetic".
+    
+- **Conclusão Clínica/Técnica:** Em escala de cinza, as características de textura de uma Lesão por Pressão estão sendo confundidas com as de um Pé Diabético.
+
+
+ O impacto da Escala de Cinza na Classe `pressure`
+
+> **Pergunta para a Profª:** _"Professora, o recall de Lesão por Pressão caiu para 48%. Será que a cor (o eritema/vermelhidão ou a coloração da necrose) era a característica principal que o modelo usava para diferenciar essas feridas?"_
+
+
+**Contexto:** Lesões por pressão variam muito de tom (do rosa claro ao escuro/preto). Sem a cor, o modelo pode estar se perdendo na semelhança de texturas granulares que ambas as feridas possuem.
+
+ Viés do Modelo para a classe majoritária
+
+> **Pergunta para o Prof:** _"O modelo está 'chutando' muito em Diabetic (26 acertos, mas também 11 erros vindos da outra classe). Como podemos penalizar mais o erro na classe Pressure?"_
+
+Análise Visual com Grad-CAM
+
+> **Pergunta para o Prof:** _"Já que temos os resultados, quero usar o Grad-CAM nas 11 imagens de Pressure que foram classificadas como Diabetic. Quero ver se o modelo está focando na borda da ferida ou no fundo da imagem."_
+
+**Por que isso é importante:** Se o Grad-CAM mostrar que o modelo olha para o "lençol" ou para a "pele ao redor" em vez da ferida, o problema não é a cor, mas o conjunto de dados.
+
+ MobileNetV2 e Transfer Learning em Cinza
+
+> **Pergunta para o Prof:** _"O MobileNetV2 foi treinado na ImageNet (fotos coloridas de objetos). Faz sentido tentarmos um 'Fine-tuning' mais profundo, já que a distribuição de dados (agora em cinza) mudou radicalmente em relação ao peso original?"_
+
+ * **Gráfico da Acurácia**
+	
+	![[Captura de tela 2026-05-12 190330.png]]
+
+
+
+* **Gráficos de Acurácia & Perca de Treinamento e Validação ***
+
+![[Captura de tela 2026-05-12 190357.png]]
+
+
+* **Treinamento por Épocas***
+
+![[Pasted image 20260512204324.png]]
+
+
+* **Sumário do Modelo**
+
+![[Pasted image 20260512204348.png]]
+
+* **Matriz de Confusão**
+![[Pasted image 20260512204415.png]]
+
+
+
+* **Análise de Erros***
+![[Pasted image 20260512204435.png]]
+
+
+* **Curva ROC **
+
+![[Captura de tela 2026-05-12 190411.png]]
+
+* **GradCam Erros**
+
+
+![[Pasted image 20260512204625.png]]
+
+
+
+* **GradCam Acertos***
+
+![[Pasted image 20260512204650.png]]
