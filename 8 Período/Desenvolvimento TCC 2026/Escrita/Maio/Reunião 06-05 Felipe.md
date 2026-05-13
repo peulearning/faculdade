@@ -218,3 +218,33 @@ Análise Visual com Grad-CAM
 * **GradCam Acertos***
 
 ![[Pasted image 20260512204650.png]]
+
+
+* Depois de Analisar as imagens, oque eu pensei :  " O Modelo está de fato extraindo características ? "
+
+ **A Prova Estatística: 72% não é "chute"**
+
+Se o modelo não estivesse extraindo característica nenhuma, a acurácia em um problema de 2 classes (binário) seria próxima de **50%** (aleatório).
+
+- Com **72% de acurácia**, o modelo provou que encontrou padrões matemáticos (texturas, bordas e formas) que se repetem.
+    
+- O **Recall de 0.90 em Diabetic** mostra que as características dessa classe são muito marcantes mesmo em preto e branco. O modelo "aprendeu" a assinatura visual do pé diabético (provavelmente a forma da ferida ou o padrão da pele ao redor).
+
+ **O que o modelo está "enxergando" (Textura vs. Cor)**
+
+- **Gradientes de Intensidade:** Diferença entre áreas claras (exsudato, fibrina) e escuras (necrose).
+    
+- **Bordas e Contornos:** A profundidade da ferida e a irregularidade das margens.
+    
+- **Textura Local:** A rugosidade do tecido.
+    
+
+**O Problema com a Classe `Pressure`:** O recall baixo (0.48) em Lesões por Pressão sugere que, para essa classe, a **cor era uma característica fundamental**.
+
+- **Hipótese:** Muitas lesões por pressão em estágio inicial são identificadas pelo "eritema" (vermelhidão). Em escala de cinza, o vermelho vira um tom de cinza médio que se mistura perfeitamente com o tom de pele normal. O modelo perdeu o "alvo".
+
+**Comparativo**
+
+- **Comparação com RGB:** Rodar o mesmo modelo com imagens coloridas. Se o recall de `pressure` subir de 0.48 para 0.80, por exemplo, você prova que a cor é essencial para essa patologia.
+    
+- **Grad-CAM:** Gerar o mapa de calor. Se o Grad-CAM mostrar o modelo focando na borda da ferida, ele está extraindo **forma**. Se ele focar no centro granuloso, ele está extraindo **textura**.
