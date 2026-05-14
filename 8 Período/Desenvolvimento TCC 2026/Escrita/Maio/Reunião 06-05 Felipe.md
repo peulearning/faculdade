@@ -62,7 +62,7 @@
 
 ## Resultados das Metas 📌
 
-
+## Artigo sobre as Cores 🔴🟡⚪⚫
 * **Pesquisa Cromática** 
 
 **Nome do Artigo:_“Fully automatic wound segmentation with deep convolutional neural networks”_ (Wang et al., 2020)."**
@@ -84,7 +84,7 @@ As transformações Cr e Luv são aplicadas às imagens de entrada para remover 
 **Referência:**  Fauzi, M. F. A. et al. Computerized segmentation and measurement of chronic wound images. Comput. Biol. Med. 60, 74–85 (2015).
 
 
-
+## Pesquisa sobre os Formato de Feridas ⭕
 * **Pesquisa Padrão e Formato de  Feridas Diabéticas e por Pressão**
 
 **Nome do Artigo:** **_“The Enlightening Role of Explainable Artificial Intelligence in Chronic Wound Classification”_ (Anisuzzaman et al., 2021).**"
@@ -103,7 +103,7 @@ As transformações Cr e Luv são aplicadas às imagens de entrada para remover 
 
 **Referências:**
 
-
+## Pesquisa Escala Cinza 🩶
 * **Pesquisa Escala Cinza**
 
 **Nome do Artigo:** **_“A Systematic Investigation of Models for Color Image Processing in Wound Size Estimation”_ (Zuniga-Rodriguez et al., 2021)."**
@@ -116,7 +116,7 @@ relacionadas à cor da pele do paciente e a anomalias como eritema e estrias. Al
 entre diferentes regiões de tecido são frequentemente imprecisos e altamente irregulares. Portanto, técnicas de processamento de imagem e inteligência computacional têm sido aplicadas em diversos estudos para abordar vários aspectos do diagnóstico de feridas.
 
 
-**Argumento:** O artigo valida o uso de **Grayscale** como etapa essencial para pré-processamento e segmentação de bordas (thresholding). Ele discute como a redução de canais facilita o cálculo de área em dispositivos móveis.
+**Argumento:** O artigo valida o uso de **Grayscale** como etapa essencial para pré-processamento e segmentação de bordas (thresholding). Ele discute sobre a redução de canais para o cálculo de área em dispositivos móveis.
 
 **Artigo:** file:///C:/Users/peuja/Downloads/computers-10-00043.pdf
 
@@ -131,7 +131,7 @@ entre diferentes regiões de tecido são frequentemente imprecisos e altamente i
 --- 
 
 
-## Notebook em escala cinza : 
+## Notebook GrayScale + HeatMap : 
 
 *  **Link : [Cópia de Archictecture MobileNetV2 2 Classes Modify.ipynb - Colab](https://colab.research.google.com/drive/1JvCKHcAfUNI5Ihd8qsA01Wu8d-eLG4ef#scrollTo=LC5kihhpGkL0)**
 
