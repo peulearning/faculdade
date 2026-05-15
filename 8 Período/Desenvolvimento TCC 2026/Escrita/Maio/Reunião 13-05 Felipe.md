@@ -26,6 +26,9 @@ Q8: Está correto utilizar a escala de cinza ? Se estiver quais técnicas eu dev
 
 Esta seção detalha os pontos levantados via pesquisa integrada (Google + Gemini) sobre os fundamentos do projeto.
 
+
+Hipótese =  "O nosso modelo em escala cinza, ele está conseguindo extrair as características ?"
+
 ### O Papel da Escala de Cinza
 
 - **O que observar:** Ao trabalhar com escala de cinza, o foco principal é a análise de **texturas, formas e gradientes de intensidade**. Busca-se identificar padrões morfológicos que a variação de cores pode ocultar ou confundir.
@@ -35,7 +38,7 @@ Esta seção detalha os pontos levantados via pesquisa integrada (Google + Gemin
     - **Alteração na qualidade:** Ao introduzir heatmaps, ganha-se uma interpretação visual de onde o modelo está focando, porém, na escala de cinza pura, essa análise pode ser limitada pela falta de contraste térmico/cromático que ajudaria a diferenciar tipos de tecidos.
         
     - **Análise de Mapas de Calor:** É possível analisá-los bem em escala de cinza, desde que o pré-processamento garanta que as bordas e profundidades estejam matematicamente bem definidas.
-        
+    
 
 ### Identificação e Padrões de Feridas
 
@@ -68,13 +71,13 @@ Abaixo, o levantamento manual realizado para tentar identificar a localização 
 
 #### Dataset: Úlcera Diabética
 
-|**Amostragem**|**Distribuição de Achados**|
-|---|---|
-|**Linha 1**|6 NDA / 2 Calcanhar|
-|**Linha 2**|1 Sola / 1 NDA / 2 Calcanhar / 2 Dedos|
-|**Linha 3**|3 NDA / 2 Dedos / 1 Calcanhar|
-|**Linha 4**|5 Dedos / 1 Sola|
-|**Linha 5**|4 NDA / 1 Dedo|
+| **Amostragem** | **Distribuição de Achados**            |
+| -------------- | -------------------------------------- |
+| **Linha 1**    | 6 NDA / 2 Calcanhar                    |
+| **Linha 2**    | 1 Sola / 1 NDA / 2 Calcanhar / 2 Dedos |
+| **Linha 3**    | 3 NDA / 2 Dedos / 1 Calcanhar          |
+| **Linha 4**    | 5 Dedos / 1 Sola                       |
+| **Linha 5**    | 4 NDA / 1 Dedo                         |
 
 #### Dataset: Úlcera de Pressão
 
@@ -93,7 +96,7 @@ Abaixo, o levantamento manual realizado para tentar identificar a localização 
 
 A prioridade do modelo deve seguir o fluxo:
 
-1. **Identificação:** É Ferida ou Não Ferida?
+1. **Detecção & Identificação:** É Ferida ou Não Ferida?
     
 2. **Classificação:** Qual ferida é? (Especifidade da patologia).
     
@@ -153,3 +156,6 @@ Para extrair a máxima qualidade focando no leito da ferida, o fluxo deve combin
 - **Técnica:** **Padding** (manter aspect ratio) + **Normalização**.
     
 - **Aplicação:** Redimensionar preenchendo bordas com zero e dividir os valores por 255 (escala 0 a 1) ou centralizar média/desvio padrão conforme padrões da ImageNet.
+
+--- 
+
