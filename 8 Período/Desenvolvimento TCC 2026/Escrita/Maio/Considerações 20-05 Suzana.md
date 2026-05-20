@@ -81,3 +81,18 @@ class_weights = dict(zip(class_labels, weights))
 
 # Passando para o model.fit:
 # history = model.fit(train_generator, ..., class_weight=class_weights)
+```
+
+### Solução B: Ajustar o Fine-Tuning do MobileNetV2
+
+Se eu congelei a base inteira do MobileNetV2 e só treinei a camada final (Dense), o modelo está usando características muito genéricas.
+
+- **O que vou fazer:** Descongelar as últimas 20 ou 30 camadas do MobileNetV2 e treinar com um `learning_rate` bem baixo (ex: `1e-5` ou `1e-6`). Isso permitirá que o modelo ajuste os filtros para captar diferenças sutis de textura.
+    
+
+### Solução C: Implementar a Focal Loss
+
+Se os pesos não resolverem, implementarei a Focal Loss. Ela diminui o peso dos exemplos fáceis (como a classe `normal` que já tem F1 de 0.97) e foca o gradiente na confusão entre diabética e pressão.
+
+
+
