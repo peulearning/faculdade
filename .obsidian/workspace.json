@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3b6334272b108bc4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 13-05 Felipe.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Reunião 13-05 Felipe"
-            }
-          },
-          {
             "id": "9c69cb1aeb543c34",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 15-05.md",
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Considerações 20-05 Suzana.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reunião 15-05"
+              "title": "Considerações 20-05 Suzana"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,13 +183,21 @@
   },
   "active": "9c69cb1aeb543c34",
   "lastOpenFiles": [
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 13-05 Felipe.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 15-05.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Considerações 20-05 Suzana.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 13-05 Felipe.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 06-05 Felipe.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 06-05 Suzane.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 27-04 ( Felipe, Suzana, Karine).md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 17-04 Karine.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 23-04 Karine.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 06-04.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 01-04.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos/XX AMOSTRA DE ENFERMAGEM.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos/Programa de Pós Graduação e Modelagem Computacional.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Dezembro/Próxima Reunião.md",
+    "App-Mobile/Upando Aplicativo PlayStore.md",
+    "App-Mobile",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 17-04 Karine.md",
     "8 Período/Segurança e Auditoria de Sistemas de Informação.md",
     "8 Período/Sistemas de Apoio à Decisão.md",
     "Pasted image 20260512204650.png",
@@ -216,10 +209,6 @@
     "Pasted image 20260512204324.png",
     "Captura de tela 2026-05-12 190357.png",
     "Captura de tela 2026-05-12 190330.png",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos/Programa de Pós Graduação e Modelagem Computacional.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 23-04 Karine.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 06-04.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 01-04.md",
     "Pasted image 20260506101816.png",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Sem título/desktop.ini",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio",
@@ -233,16 +222,12 @@
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Prints/Testes.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 25-03.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 11-03.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 04-03.md",
-    "Infraestrura (  Docker & Traefik ).md",
-    "8 Período/Avaliação SASI.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Prints",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Fevereiro",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Janeiro",
-    "8 Período/Desenvolvimento TCC 2026/Escrita",
-    "8 Período/Desenvolvimento TCC 2026"
+    "8 Período/Desenvolvimento TCC 2026/Escrita"
   ]
 }

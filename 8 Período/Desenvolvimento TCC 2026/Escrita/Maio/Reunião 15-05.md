@@ -1,4 +1,4 @@
-# 📚 Reunião / Discussões de Pesquisa — Pré-processamento e Interpretabilidade do Modelo
+q# 📚 Reunião / Discussões de Pesquisa — Pré-processamento e Interpretabilidade do Modelo
 
 > **Contexto:** Discussões e direcionamentos levantados pela Suzana sobre detecção, identificação, pré-processamento de imagens e interpretabilidade do modelo utilizando Grad-CAM.
 
@@ -139,11 +139,11 @@ Verificar se o modelo está analisando as regiões corretas da imagem.
 
 ### Grad-CAM
 
-- [ ]  Implementar Grad-CAM no modelo RGB atual
+- [x]  Implementar Grad-CAM no modelo RGB atual ( 4 Classes Contexo Geral )
 - [ ]  Gerar mapas de ativação para todas as classes
 - [ ]  Verificar se o modelo está olhando para a lesão
 - [ ]  Identificar padrões incorretos de atenção
-- [ ]  Comparar imagens corretas vs incorretas
+- [x]  Comparar imagens corretas vs incorretas
 - [ ]  Salvar exemplos relevantes para documentação
 - [ ]  Criar análise visual qualitativa dos resultados
 
@@ -203,7 +203,7 @@ Verificar se o modelo está analisando as regiões corretas da imagem.
 
 ## 🧠 Experimentos Comparativos
 
-- [ ]  RGB vs Grayscale
+- [x]  RGB vs Grayscale
 - [ ]  RGB vs CLAHE
 - [ ]  RGB vs Edge Detection
 - [ ]  CLAHE + Grayscale
@@ -253,3 +253,7 @@ Informações estruturais (bordas e contornos) podem auxiliar na classificação
 |🟡 Média|Grayscale|
 |🟡 Média|Edge Detection|
 |🟢 Baixa|Combinações avançadas de pré-processamento|
+
+---  
+
+
