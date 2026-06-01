@@ -22,7 +22,7 @@ Se a classe de pressão tiver muito menos imagens que as outras, o modelo tende 
   * **Focal Loss:** Uma função de perda que força o modelo a focar nos exemplos difíceis de errar (muito superior à Cross-Entropy padrão para cenários assim).
   * **Weighted Cross-Entropy:** Dar um peso maior no cálculo do erro quando o modelo errar a classe de pressão.
 
-### C. Estratégias de Arquitetura e Otimização para Edge AI
+### C. Estratégias de Arquitetura e Otimização
 Como estou focando em modelos otimizados para dispositivos móveis (MobileNetV2 / TFLite):
 * **O que vou pesquisar:** `"MobileNetV2 fine-tuning strategies for clinical datasets"`.
 * **O que devo observar:** Congelar poucas camadas ou usar um *learning rate* muito alto pode destruir os pesos pré-treinados do ImageNet que ajudariam a diferenciar texturas complexas.
