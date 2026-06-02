@@ -405,7 +405,11 @@ Link do Notebook : https://colab.research.google.com/drive/1vU-cAZFRS28BWuuDOTxY
 
 
 
+![[Pasted image 20260602122506.png]]
 
+
+
+![[Pasted image 20260602122530.png]]
 
 
 ##  🌟Notebook MobileNetV2 4 Classes Aplicando Grad-Cam
@@ -414,3 +418,9 @@ Link do Notebook : https://colab.research.google.com/drive/1vU-cAZFRS28BWuuDOTxY
 
 
 ![[Pasted image 20260601142900.png]]
+
+
+![[Pasted image 20260602145418.png]]
+
+
+![[Pasted image 20260602145425.png]]

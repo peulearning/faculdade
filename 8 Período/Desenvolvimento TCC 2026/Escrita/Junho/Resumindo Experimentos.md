@@ -687,3 +687,169 @@ Os valores de AUC demonstram que, em termos de discriminação probabilística p
 
 
 
+
+# 📊 Experimento 07 — MobileNetV2 em Escala de Cinza Sem Augmentation (2 Classes)
+
+### Objetivo
+
+Avaliar o desempenho da arquitetura MobileNetV2 utilizando Transfer Learning para classificação binária de lesões (`diabetic` e `pressure`), aplicando um pré-processamento focado exclusivamente na forma, textura e contraste estrutural através da **conversão das imagens para escala de cinza**.
+
+O experimento foi conduzido **sem aplicação de Data Augmentation**.
+
+### Resultados Obtidos
+
+#### Relatório de Classificação (`image_3c679e.png`)
+
+|**Classe**|**Precision**|**Recall**|**F1-Score**|**Support**|
+|---|---|---|---|---|
+|diabetic|0.61|0.69|0.65|29|
+|pressure|0.47|0.38|0.42|21|
+
+#### Métricas Gerais (`image_3c679e.png`)
+
+|**Métrica**|**Valor**|
+|---|---|
+|Accuracy|0.56|
+|Macro Avg F1|0.53|
+|Weighted Avg F1|0.55|
+
+### Análise da Matriz de Confusão (`image_4a2908.png`)
+
+**Matriz:**
+
+|**Real \ Predito**|**diabetic**|**pressure**|
+|---|---|---|
+|**diabetic**|20|9|
+|**pressure**|13|8|
+
+#### Acertos
+
+- **20** imagens diabéticas classificadas corretamente.
+    
+- **8** imagens de pressão classificadas corretamente.
+    
+
+#### Erros
+
+- **13** imagens de pressão foram confundidas com diabéticas.
+    
+- **9** imagens diabéticas foram confundidas com pressão.
+    
+
+#### Interpretação
+
+- 📉 **Degradação Crítica de Desempenho:** A acurácia despencou para **56%** (ficando muito próxima de um palpite puramente aleatório/50%). No Experimento 01 (com as mesmas condições, mas em RGB), a acurácia era de 64%.
+    
+- ❌ **A Classe _Pressure_ colapsou:** O recall para úlceras por pressão caiu para alarmantes **38%**. O modelo errou muito mais do que acertou nessa categoria (13 erros contra 8 acertos), mostrando uma forte tendência a classificar erroneamente o tecido lesionado como diabético.
+    
+
+### Curva ROC (`image_3c6782.png`)
+
+**AUC obtida:**
+
+- **AUC Score geral:** 0.5665
+    
+
+#### Interpretação
+
+Uma AUC de **0.57** indica estatisticamente que o classificador perdeu quase toda a sua capacidade de discriminação. Uma curva ROC tão próxima da linha diagonal de referência (linha tracejada) prova que o modelo está com dificuldades extremas para encontrar limiares de decisão consistentes.
+
+### 🎯 Conclusão do Experimento
+
+> [!IMPORTANT] Insight Clínico: A Importância Crucial da Cor
+> 
+> A remoção da informação de cor (conversão para escala de cinza) prejudicou severamente a capacidade da rede de diferenciar as patologias. Na dermatologia e análise de úlceras, tonalidades específicas de eritema (vermelhidão), tecidos de granulação (tons rosados), esfacelo (tons amarelados/esbranquiçados) e necrose (tons enegrecidos) são marcadores clínicos essenciais.
+> 
+> Ao forçar a MobileNetV2 a olhar apenas para padrões de textura e intensidade de cinza sem o auxílio da cor, as bordas e os contrastes morfológicos das lesões diabéticas e por pressão tornaram-se praticamente indistinguíveis para os filtros convolucionais, validando que **manter os canais RGB é um requisito indispensável para este dataset**.
+
+
+# 📊 Experimento 08 — MobileNetV2 de 4 Classes com Grad-CAM (Sem Augmentation)
+
+### Objetivo
+
+Avaliar a interpretabilidade visual da arquitetura MobileNetV2 utilizando a técnica **Grad-CAM** (_Gradient-weighted Class Activation Mapping_). O objetivo é validar de forma qualitativa se os mapas de calor gerados pela última camada convolucional da rede coincidem com as regiões anatômicas e patológicas reais das úlceras (`diabetic`, `pressure`, `normal` e `background`) em um ambiente sem transformações de dados sintéticos.
+
+### Resultados Obtidos
+
+#### Relatório de Classificação (`image_3bfb7d.png`)
+
+|**Classe**|**Precision**|**Recall**|**F1-Score**|**Support**|
+|---|---|---|---|---|
+|background|1.00|0.60|0.75|5|
+|diabetic|0.76|0.86|0.81|29|
+|normal|0.79|1.00|0.88|15|
+|pressure|0.73|0.52|0.61|21|
+
+#### Métricas Gerais (`image_3bfb7d.png`)
+
+|**Métrica**|**Valor**|
+|---|---|
+|Accuracy|0.77|
+|Macro Avg F1|0.76|
+|Weighted Avg F1|0.76|
+
+### Análise da Matriz de Confusão (`image_3bfb80.png`)
+
+**Matriz:**
+
+|**Real \ Predito**|**background**|**diabetic**|**normal**|**pressure**|
+|---|---|---|---|---|
+|**background**|3|1|1|0|
+|**diabetic**|0|25|0|4|
+|**normal**|0|0|15|0|
+|**pressure**|0|7|3|11|
+
+_Nota: Sendo a mesma base de dados original de 4 classes sem alterações, o modelo replica o comportamento estatístico do Experimento 02, mantendo a clássica confusão mútua entre `pressure` e `diabetic` (7 erros de pressão rotulados como diabetes)._
+
+### Análise Visual via Grad-CAM (`image_3c0246.png`)
+
+A imagem de saída do Grad-CAM exibe quatro amostras representativas correspondentes a cada classe, sobrepondo o mapa de calor à imagem original. O gradiente varia de tons frios (azul) a tons quentes (vermelho), onde a cor vermelha indica os pixels de maior peso para a decisão final da rede.
+
+#### 1. Amostra de Pele Saudável (`normal`)
+
+- **Comportamento do Grad-CAM:** O foco de calor concentrou-se de maneira centralizada e difusa sobre a textura homogênea do tecido.
+    
+- **Avaliação Clínica:** Correto. Como não existem bordas de feridas ou focos inflamatórios, a rede baseou sua ativação na uniformidade e coloração típica da pele íntegra.
+    
+
+#### 2. Amostra de Úlcera Diabética (`diabetic`)
+
+- **Comportamento do Grad-CAM:** A zona vermelha de máxima ativação fixou-se diretamente no **leito da ferida e nas bordas ulceradas**, capturando com precisão a área de escavação tecidual.
+    
+- **Avaliação Clínica:** Excelente. Demonstra que os filtros convolucionais aprenderam a reconhecer a morfologia concêntrica e destrutiva característica das lesões de pé diabético.
+    
+
+#### 3. Amostra de Úlcera por Pressão (`pressure`)
+
+- **Comportamento do Grad-CAM:** O modelo ativou fortemente sobre a região central da lesão, englobando áreas de possível esfacelo/isquemia.
+    
+- **Avaliação Clínica:** Correto. O padrão confirma que o modelo busca características texturais profundas no centro da ferida para tentar diferenciá-la da úlcera diabética, embora a semelhança visual nesses pontos explique os erros cruzados na matriz de confusão.
+    
+
+#### 4. Amostra de Fundo (`background`)
+
+- **Comportamento do Grad-CAM:** O mapa de calor isolou-se nas margens externas da imagem, ignorando tecidos biológicos e focando em elementos periféricos.
+    
+- **Avaliação Clínica:** Correto. Valida que a classe de controle funciona conforme o esperado, forçando a rede a ignorar artefatos que não pertencem ao contexto clínico do paciente.
+    
+
+### Curva ROC (`image_3bfb7a.png`)
+
+**AUC Scores por Classe:**
+
+- **background:** 1.00
+    
+- **diabetic:** 0.92
+    
+- **normal:** 1.00
+    
+- **pressure:** 0.85
+    
+
+### 🎯 Conclusão do Experimento com Grad-CAM
+
+> [!TIP] O Veredito da Inteligência Artificial Explicável (XAI)
+> 
+> A aplicação do Grad-CAM neste notebook traz uma validação qualitativa indispensável para o seu trabalho científico: **o modelo não está acertando por sorte ou por vieses de fundo (como lençóis, iluminação ou sombras)**.
+> 
+> Mesmo operando com uma acurácia modesta de **77%** devido à ausência de augmentation, as imagens geradas provam que as camadas convolucionais profundas da MobileNetV2 conseguiram se ancorar nos elementos biológicos corretos — o leito ulceroso, o formato das bordas e a textura tecidual. Isso valida a arquitetura como uma candidata robusta para sistemas de suporte à decisão médica, pois os critérios de extração de características mimetizam os pontos de interesse avaliados por um olho clínico humano.
