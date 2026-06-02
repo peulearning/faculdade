@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e976163ffde6ed67",
+        "id": "f6926a3a9419f0ae",
         "type": "tabs",
         "children": [
           {
-            "id": "9c69cb1aeb543c34",
+            "id": "f49e4ab0e9d32472",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Resumo What as done 01-06"
             }
+          },
+          {
+            "id": "fd888605aaf8cbc2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumindo Experimentos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Resumindo Experimentos"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5124969482422,
+    "width": 243.50418853759766,
     "collapsed": true
   },
   "right": {
@@ -181,20 +196,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9c69cb1aeb543c34",
+  "active": "fd888605aaf8cbc2",
   "lastOpenFiles": [
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumo What as done 01-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumindo Experimentos.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos/Programa de Pós Graduação e Modelagem Computacional.md",
+    "Pasted image 20260331163442.png",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos/XX AMOSTRA DE ENFERMAGEM.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Considerações 20-05 Suzana.md",
     "Pasted image 20260601142900.png",
     "Pasted image 20260601142832.png",
     "Pasted image 20260601142632.png",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 11-03.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 25-03.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 17-03.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumo What as done 01-06.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 01-04.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 04-03.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 06-04.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Fevereiro/reuniao 05-02.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Considerações 20-05 Suzana.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 15-05.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 06-05 Felipe.md",
@@ -209,9 +228,6 @@
     "8 Período/Desenvolvimento TCC 2025/Reunião Junho/Reunião 26-06.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Junho/Pesquisa 09-06 11-06 ( 2ª Feira - 4ª Feira).md",
     "8 Período/Desenvolvimento TCC 2025/Materiais e Metódos.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 10-09.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Resumo SNACT.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/Orientação TCC.md",
     "App-Mobile",
     "Pasted image 20260512204650.png",
     "Pasted image 20260512204625.png",
@@ -219,8 +235,6 @@
     "Pasted image 20260512204435.png",
     "Pasted image 20260512204415.png",
     "Pasted image 20260512204348.png",
-    "Pasted image 20260512204324.png",
-    "Captura de tela 2026-05-12 190357.png",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Sem título/desktop.ini",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos",

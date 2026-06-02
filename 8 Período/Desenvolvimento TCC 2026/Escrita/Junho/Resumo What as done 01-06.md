@@ -2,8 +2,6 @@ O que fazer , recapitular tudo que já temos,  matriz de confusão e resultados 
 
 
 
-
-
 ## 🧩  Resposta do Pipeline de Experimentos (Sem Augmentation)
 
 ### Arquitetura Sequencial  2 Classes
@@ -181,6 +179,10 @@ O que fazer , recapitular tudo que já temos,  matriz de confusão e resultados 
 
 
 --- 
+
+
+
+
 
 
 
