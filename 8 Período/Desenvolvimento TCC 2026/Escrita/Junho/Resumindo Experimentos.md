@@ -24,11 +24,11 @@ Sem aplicação de Data Augmentation antes do treinamento.
 
 ### Métricas Gerais
 
-|Métrica|Valor|
-|---|---|
-|Accuracy|0.64|
-|Macro Avg F1|0.63|
-|Weighted Avg F1|0.64|
+| Métrica         | Valor |
+| --------------- | ----- |
+| Accuracy        | 0.64  |
+| Macro Avg F1    | 0.63  |
+| Weighted Avg F1 | 0.64  |
 
 ---
 
@@ -773,12 +773,12 @@ Avaliar a interpretabilidade visual da arquitetura MobileNetV2 utilizando a téc
 
 #### Relatório de Classificação (`image_3bfb7d.png`)
 
-|**Classe**|**Precision**|**Recall**|**F1-Score**|**Support**|
-|---|---|---|---|---|
-|background|1.00|0.60|0.75|5|
-|diabetic|0.76|0.86|0.81|29|
-|normal|0.79|1.00|0.88|15|
-|pressure|0.73|0.52|0.61|21|
+| **Classe** | **Precision** | **Recall** | **F1-Score** | **Support** |
+| ---------- | ------------- | ---------- | ------------ | ----------- |
+| background | 1.00          | 0.60       | 0.75         | 5           |
+| diabetic   | 0.76          | 0.86       | 0.81         | 29          |
+| normal     | 0.79          | 1.00       | 0.88         | 15          |
+| pressure   | 0.73          | 0.52       | 0.61         | 21          |
 
 #### Métricas Gerais (`image_3bfb7d.png`)
 
@@ -853,3 +853,47 @@ A imagem de saída do Grad-CAM exibe quatro amostras representativas corresponde
 > A aplicação do Grad-CAM neste notebook traz uma validação qualitativa indispensável para o seu trabalho científico: **o modelo não está acertando por sorte ou por vieses de fundo (como lençóis, iluminação ou sombras)**.
 > 
 > Mesmo operando com uma acurácia modesta de **77%** devido à ausência de augmentation, as imagens geradas provam que as camadas convolucionais profundas da MobileNetV2 conseguiram se ancorar nos elementos biológicos corretos — o leito ulceroso, o formato das bordas e a textura tecidual. Isso valida a arquitetura como uma candidata robusta para sistemas de suporte à decisão médica, pois os critérios de extração de características mimetizam os pontos de interesse avaliados por um olho clínico humano.
+
+
+
+
+# 📊 Tabela Comparativa Geral: Experimentos MobileNetV2
+
+| **Experimento** | **Descrição (Cenário)**        | **Pré-processamento**     | **Acurácia** | **F1-Score (Macro)** | **AUC (Min - Max)** | **Principais Observações / Conclusão**                                                                                 |
+| --------------- | ------------------------------ | ------------------------- | ------------ | -------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **01**          | 2 Classes (Diabetic, Pressure) | RGB, Sem Augmentation     | **64%**      | **0.63**             | ~0.76               | Comportamento estável (sem overfitting), mas forte confusão mútua e simétrica entre as duas lesões.                    |
+| **02**          | 4 Classes (+ Normal, Bg)       | RGB, Sem Augmentation     | **77%**      | **0.76**             | 0.85 - 1.00         | Facilidade extrema em isolar fundo e tecido normal. Gargalo persiste na confusão entre lesões patológicas.             |
+| **03**          | 3 Classes (Sem Background)     | RGB, Sem Augmentation     | **85%**      | **0.85**             | 0.87 - 0.99         | **Melhor modelo realista.** Eliminação do ruído (fundo) ajudou a focar nas patologias. Erros perfeitamente simétricos. |
+| **04**          | 2 Classes (Diabetic, Pressure) | RGB, Augmentation Híbrido | **99%**      | **0.99**             | 0.99                | "Milagre estatístico", mas com fortíssimos indícios de **Data Leakage** (memorização de amostras duplicadas).          |
+| **05**          | 4 Classes (+ Normal, Bg)       | RGB, Augmentation Híbrido | **100%**     | **1.00**             | 1.00                | Perfeição irreal. **Data Leakage confirmado**. Curva de validação impecável devido ao vazamento offline/online.        |
+| **06**          | 3 Classes (Sem Background)     | RGB, Augmentation Híbrido | **89%**      | **0.89**             | 0.96 - 1.00         | Resistiu melhor ao vazamento de dados que o Exp. 05. Reflete um aprendizado mais fidedigno do gargalo patológico.      |
+| **07**          | 2 Classes (Diabetic, Pressure) | Escala de Cinza, Sem Aug  | **56%**      | **0.53**             | 0.57                | **Degradação crítica.** Quase um palpite aleatório. Comprova que a informação de **cor (RGB) é vital** para o modelo.  |
+| **08**          | 4 Classes com **Grad-CAM**     | RGB, Sem Augmentation     | **77%**      | 0.76                 | 0.85 - 1.00         | Réplica do Exp 02, mas com **Validação XAI**. O Grad-CAM provou que a rede "olha" para o lugar certo (leito e bordas). |
+
+
+--- 
+
+
+## Considerações de Suzana 
+
+! IMPORTANT 
+
+* Validar se Overfiting não está acontecendo ou está acontecendo.
+* Agumentação ajuda a bons resultados, isolar a agumentação  ( agumentar o treino e agumentar o teste completamente separados ) . 
+
+* Step-a-Step : 
+1. First Step:  join train and test origins .
+2. Second Step : How doing ? Just split , train test and validation . It directorys generate augmenatations datas. And play training.
+
+*  Final-Step : Fine-Tunnig Model 
+
+- Encerra as atividades 
+
+---  
+
+*  Elabora duas cópias do Notebook em escala cinza e aplicar as técnicas Edge Canvy e CLAHE e comprar os resultados obtidos.  
+
+
+<p align="center"> <img src="[https://github.com/suzanasvm/SetBike/blob/master/esquematico-arduino.png](https://github.com/suzanasvm/SetBike/blob/master/esquematico-arduino.png)"> </p>
+
+

@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f6926a3a9419f0ae",
+        "id": "5daa2549d59d9620",
         "type": "tabs",
         "children": [
           {
-            "id": "f49e4ab0e9d32472",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumo What as done 01-06.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Resumo What as done 01-06"
-            }
-          },
-          {
-            "id": "fd888605aaf8cbc2",
+            "id": "483de8bd88348573",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,8 +21,7 @@
               "title": "Resumindo Experimentos"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,45 +181,46 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fd888605aaf8cbc2",
+  "active": "483de8bd88348573",
   "lastOpenFiles": [
+    "Prints/Pasted image 20251010155446.png",
+    "Prints/Pasted image 20250929161121.png",
+    "Prints/Pasted image 20251010154906.png",
+    "Prints/Pasted image 20250929161053.png",
+    "Prints/Pasted image 20250929160837.png",
+    "Prints/Pasted image 20250929160820.png",
+    "Prints/Pasted image 20250929150403.png",
+    "Prints/Pasted image 20250929150355.png",
+    "Prints/Pasted image 20250929135237.png",
+    "Prints/Pasted image 20250929134641.png",
+    "Prints/Pasted image 20250929134628.png",
+    "Prints/Ferramentas de Pesquisa Científica.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumo What as done 01-06.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumindo Experimentos.md",
-    "Pasted image 20260602145425.png",
-    "Pasted image 20260602145418.png",
-    "Pasted image 20260602122530.png",
-    "Pasted image 20260602122506.png",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos/Programa de Pós Graduação e Modelagem Computacional.md",
-    "Pasted image 20260331163442.png",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos/XX AMOSTRA DE ENFERMAGEM.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Considerações 20-05 Suzana.md",
-    "Pasted image 20260601142900.png",
-    "Pasted image 20260601142832.png",
-    "Pasted image 20260601142632.png",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 11-03.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 25-03.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 17-03.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 01-04.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Reunião 04-03.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 06-04.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Fevereiro/reuniao 05-02.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 15-05.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 06-05 Felipe.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 06-05 Suzane.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 17-04 Karine.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 23-04 Karine.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 27-04 ( Felipe, Suzana, Karine).md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Abril/Reunião Dia 02-04.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Abril/Reunião Dia 09-04.md",
-    "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Seg 03-08.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Roteiro para Reunião 05-06.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Reunião 15-08.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Seg 03-08.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Dezembro/Próxima Reunião.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Dezembro/Reunião Dia 02-12.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Novembro/Reunião dia 27.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Novembro/Reunião Dia 11.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2/Artigos x Modelo.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2/Implementação Notebook Colab.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2/MobileNetV2 Inverted Residuals and Linear Bottlenecks.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 15-09.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Reunião Dia 10-09.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Multi‑modal wound classification using wound image and location by deep neural network.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Setembro/Integrated image and location analysis for wound classification a deep learning approach.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Julho/Reunião 25-07.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Julho/Reunião 17-07.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Julho/Reunião 15-07.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Junho/Reunião 26-06.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Junho/Pesquisa 09-06 11-06 ( 2ª Feira - 4ª Feira).md",
-    "8 Período/Desenvolvimento TCC 2025/Materiais e Metódos.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Abril/Reunião Dia 09-04.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Abril/Reunião Dia 02-04.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Março/Reunião Dia 19-03.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho",
     "App-Mobile",
-    "Pasted image 20260512204650.png",
-    "Pasted image 20260512204625.png",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Sem título/desktop.ini",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos",
