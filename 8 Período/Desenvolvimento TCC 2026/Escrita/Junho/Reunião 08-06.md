@@ -57,12 +57,88 @@ Para a próxima discussão, é necessário derivar o notebook principal em duas 
 
 
 
-#### ⚪ Pipeline Analisado e Feito
+#### ⚪ Pipeline Analisado e Feito no 4 Classes Grad-CAM 
 
 
 Notebook 📚 :  [Refazendo Split DatasetOriginal Archictecture MobileNetV2 4 Classes Modify Grad-Cam Apply .ipynb - Colab](https://colab.research.google.com/drive/1194PdVXnJdZDFcPZAJlS4OZo4P5wOUyu#scrollTo=voGjGoPVIiT2) 
 
+ #Validação de Overfitting
 
+Para monitorar possíveis sinais de overfitting foram utilizadas:
+
+- Curvas de Accuracy de Treino e Validação;
+- Curvas de Loss de Treino e Validação;
+- EarlyStopping;
+- ReduceLROnPlateau;
+- Avaliação final utilizando conjunto de teste isolado.
+
+ #Resultado Observado
+
+Durante o treinamento foi observada uma diferença moderada entre treino e validação.
+
+```
+Treino ≈ 79% Validação ≈ 65% ~ 70%
+```
+
+Apesar da diferença entre as curvas, a perda de validação permaneceu relativamente estável ao longo das épocas.
+
+Não foram observados comportamentos típicos de overfitting severo, como:
+
+```
+Train Loss ↓↓↓Validation Loss ↑↑↑
+```
+
+ou
+
+```
+Train Accuracy ↑↑↑Validation Accuracy ↓↓↓
+```
+
+ Conclusão
+
+Até o momento não existem evidências fortes de overfitting severo.
+
+O modelo demonstra capacidade razoável de generalização para dados não vistos.
+
+
+#Isolamento da Data Augmentation
+
+A orientação de separar completamente os conjuntos de treino, validação e teste foi atendida.
+
+O fluxo executado foi:
+
+```
+Dataset Original        ↓Dataset Mestre        ↓Novo Split(train / validation / test)        ↓Data Augmentation apenas no treino
+```
+
+ Configuração utilizada
+
+```
+rotation_range=20
+width_shift_range=0.1
+height_shift_range=0.1
+shear_range=0.1
+zoom_range=0.1
+horizontal_flip=True
+```
+
+A validação e o teste receberam apenas:
+
+```
+preprocess_input
+```
+
+sem transformações geométricas ou fotométricas.
+
+ #Garantias obtidas
+
+- Sem compartilhamento de imagens entre conjuntos;
+- Sem compartilhamento de imagens augmentadas entre conjuntos;
+- Sem evidências de Data Leakage;
+- Pipeline compatível com boas práticas experimentais.
+
+
+---
 ##### Etapa 1 — Recuperação do Dataset Original
 
 O dataset original disponibilizado pelo autor possuía a seguinte organização:
@@ -91,9 +167,11 @@ Objetivo:
 - Permitir a criação de uma nova divisão controlada dos dados;
 - Garantir reprodutibilidade experimental.
 
+
+
 ---
 
-#### Etapa 3 — Novo Split Estratificado
+##### Etapa 3 — Novo Split Estratificado
 
 A partir do `dataset_master` foi criado um novo conjunto experimental:
 
@@ -113,7 +191,7 @@ random_state = 42
 
 para garantir reprodutibilidade.
 
-##### Distribuição obtida
+###### Distribuição obtida
 
 |Classe|Train|Validation|Test|
 |---|---|---|---|
@@ -151,7 +229,7 @@ TOTAL: 68
 
 O treinamento passou a utilizar:
 
-##### Train Generator
+###### Train Generator
 
 Com Data Augmentation:
 
@@ -168,7 +246,7 @@ train_datagen = ImageDataGenerator(
 )
 ```
 
-##### Validation/ Test Generator
+###### Validation/ Test Generator
 
 Sem Data Augmentation:
 
@@ -184,7 +262,7 @@ val_test_datagen = ImageDataGenerator(
 
 Foi adotada uma estratégia em duas fases.
 
-##### Fase 1
+###### Fase 1
 
 Treinamento apenas da cabeça classificadora.
 
@@ -193,7 +271,7 @@ Objetivo:
 - Aproveitar os pesos pré-treinados da MobileNetV2;
 - Adaptar as camadas finais ao domínio de feridas.
 
-##### Fase 2
+###### Fase 2
 
 Fine-Tuning parcial da MobileNetV2.
 
@@ -217,3 +295,19 @@ Adam(learning_rate=1e-5)
 para evitar destruição dos pesos previamente aprendidos.
 
 ---
+
+
+
+* Matriz de Confusão
+
+
+![[Captura de tela 2026-06-09 151227.png]]
+![[Pasted image 20260609151609.png]]
+
+* Acúracia Treinamento / Perca Loss 
+
+![[Captura de tela 2026-06-09 151234.png]]
+
+
+* Curva AUC / ROC
+![[Captura de tela 2026-06-09 151314.png]]
