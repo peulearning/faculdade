@@ -24,32 +24,11 @@ Para organizar os dados e o processo de treinamento, a sequência oficial acorda
     
 4. **Treinamento Base:** Executar o treinamento (_Play training_) e registrar as métricas.
     
-5. **Fine-Tuning:** Refinar os pesos do modelo (descongelando camadas finais, se necessário) para estabilizar os resultados.
+5. **Fine-Tuning:** Refinar os pesos do modelo (descongelando camadas finais, se necessário) para estabilizar os resultados.  
     
 6. **Encerramento das Atividades:** Salvar os pesos e gerar os artefatos de avaliação (Matriz de Confusão, Curvas ROC/AUC).
     
 
-#### 🔬 Experimentos de Pré-processamento (Novos Notebooks)
-
-Para a próxima discussão, é necessário derivar o notebook principal em duas novas frentes de experimentação usando imagens em **escala de cinza**:
-
-- [ ] **Notebook 1: Edge Canny**
-    
-    - Converter imagens para tons de cinza.
-        
-    - Aplicar o filtro de Canny para detecção de bordas (focando nos contornos das estruturas/lesões).
-        
-    - Treinar o modelo com esses dados e extrair métricas.
-        
-- [ ] **Notebook 2: CLAHE (Contrast Limited Adaptive Histogram Equalization)**
-    
-    - Converter imagens para tons de cinza.
-        
-    - Aplicar o CLAHE. Essa técnica é excelente para imagens clínicas, pois realça o contraste local sem estourar o brilho global, destacando melhor a textura dos tecidos.
-        
-    - Treinar o modelo com esses dados e extrair métricas.
-        
-- [ ] **Comparativo Final:** Montar um quadro comparativo dos resultados do Canny e do CLAHE contra a _baseline_ original (RGB sem filtros).
 
 
 
@@ -57,7 +36,7 @@ Para a próxima discussão, é necessário derivar o notebook principal em duas 
 
 
 
-#### ⚪ Pipeline Analisado e Feito no 4 Classes Grad-CAM 
+#### ⚪ Pipeline de Treinamento
 
 
 Notebook 📚 :  [Refazendo Split DatasetOriginal Archictecture MobileNetV2 4 Classes Modify Grad-Cam Apply .ipynb - Colab](https://colab.research.google.com/drive/1194PdVXnJdZDFcPZAJlS4OZo4P5wOUyu#scrollTo=voGjGoPVIiT2) 
@@ -304,10 +283,123 @@ para evitar destruição dos pesos previamente aprendidos.
 ![[Captura de tela 2026-06-09 151227.png]]
 ![[Pasted image 20260609151609.png]]
 
+ Classification Report
+
+| Classe     | Precision | Recall | F1-Score |
+| ---------- | --------- | ------ | -------- |
+| Background | 1.00      | 0.50   | 0.67     |
+| Diabetic   | 0.65      | 0.86   | 0.74     |
+| Normal     | 0.82      | 0.93   | 0.88     |
+| Pressure   | 0.67      | 0.38   | 0.48     |
+
+
 * Acúracia Treinamento / Perca Loss 
 
 ![[Captura de tela 2026-06-09 151234.png]]
 
+ Interpretação
+
+Observou-se crescimento consistente da acurácia de treinamento durante as primeiras épocas, indicando aprendizado efetivo das características das imagens.
+
+A acurácia de validação acompanhou parcialmente esse crescimento, mantendo-se relativamente estável durante boa parte do treinamento.
+
+Valores observados aproximadamente:
+
+```
+Treino ≈ 79%Validação ≈ 65%–70%
+```
+
+Embora exista uma diferença entre as curvas, não foi observada divergência extrema entre treino e validação.
+
+ Conclusão
+
+Os resultados sugerem que o modelo está aprendendo padrões relevantes sem apresentar comportamento típico de memorização excessiva.
+
+---
+
+ Curva de Loss
+
+ Comportamento observado
+
+A perda de treinamento apresentou queda expressiva nas primeiras épocas:
+
+```
+2.15 → 0.55
+```
+
+demonstrando convergência adequada do processo de otimização.
+
+Já a perda de validação apresentou redução gradual seguida de estabilização:
+
+```
+1.25 → 0.60
+```
+
+mantendo comportamento relativamente controlado durante o treinamento.
+
+ Ponto de Atenção
+
+Próximo às últimas épocas ocorreu uma pequena oscilação na perda de treinamento.
+
+Entretanto:
+
+- A perda de validação não apresentou crescimento explosivo;
+- O EarlyStopping interrompeu o treinamento antes que ocorresse degradação significativa;
+- O ReduceLROnPlateau contribuiu para estabilizar o processo de aprendizagem.
+
+---
+
+ Avaliação de Overfitting
+
+Um cenário clássico de overfitting seria caracterizado por:
+
+```
+Accuracy Treino ↑↑↑
+Accuracy Validação ↓↓↓
+Loss Treino ↓↓↓
+Loss Validação ↑↑↑
+```
+
+Esse comportamento não foi observado no experimento atual.
+
+ Evidências
+
+✅ Curvas relativamente próximas.
+
+✅ Loss de validação controlada.
+
+✅ Accuracy de validação estável.
+
+✅ Generalização confirmada pelo conjunto de teste.
+
+ Conclusão
+
+Os gráficos indicam ausência de overfitting severo. Existe uma diferença moderada entre treino e validação, esperada para datasets pequenos e desbalanceados, mas o comportamento geral das curvas sugere que o modelo manteve capacidade de generalização para dados não vistos.
+
 
 * Curva AUC / ROC
 ![[Captura de tela 2026-06-09 151314.png]]
+
+
+ AUC por Classe
+
+|Classe|AUC|
+|---|---|
+|Background|1.00|
+|Diabetic|0.83|
+|Normal|1.00|
+|Pressure|0.7|
+
+
+ 📌 Resultado Final do Experimento
+
+|Métrica|Valor|
+|---|---|
+|Accuracy|71%|
+|Macro F1|0.69|
+|Weighted F1|0.69|
+|Melhor Classe|Normal|
+|Classe Mais Difícil|Pressure|
+|Principal Confusão|Pressure → Diabetic|
+|Overfitting Severo|Não observado|
+|Data Leakage|Não observado|
