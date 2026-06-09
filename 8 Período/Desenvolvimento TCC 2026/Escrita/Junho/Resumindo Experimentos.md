@@ -893,7 +893,7 @@ A imagem de saída do Grad-CAM exibe quatro amostras representativas corresponde
 
 *  Elabora duas cópias do Notebook em escala cinza e aplicar as técnicas Edge Canvy e CLAHE e comprar os resultados obtidos.  
 
-
+<HTML>
 <p align="center"> <img src="[https://github.com/suzanasvm/SetBike/blob/master/esquematico-arduino.png](https://github.com/suzanasvm/SetBike/blob/master/esquematico-arduino.png)"> </p>
-
+</HTML> 
 
