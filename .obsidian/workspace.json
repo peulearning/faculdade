@@ -121,7 +121,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.50418853759766
+    "width": 343.50418853759766,
+    "collapsed": true
   },
   "right": {
     "id": "a3a788e0072b571c",
@@ -225,9 +226,10 @@
   },
   "active": "5d3e301110b8fa6d",
   "lastOpenFiles": [
-    "Pasted image 20260610132854.png",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 09-06.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 06-05 Felipe.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 08-06 Pipeline2.md",
+    "Pasted image 20260610132854.png",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Considerações 20-05 Suzana.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 06-05 Suzane.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Roteiro para Reunião 05-06.md",
@@ -240,7 +242,6 @@
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 23-04 Karine.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 17-04 Karine.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 27-04 ( Felipe, Suzana, Karine).md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 08-06 Pipeline2.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 08-06.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumo What as done 01-06.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumindo Experimentos.md",
@@ -253,7 +254,6 @@
     "Prints/Pasted image 20250929161121.png",
     "Prints/Pasted image 20251010154906.png",
     "Prints/Pasted image 20250929161053.png",
-    "Prints/Pasted image 20250929160837.png",
     "Prints/Ferramentas de Pesquisa Científica.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Reunião 15-08.md",
     "8 Período/Desenvolvimento TCC 2025/Reunião Agosto/Seg 03-08.md",
