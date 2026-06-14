@@ -1,4 +1,4 @@
-# 📔 Registro de Reunião e Pesquisa: Visão Computacional (13/05)
+a# 📔 Registro de Reunião e Pesquisa: Visão Computacional (13/05)
 
 
 ``` 

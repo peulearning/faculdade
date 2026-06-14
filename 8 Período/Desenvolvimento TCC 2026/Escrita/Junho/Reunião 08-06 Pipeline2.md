@@ -10,7 +10,7 @@ Para a próxima discussão, é necessário derivar o notebook principal em duas 
         
     - Treinar o modelo com esses dados e extrair métricas.
         
-- [ ] **Notebook 2: CLAHE (Contrast Limited Adaptive Histogram Equalization)**
+- [x] **Notebook 2: CLAHE (Contrast Limited Adaptive Histogram Equalization)**
     
     - Converter imagens para tons de cinza.
         
@@ -18,7 +18,7 @@ Para a próxima discussão, é necessário derivar o notebook principal em duas 
         
     - Treinar o modelo com esses dados e extrair métricas.
         
-- [ ] **Comparativo Final:** Montar um quadro comparativo dos resultados do Canny e do CLAHE contra a _baseline_ original (RGB sem filtros).
+- [x] **Comparativo Final:** Montar um quadro comparativo dos resultados do Canny e do CLAHE contra a _baseline_ original (RGB sem filtros).
 
 
 
