@@ -49,9 +49,9 @@ Olhando os números da classe `pressure`:
 
 ## 🧪 Meu Plano de Ação Experimental
 Antes de alterar toda a arquitetura, farei os seguintes diagnósticos:
-- [ ] **Matriz de Confusão detalhada:** Com quais classes a Úlcera por Pressão está se confundindo? Isso vai me dizer se o problema é proximidade visual ou viés do dataset.
-- [ ] **Análise Visual com Grad-CAM nos Erros:** Pegar as imagens de Pressão que o modelo errou e plotar o Grad-CAM delas para ver o foco exato do erro.
-- [ ] **Revisão do Pipeline de Augmentation:** Como removi a variação de brilho do treinamento apenas no momento da execução (o que já subiu o modelo em 2%), preciso garantir que o corte (crop) ou o redimensionamento não estejam cortando a borda da ferida por pressão, já que a localização anatômica é crucial.
+- [x] **Matriz de Confusão detalhada:** Com quais classes a Úlcera por Pressão está se confundindo? Isso vai me dizer se o problema é proximidade visual ou viés do dataset.
+- [x] **Análise Visual com Grad-CAM nos Erros:** Pegar as imagens de Pressão que o modelo errou e plotar o Grad-CAM delas para ver o foco exato do erro.
+- [x] **Revisão do Pipeline de Augmentation:** Como removi a variação de brilho do treinamento apenas no momento da execução (o que já subiu o modelo em 2%), preciso garantir que o corte (crop) ou o redimensionamento não estejam cortando a borda da ferida por pressão, já que a localização anatômica é crucial.
 
 ---
 
