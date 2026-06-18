@@ -47,8 +47,8 @@ Para monitorar possíveis sinais de overfitting foram utilizadas:
 
 - Curvas de Accuracy de Treino e Validação;
 - Curvas de Loss de Treino e Validação;
-- EarlyStopping;
-- ReduceLROnPlateau;
+- EarlyStopping;  
+- ReduceLROnPlateau; 
 - Avaliação final utilizando conjunto de teste isolado.
 
  #Resultado Observado
@@ -64,7 +64,8 @@ Apesar da diferença entre as curvas, a perda de validação permaneceu relativa
 Não foram observados comportamentos típicos de overfitting severo, como:
 
 ```
-Train Loss ↓↓↓Validation Loss ↑↑↑
+Train Loss ↓↓↓
+Validation Loss ↑↑↑
 ```
 
 ou
@@ -87,7 +88,9 @@ A orientação de separar completamente os conjuntos de treino, validação e te
 O fluxo executado foi:
 
 ```
-Dataset Original        ↓Dataset Mestre        ↓Novo Split(train / validation / test)        ↓Data Augmentation apenas no treino
+Dataset Original       
+ ↓
+ Dataset Mestre        ↓Novo Split(train / validation / test)        ↓Data Augmentation apenas no treino
 ```
 
  Configuração utilizada

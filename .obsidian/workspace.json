@@ -8,17 +8,31 @@
         "type": "tabs",
         "children": [
           {
+            "id": "56276c44b5381aeb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 17-06.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Reunião 17-06"
+            }
+          },
+          {
             "id": "ff7acfd1031d6305",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Datasets.md",
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 08-06.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Datasets"
+              "title": "Reunião 08-06"
             }
           }
         ]
@@ -78,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.50418853759766,
+    "width": 283.5124969482422,
     "collapsed": true
   },
   "right": {
@@ -181,44 +195,43 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ff7acfd1031d6305",
+  "active": "56276c44b5381aeb",
   "lastOpenFiles": [
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Como otimizar o modelo.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 10-06.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 08-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 17-06.md",
+    "Pasted image 20260618002244.png",
+    "Pasted image 20260618002207.png",
+    "Pasted image 20260618002148.png",
+    "Pasted image 20260618002106.png",
+    "Pasted image 20260618001949.png",
+    "Pasted image 20260618001934.png",
+    "Pasted image 20260618001907.png",
+    "Pasted image 20260618000240.png",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Datasets.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumo What as done 01-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumindo Experimentos.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Remover Tunnig - Diminuir Camadas.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Oque eu testei pra otimizar.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Como otimizar o modelo.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Explicação dos Parâmetros.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 10-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 08-06 Pipeline2.md",
     "Fichamentos/LLMs-Healthcare.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Literatura.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Experimento Comparativo dos Modelos.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Considerações 20-05 Suzana.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Datasets.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 08-06 Pipeline2.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 09-06.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Roteiro para Reunião 05-06.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Oque eu testei pra otimizar.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumindo Experimentos.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Remover Tunnig - Diminuir Camadas.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Explicação dos Parâmetros.md",
     "Pasted image 20260616185313.png",
     "Pasted image 20260616185256.png",
-    "Pasted image 20260616185241.png",
-    "Pasted image 20260616185234.png",
-    "Pasted image 20260615234209.png",
     "21 7] [ 7 14.md",
     "8 Período/Avaliação SASI.md",
     "8 Período/Segurança e Auditoria de Sistemas de Informação.md",
     "8 Período/Sistemas de Apoio à Decisão.md",
-    "Captura de tela 2026-05-12 190330.png",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumo What as done 01-06.md",
-    "Pasted image 20260614192428.png",
-    "Pasted image 20260614192403.png",
-    "Pasted image 20260614192354.png",
-    "Pasted image 20260614192337.png",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 06-05 Felipe.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 13-05 Felipe.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 06-05 Suzane.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Reunião 15-05.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos/Programa de Pós Graduação e Modelagem Computacional.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Reunião 01-04.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho",
     "App-Mobile",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Sem título/desktop.ini",
