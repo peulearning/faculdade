@@ -50,7 +50,7 @@ Em resumo, em **detecção/classificação de feridas com poucos dados**, compa
 ---
 
 
-Notebook Arquitetura Sequencial : 
+## 💻 Notebook Arquitetura Sequencial 2 Classes   
 
 
 [2 _Classes_RefazendoSPLIT_Archiceture Sequencial 2 Classes Modify.ipynb - Colab](https://colab.research.google.com/drive/1C-WqnyNu1Gk0EGBdW9Mqw_dTXQhBLITW#scrollTo=W-DbAX6dwwHZ) 
@@ -88,4 +88,94 @@ Notebook Arquitetura Sequencial :
 * Grad-cam Bem Classificadas 
 
 ![[Pasted image 20260622153248.png]]
+
+
+
+
+## 💻 Notebook Arquitetura Sequencial 4 Classes 
+
+[notebooks_tcc/4__Classes_RefazendoSPLIT_Archiceture_Sequencial_4_Classes_Modify.ipynb at main · peulearning/notebooks_tcc](https://github.com/peulearning/notebooks_tcc/blob/main/4__Classes_RefazendoSPLIT_Archiceture_Sequencial_4_Classes_Modify.ipynb)
+
+
+[4 _Classes_RefazendoSPLIT_Archiceture Sequencial 4 Classes Modify.ipynb - Colab](https://colab.research.google.com/drive/1afoOXXJDqOxUtXTwBIO3JjAfc9f4vSTR#scrollTo=rJNPHl8nmXZ9)
+
+
+
+* Sumário 
+
+![[Pasted image 20260622165251.png]]
+
+
+* Treinamento
+
+![[Pasted image 20260622180031.png]]
+
+
+* Acurácia / Perca
+
+![[Pasted image 20260622180044.png]]
+
+* Matriz de Confusão
+![[Pasted image 20260622180100.png]]
+
+* Curva ROC
+
+![[Pasted image 20260622191046.png]]
+
+
+* Grad-cam Mal-Classificados
+
+![[Pasted image 20260622222303.png]]
+
+ * Grad-cam Bem-Classificados
+
+![[Pasted image 20260622222318.png]]
+
+
+
+---
+
+## 💻 Notebook Arquitetura Sequencial 6 Classes 
+
+
+[notebooks_tcc/6__Classes_RefazendoSPLIT_Archiceture_Sequencial_Classes_Modify.ipynb at main · peulearning/notebooks_tcc](https://github.com/peulearning/notebooks_tcc/blob/main/6__Classes_RefazendoSPLIT_Archiceture_Sequencial_Classes_Modify.ipynb)
+
+
+[6 _Classes_RefazendoSPLIT_Archiceture Sequencial Classes Modify.ipynb - Colab](https://colab.research.google.com/drive/1d84YQPFd8VO_mh8uzffeMRTeALQ9V-a4)
+
+
+
+* Súmario
+
+![[Pasted image 20260622234543.png]]
+
+
+* Treinamento
+
+![[Pasted image 20260622234604.png]]
+
+* Acurácia Treinamento / Perca
+
+![[Pasted image 20260622234734.png]]
+
+
+* Matriz de Confusão
+
+![[Pasted image 20260622234806.png]]
+
+
+* Curva ROC
+
+![[Pasted image 20260622234821.png]]
+
+
+---
+
+
+## 💻 Notebook Arquitetura Sequencial 3 Classes 
+
+
+--- 
+
+## 💻 Notebook Arquitetura MobileNetV2 6 Classes
 
