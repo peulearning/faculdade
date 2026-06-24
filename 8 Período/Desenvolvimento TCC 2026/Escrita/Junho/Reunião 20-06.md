@@ -179,3 +179,98 @@ Em resumo, em **detecção/classificação de feridas com poucos dados**, compa
 
 ## 💻 Notebook Arquitetura MobileNetV2 6 Classes
 
+
+
+[RF_FT_6_Classes_Refazendo Split DatasetOriginal Archictecture MobileNetV2 Modify Grad-Cam Apply .ipynb - Colab](https://colab.research.google.com/drive/18THE0ZNAsxZIm1VLCF-t2JH2gEvMYbor#scrollTo=CuhRF5_hGX4M)
+
+
+
+
+* Sumário 
+
+![[Pasted image 20260623124504.png]]
+
+
+* Treinamento 
+
+	![[Pasted image 20260623124434.png]]
+
+* Matriz de Confusão
+
+	![[Pasted image 20260623124517.png]]
+![[Pasted image 20260623124602.png]]
+
+
+* Acurácia  / Perda 
+
+![[Pasted image 20260623124529.png]]
+
+
+*  Curva ROC
+
+![[Pasted image 20260623124548.png]]
+
+
+
+
+
+----
+
+## Tabela 1 – Comparação Geral dos Modelos
+
+|Métrica|Arquitetura Sequencial|MobileNetV2|Diferença|
+|---|---|---|---|
+|Accuracy|0,59 (59%)|**0,73 (73%)**|+14 p.p.|
+|Precision Macro Avg|0,57|**0,77**|+0,20|
+|Recall Macro Avg|0,61|**0,73**|+0,12|
+|F1-Score Macro Avg|0,58|**0,74**|+0,16|
+|Precision Weighted Avg|0,58|**0,73**|+0,15|
+|Recall Weighted Avg|0,59|**0,73**|+0,14|
+|F1-Score Weighted Avg|0,58|**0,73**|+0,15|
+
+---
+
+## Tabela 2 – Comparação por Classe (F1-Score)
+
+|Classe|Arquitetura Sequencial|MobileNetV2|Ganho|
+|---|---|---|---|
+|Background|0,60|**0,86**|+0,26|
+|Diabetic|0,62|**0,68**|+0,06|
+|Normal|0,81|**0,94**|+0,13|
+|Pressure|0,36|**0,56**|+0,20|
+|Sirurgical|0,45|**0,58**|+0,13|
+|Venous|0,66|**0,85**|+0,19|
+
+---
+
+## Tabela 3 – Precisão (Precision) por Classe
+
+|Classe|Arquitetura Sequencial|MobileNetV2|
+|---|---|---|
+|Background|0,50|**1,00**|
+|Diabetic|0,67|**0,72**|
+|Normal|0,76|**0,88**|
+|Pressure|0,39|**0,55**|
+|Sirurgical|0,53|**0,65**|
+|Venous|0,60|**0,80**|
+
+---
+
+## Tabela 4 – Recall por Classe
+
+|Classe|Arquitetura Sequencial|MobileNetV2|
+|---|---|---|
+|Background|0,75|0,75|
+|Diabetic|0,57|**0,64**|
+|Normal|0,87|**1,00**|
+|Pressure|0,33|**0,57**|
+|Sirurgical|0,40|**0,52**|
+|Venous|0,74|**0,92**|
+
+A comparação entre os modelos demonstra superioridade da arquitetura MobileNetV2 em todas as métricas avaliadas. A acurácia global aumentou de 59% para 73%, representando um ganho absoluto de 14 pontos percentuais. Da mesma forma, os valores de Precision, Recall e F1-Score médios apresentaram melhorias consistentes, indicando maior capacidade de generalização do modelo baseado em aprendizado por transferência.
+
+A análise por classe evidencia que os maiores ganhos ocorreram nas classes _Background_ (+26 pontos no F1-Score), _Pressure_ (+20 pontos) e _Venous_ (+19 pontos). Esses resultados sugerem que a MobileNetV2 foi capaz de extrair características mais discriminativas das imagens, reduzindo erros de classificação observados na arquitetura sequencial.
+
+A classe _Normal_ apresentou o melhor desempenho entre todas as categorias, alcançando F1-Score de 94% e Recall de 100%, demonstrando excelente capacidade de identificação pelo modelo. Por outro lado, as classes _Pressure_ e _Sirurgical_ permaneceram como as mais desafiadoras, embora tenham apresentado melhorias consideráveis em relação à arquitetura sequencial.
+
+De forma geral, os resultados confirmam que a utilização da MobileNetV2 como modelo pré-treinado proporcionou uma representação mais robusta das características visuais das feridas, resultando em melhor desempenho de classificação quando comparada à arquitetura convolucional construída do zero.

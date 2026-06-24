@@ -13,12 +13,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 20-06.md",
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 23-06.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reunião 20-06"
+              "title": "Reunião 23-06"
+            }
+          },
+          {
+            "id": "4634052797a89591",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 17-06.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Reunião 17-06"
+            }
+          },
+          {
+            "id": "97b50b320742cad5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 10-06.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Reunião 10-06"
             }
           }
         ]
@@ -183,19 +211,20 @@
   },
   "active": "56276c44b5381aeb",
   "lastOpenFiles": [
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 20-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 23-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 10-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 17-06.md",
+    "Pasted image 20260623124602.png",
+    "Pasted image 20260623124548.png",
+    "Pasted image 20260623124529.png",
+    "Pasted image 20260623124517.png",
+    "Pasted image 20260623124504.png",
+    "Pasted image 20260623124434.png",
     "Pasted image 20260622234821.png",
     "Pasted image 20260622234806.png",
     "Pasted image 20260622234734.png",
     "Pasted image 20260622234604.png",
-    "Pasted image 20260622234543.png",
-    "Pasted image 20260622222318.png",
-    "Pasted image 20260622222303.png",
-    "Pasted image 20260622191046.png",
-    "Pasted image 20260622180100.png",
-    "Pasted image 20260622180044.png",
-    "Pasted image 20260622180031.png",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 17-06.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 20-06.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 08-06.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Datasets.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Resumo What as done 01-06.md",
@@ -204,7 +233,6 @@
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Oque eu testei pra otimizar.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Como otimizar o modelo.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Explicação dos Parâmetros.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 10-06.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 08-06 Pipeline2.md",
     "Fichamentos/LLMs-Healthcare.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Março/Literatura.md",
