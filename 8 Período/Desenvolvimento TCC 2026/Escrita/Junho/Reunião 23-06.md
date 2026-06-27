@@ -24,6 +24,8 @@
 
 ## Resposta da Anomalia  📚
 
+Com Fine Tunning 4 Classes  [4_Classes_Refazendo Split DatasetOriginal Archictecture MobileNetV2 Modify Grad-Cam Apply .ipynb - Colab](https://colab.research.google.com/drive/1194PdVXnJdZDFcPZAJlS4OZo4P5wOUyu#scrollTo=h0HmlC1ZmHnr) 
+
 ![[Pasted image 20260624181913.png]]
 
 
@@ -31,6 +33,14 @@
 ![[Pasted image 20260624181900.png]]
 
 
+
+Sem Fine Tunning 4 Classes  [Cópia de RF_FT_4_Classes_Refazendo Split DatasetOriginal Archictecture MobileNetV2 Modify Grad-Cam Apply .ipynb - Colab](https://colab.research.google.com/drive/1NWSBfrQDf4JZSDahWIudGHKbDCv-lpXl#scrollTo=yqNWmkf9H0mK)
+
+
+![[Pasted image 20260625195904.png]]
+
+
+![[Pasted image 20260625200000.png]]
 
 Ao Analisar os gráficos e os logs de época lado a lado revela que o que ocorreu aqui não é exatamente o que a literatura define como _Catastrophic Forgetting_, mas sim uma combinação de dois outros fenômenos muito bem documentados em Deep Learning: **Destruição de Representação (Representation Destruction)** e **Deslocamento Induzido por Augmentation (Augmentation-Induced Shift)**.
 
@@ -218,4 +228,193 @@ Ao decidir utilizar apenas a estratégia Treino / Teste (ex: 80/20 ou 85/15), a 
 
 > _"Diferente de grandes bancos de dados (como a ImageNet), a escassez inerente de imagens clínicas neste escopo impõe limitações estatísticas severas. O uso da divisão convencional tripla (Treinamento, Validação e Teste) foi descartado, pois, de acordo com Dobbin & Simon (2011) e a Lei de Escala de Guyon (1997), fracionar excessivamente bases restritas induz à privação de dados (data starvation), impedindo a convergência dos gradientes do modelo. Ademais, partições de validação diminutas geram alta variância nas métricas de avaliação durante o treinamento, mascarando a real capacidade de generalização da arquitetura (Vabalas et al., 2019). Portanto, optou-se por uma estratégia de divisão do tipo Hold-out consolidado (Treinamento e Teste), aplicando-se rigorosamente o particionamento estratificado recomendado por Kohavi (1995), o que garante a representatividade espacial idêntica das 4 classes tanto no ajuste dos pesos quanto na avaliação final das métricas de desempenho."_
 
+
+---
+
+## 🧬 Resposta  aos Ajustes no Código
+
+### 1. Baseline sem Fine-Tuning (Ajustes no Modelo Base)
+
+Como o seu modelo é uma CNN Sequencial construída do zero (utilizando camadas `Conv2D`, `MaxPooling2D`, `Flatten` e `Dense`), o conceito clássico de _fine-tuning_ (congelar/descongelar camadas de um modelo pré-treinado) não se aplica diretamente. Qualquer "ajuste" no modelo base envolverá a alteração direta da sua arquitetura e hiperparâmetros.
+
+- **Necessidade de ajuste:** Sim, é altamente recomendável ajustar os parâmetros base. Como você está lidando com um problema de visão computacional na área médica, a arquitetura inicial pode ser "simples demais" para capturar as nuances entre diferentes tipos de lesões. Você precisará iterar sobre o número de camadas convolucionais, a quantidade de filtros e as taxas de _Dropout_ para encontrar o equilíbrio ideal entre _underfitting_ e _overfitting_.
+
+### 2. Adição de Novas Classes (Cirúrgicas e Venosas)
+
+A inclusão destas duas novas classes (aumentando a complexidade do problema) exigirá as seguintes modificações obrigatórias:
+
+- **Refatoração da Arquitetura (Camada de Saída):** A mudança mais crítica é na última camada `Dense` da sua rede. O número de neurônios desta camada deve ser alterado para corresponder ao novo número total de classes (por exemplo, se antes eram 4, agora devem ser 6), mantendo a função de ativação `softmax` para classificação multiclasse. ✅
+    
+- **Capacidade da Rede:** Ao adicionar mais classes, a fronteira de decisão do modelo se torna mais complexa. É provável que você precise adicionar mais camadas `Conv2D` ou aumentar o número de filtros (ex: passar de 32 $\rightarrow$ 64 $\rightarrow$ 128) para garantir que a rede tenha capacidade de aprendizado suficiente para distinguir 6 categorias.
+    
+- **Balanceamento:** Como visto nos logs do notebook, a classe `venous` possui 247 imagens e a `sirurgical` 164. Será crucial garantir que essas classes não desbalanceiem o treinamento em relação às classes com menos imagens (como `normal` que possui 100).
+    
+
+### 3. Ajuste Fino por Tipo de Ferida (Características Visuais)
+
+As feridas cirúrgicas e venosas possuem padrões visuais muito distintos:
+
+- **Feridas Cirúrgicas:** Geralmente apresentam bordas retas, incisões limpas, presença de suturas (pontos) e formatos mais lineares.
+    
+- **Feridas Venosas:** Costumam ter bordas irregulares, leito raso, exsudato, e estão frequentemente associadas a alterações de cor na pele ao redor (dermatite ocre, hiperpigmentação).
+    
+
+Para que a rede Sequencial aprenda essas distinções, as seguintes adequações são sugeridas:
+
+**A. Parâmetros da Rede:**
+
+- **Tamanho do Kernel (Filtros):** Para capturar características finas e lineares (como suturas de feridas cirúrgicas), filtros menores como `(3, 3)` são eficientes. Você pode até experimentar uma camada inicial com kernel `(5, 5)` para capturar padrões mais amplos e de cor nas feridas venosas.
+    
+
+**B. Hiperparâmetros de Treinamento:**
+
+- **Taxa de Aprendizado (Learning Rate):** Com um problema mais complexo, a rede pode ter dificuldade em convergir. O uso de _callbacks_ como o `ReduceLROnPlateau` (que já parece estar diminuindo a taxa nos seus logs, passando de `2.0000e-04` para `4.0000e-05`) é essencial para refinar os pesos nas épocas finais.
+    
+- **Épocas (Epochs):** O treinamento atual está configurado para 25 épocas. Com a adição de novas classes, a rede precisará de mais tempo para aprender. Considere aumentar as épocas (ex: 50 a 100) utilizando o _callback_ `EarlyStopping` para interromper o treinamento caso a rede comece a decorar os dados (_overfitting_).
+    
+
+**C. Estratégias de Data Augmentation:**
+
+Para garantir que o modelo generalize bem as novas classes, reforce o gerador de dados (_train_generator_):
+
+- **Rotação e Espelhamento (`rotation_range`, `horizontal_flip`, `vertical_flip`):** Extremamente úteis para feridas venosas, que não possuem uma orientação "certa" (podem ser vistas de qualquer ângulo).
+    
+- **Variação de Brilho e Contraste (`brightness_range`):** Importante para feridas cirúrgicas, cujas fotos muitas vezes são tiradas em ambientes hospitalares com iluminação forte (como luzes de centro cirúrgico), ajudando o modelo a não se confundir com os reflexos na pele.
+    
+- **Zoom (`zoom_range`):** Ajuda a focar nos detalhes internos da ferida (como o tipo de tecido ou a presença de suturas), isolando o fundo (background).
+
+
+--- 
+
+## Códigos a serem Aplicados 6 Classes Sequencial
+
+
+### 1. Atualização do _Data Augmentation_ (Aumentação de Dados)
+
+Este código ajusta o `ImageDataGenerator` para incluir variações de brilho, zoom e rotações, que são cruciais para as feridas cirúrgicas e venosas.
+
+Python
+
+```
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+# Configuração do gerador para os dados de treino com as novas estratégias
+train_datagen = ImageDataGenerator(
+    rescale=1./255,                 # Normalização
+    rotation_range=40,              # Útil para feridas venosas (sem orientação fixa)
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    shear_range=0.2,
+    zoom_range=0.3,                 # Foco nos detalhes internos (suturas, tecidos)
+    horizontal_flip=True,           # Espelhamento horizontal
+    vertical_flip=True,             # Espelhamento vertical
+    brightness_range=[0.8, 1.2],    # Variação de brilho (simula diferentes iluminações cirúrgicas/clínicas)
+    fill_mode='nearest'
+)
+
+# Para validação e teste, aplicamos APENAS a normalização
+val_datagen = ImageDataGenerator(rescale=1./255)
+
+# Exemplo de criação dos geradores (ajuste o 'target_size' e o 'batch_size' conforme o seu código original)
+train_generator = train_datagen.flow_from_directory(
+    'caminho/para/diretorio/train', # Substitua pelo seu caminho de treino
+    target_size=(224, 224),
+    batch_size=32,
+    class_mode='categorical'        # Importante para multiclasse
+)
+
+validation_generator = val_datagen.flow_from_directory(
+    'caminho/para/diretorio/val',   # Substitua pelo seu caminho de validação
+    target_size=(224, 224),
+    batch_size=32,
+    class_mode='categorical'
+)
+```
+
+### 2. Refatoração da Arquitetura Sequencial (Modelo Base e Novas Classes)
+
+Nesta etapa, adicionamos mais capacidade à rede (mais filtros) e atualizamos a camada de saída para 6 classes (assumindo que passou de 4 para 6 ao adicionar as feridas cirúrgicas e venosas).
+
+Python
+
+```
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+
+# Definição da Arquitetura da CNN
+model = Sequential([
+    # 1ª Camada Convolucional: Kernel (3,3) para captar padrões finos iniciais
+    Conv2D(32, (3, 3), activation='relu', input_shape=(224, 224, 3)),
+    MaxPooling2D(pool_size=(2, 2)),
+    
+    # 2ª Camada Convolucional: Aumento progressivo de filtros
+    Conv2D(64, (3, 3), activation='relu'),
+    MaxPooling2D(pool_size=(2, 2)),
+    
+    # 3ª Camada Convolucional: Extração de características mais complexas
+    Conv2D(128, (3, 3), activation='relu'),
+    MaxPooling2D(pool_size=(2, 2)),
+    
+    # 4ª Camada Convolucional (Opcional, mas recomendada para 6 classes)
+    Conv2D(128, (3, 3), activation='relu'),
+    MaxPooling2D(pool_size=(2, 2)),
+    
+    Flatten(),
+    
+    # Camada Oculta Densa
+    Dense(256, activation='relu'),
+    Dropout(0.5),  # Dropout de 50% para mitigar o overfitting
+    
+    # Camada de Saída: Substituir o valor '6' pelo número exato de classes finais no seu dataset
+    Dense(6, activation='softmax') # Softmax garante probabilidades para cada classe
+])
+
+model.summary()
+```
+
+### 3. Hiperparâmetros de Treino e _Callbacks_
+
+Aqui adicionamos os controlos de _EarlyStopping_ e _ReduceLROnPlateau_ para otimizar o treino e evitar que o modelo decore os dados (overfitting), permitindo treinar por mais épocas.
+
+Python
+
+```
+from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
+from tensorflow.keras.optimizers import Adam
+
+# Callbacks
+early_stopping = EarlyStopping(
+    monitor='val_loss', 
+    patience=10,                 # Espera 10 épocas sem melhoria antes de parar
+    restore_best_weights=True    # Restaura os pesos da melhor época
+)
+
+reduce_lr = ReduceLROnPlateau(
+    monitor='val_loss', 
+    factor=0.2,                  # Reduz a taxa de aprendizagem a 20% do valor atual
+    patience=5,                  # Se em 5 épocas não melhorar, reduz a taxa
+    min_lr=1e-6                  # Limite mínimo da taxa de aprendizagem
+)
+
+# Compilação do modelo
+model.compile(
+    optimizer=Adam(learning_rate=0.001), # Taxa de aprendizagem inicial
+    loss='categorical_crossentropy',     # Função de perda para problemas multiclasse
+    metrics=['accuracy']
+)
+
+# Treino do modelo (aumentando as épocas para permitir a convergência)
+history = model.fit(
+    train_generator,
+    epochs=50,                           # Como temos EarlyStopping, podemos aumentar as épocas com segurança
+    validation_data=validation_generator,
+    callbacks=[early_stopping, reduce_lr]
+)
+```
+
+
+---
+
+
+## Códigos a serem Aplicados 6 Classes MobileNetV2 
 
