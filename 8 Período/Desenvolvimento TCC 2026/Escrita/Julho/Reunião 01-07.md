@@ -8,14 +8,14 @@
 
 *Modificações focadas apenas na divisão dos dados e remoção de classes.*
 
-- [ ] **[[Exp 01 - Avaliação de Splits (Sem Validação)]]**
+- [x] **[[Exp 01 - Avaliação de Splits (Sem Validação)]]**
   - Remover conjunto de validação, focando apenas em Treino e Teste.
   - Avaliar o desempenho do modelo nas proporções:
-    - [ ] 70 / 30
-    - [ ] 80 / 20
-    - [ ] 75 / 25
+    - [x] 70 / 30
+    - [x] 80 / 20
+    - [x] 75 / 25
 
-- [ ] **[[Exp 02 - Redução para 5 Classes]]**
+- [x] **[[Exp 02 - Redução para 5 Classes]]**
   - Remover a classe de feridas **Cirúrgicas** do dataset.
   - Executar treinamento e comparar métricas com o baseline anterior.
 
@@ -25,7 +25,7 @@
 
 *Modificações no pipeline para adaptar as lógicas das feridas Cirúrgicas e por Pressão.*
 
-- [ ] **[[Exp 03 - Avaliação Completa com 6 Classes]]**
+- [x] **[[Exp 03 - Avaliação Completa com 6 Classes]]**
   - Reintegrar e adaptar as classes usando o código abaixo.
 
 ```
