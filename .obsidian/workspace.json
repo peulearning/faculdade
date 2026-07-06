@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Reunião 01-07.md",
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/80-20.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reunião 01-07"
+              "title": "80-20"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.50418853759766
+    "width": 244.50418853759766,
+    "collapsed": true
   },
   "right": {
     "id": "a3a788e0072b571c",
@@ -182,9 +183,12 @@
   },
   "active": "c4d2cedb5daf529f",
   "lastOpenFiles": [
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/70-30.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/75-25.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Reunião 01-07.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/6 Classes/80-20.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/70-30.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Reunião 01-07.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/6 Classes/75-25.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/6 Classes/70-30.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/SemTunning/5 Classes/70-30.md",
@@ -200,7 +204,6 @@
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/Tunning/5 Classes/70-30.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/SemTunning/5 Classes/75-25.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/SemTunning/5 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/75-25.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/75-25.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/80-20.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/Alteração Split.md",
@@ -208,8 +211,6 @@
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/75-25.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/70-30.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Comparativos/MobileNetV2/4 Classes/Prints/SemFineTunning/Prova.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/Alteração Split.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/2 Classes/Notebook.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 04/Tunnig",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 04/SemTunning",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/SemTunning",
