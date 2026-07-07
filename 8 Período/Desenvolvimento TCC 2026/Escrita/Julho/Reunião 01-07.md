@@ -75,3 +75,12 @@ model = models.Model(inputs, outputs)
   - Adicionar novas amostras de background.
   - Adicionar novas amostras da classe Normal.
   - Reavaliar o balanceamento geral das classes antes de treinar.
+
+
+---
+
+## 🔎 Fase 4: Expansão do Dataset
+
+- [ ] **[[Exp 05 - 4 Classes Removendo "Pressure" Adicionando "Venous"]]**
+  - Condição: Executar e analisar os resultados 
+  - Avaliar Treino e Teste e Treino , Validação e Teste.
