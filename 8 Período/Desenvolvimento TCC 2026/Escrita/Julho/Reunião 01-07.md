@@ -81,6 +81,6 @@ model = models.Model(inputs, outputs)
 
 ## 🔎 Fase 4: Expansão do Dataset
 
-- [ ] **[[Exp 05 - 4 Classes Removendo "Pressure" Adicionando "Venous"]]**
+- [x] **[[Exp 05 - 4 Classes Removendo "Pressure" Adicionando "Venous"]]**
   - Condição: Executar e analisar os resultados 
   - Avaliar Treino e Teste e Treino , Validação e Teste.
