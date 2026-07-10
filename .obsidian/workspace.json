@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1cd0503ac458a9c0",
+        "id": "b580ca5cdda2a3b6",
         "type": "tabs",
         "children": [
           {
-            "id": "c358a7adc395ab52",
+            "id": "6a45b5de64a3744b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/Resultados/80-20.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "80-20"
+              "title": "Nova aba"
             }
           }
         ]
@@ -180,27 +176,40 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c358a7adc395ab52",
+  "active": "84fdbe6bada7bb76",
   "lastOpenFiles": [
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/Resultados/75-25.md",
-    "Pasted image 20260710110028.png",
-    "Pasted image 20260710110000.png",
-    "Pasted image 20260710105943.png",
-    "Pasted image 20260710105930.png",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/Resultados/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/Resultados/70-30.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/Resultados/75-25.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/70-30.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/Resultados/75-25.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/Resultados/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/75-25.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/Resultados/70-30.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/75-25.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/Resultados",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/70-30.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/Resultados/80-20.md",
-    "Pasted image 20260710072458.png",
-    "Pasted image 20260710072449.png",
-    "Pasted image 20260710072437.png",
-    "Pasted image 20260710072428.png",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/Resultados/75-25.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/Resultados/70-30.md",
+    "Prints/Captura de tela 2026-05-12 190330.png",
+    "Prints/Pasted image 20260329152427.png",
+    "Prints/Pasted image 20260322114010.png",
+    "Prints/Pasted image 20260320214543.png",
+    "Prints/Pasted image 20260316141357.png",
+    "Prints/Pasted image 20260202130939.png",
+    "Prints/Pasted image 20251215172701.png",
+    "Prints/Pasted image 20251127155916.png",
+    "Prints/Pasted image 20251127125102.png",
+    "Prints/Pasted image 20251127124148.png",
+    "Infraestrura (  Docker & Traefik ).md",
+    "Command Code.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/Resultados",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/80-20.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/75-25.md",
-    "Pasted image 20260710055642.png",
-    "Pasted image 20260710055619.png",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/70-30.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/Resultados",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/75-25.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Reunião 01-07.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/2 Classes/Notebook.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Reunião 08-07.md",
@@ -208,24 +217,12 @@
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Tunning/4 Classes/75-25.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Tunning/4 Classes/70-30.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Tunning/4 Classes/70-15-15.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes/75-25.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes/70-30.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes/70-15-15.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 04/SemTunning/5 Classes.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 04/SemTunning/4 Classes.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 04/SemTunning/2 Classes.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/SemTunning/6 Classes/70-15-15.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/Tunning/6 Classes/70-15-15.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/75-25.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Tunning/4 Classes",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4/Sem título",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Tunning",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/Tunning/6 Classes",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/SemTunning/6 Classes",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 04/Tunnig"
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/Tunning/6 Classes"
   ]
 }
