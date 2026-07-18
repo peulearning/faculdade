@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/SemTunning/6 Classes/80-20.md",
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article/Metodologia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "80-20"
+              "title": "Metodologia"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5124969482422,
-    "collapsed": true
+    "width": 349.5124969482422
   },
   "right": {
     "id": "a3a788e0072b571c",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Abril/Eventos/XX MOSTRA CIENTÍFICA DE ENFERMAGEM.md",
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article/Metodologia.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para XX MOSTRA CIENTÍFICA DE ENFERMAGEM"
+              "title": "Links inversos para Metodologia"
             }
           },
           {
@@ -158,8 +157,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           }
         ]
@@ -177,12 +176,16 @@
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Criar nova base": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "bases:Criar nova base": false
     }
   },
   "active": "78ea1f43e7777f94",
   "lastOpenFiles": [
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article/Introdução.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article/Metodologia.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/SemTunning/6 Classes/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article/Sem título",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Reunião 08-07.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Reunião 01-07.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Reunião 10-07.md",
@@ -190,7 +193,6 @@
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/SemTunning/5 Classes/70-15-15.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/SemTunning/5 Classes/80-20.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/Tunning/5 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/SemTunning/6 Classes/80-20.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/Tunning/6 Classes/80-20.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/6 Classes/80-20.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/80-20.md",
@@ -207,8 +209,6 @@
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/75-25.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes/75-25.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes/70-30.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Tunning/4 Classes/75-25.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/75-25.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Comparativos/Exp06",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Comparativos",
     "Livros/Estat e prob.pdf",
@@ -217,8 +217,6 @@
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/Tunning/5 Classes/Resultados",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Tunning/4 Classes/Resultados",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes/Resultados",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/SemTunning/5 Classes/Resultados",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/6 Classes/Resultados",
     "Prints/Captura de tela 2026-05-12 190330.png",
     "Prints/Pasted image 20260329152427.png",
     "Prints/Pasted image 20260322114010.png",
