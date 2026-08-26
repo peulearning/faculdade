@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d1fb003ec6006ba5",
+        "id": "86ccfef8b69a66b9",
         "type": "tabs",
         "children": [
           {
-            "id": "78ea1f43e7777f94",
+            "id": "37cebcdba7c04191",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article/Metodologia.md",
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Agosto/Exp 01/Validação Cruzada.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Metodologia"
+              "title": "Validação Cruzada"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de arquivos"
@@ -78,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5124969482422
+    "width": 349.5124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "a3a788e0072b571c",
@@ -94,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article/Metodologia.md",
+                "file": "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article/Resultados e Discussões.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +107,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Metodologia"
+              "title": "Links inversos para Resultados e Discussões"
             }
           },
           {
@@ -179,44 +182,44 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "78ea1f43e7777f94",
+  "active": "37cebcdba7c04191",
   "lastOpenFiles": [
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article/Introdução.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article/Metodologia.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/SemTunning/6 Classes/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Tunning/4 Classes/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Agosto/Exp 01/Validação Cruzada.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 23-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Agosto/Exp 01",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Agosto",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 20-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 17-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 10-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 09-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 08-06 Pipeline2.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Reunião 08-06.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Explicação dos Parâmetros.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Datasets.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Comparativo dos Modelos.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Tunning/4 Classes/Resultados/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/80-20.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/70-15-15.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/6 Classes/70-15-15.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/6 Classes/70-30.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/6 Classes/75-25.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/6 Classes/80-20.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Julho/Reunião 15-07.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Maio/Considerações 20-05 Suzana.md",
+    "8 Período/Desenvolvimento TCC 2026/Escrita/Junho/Como otimizar o modelo.md",
+    "8 Período/Desenvolvimento TCC 2025/Reunião Outubro/MobileNetV2/Artigos x Modelo.md",
+    "Entrevistas",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article/Sem título",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/MCPPMGCS Article",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Reunião 08-07.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Reunião 01-07.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Reunião 10-07.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Comparativos/Documentos.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/SemTunning/5 Classes/70-15-15.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/SemTunning/5 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/Tunning/5 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/Tunning/6 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/6 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/4 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Tunning/4 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/4 Classes/80-20.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/Tunning/5 Classes/75-25.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/SemTunning/5 Classes/75-25.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/SemTunning/6 Classes/75-25.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/SemTunning/6 Classes/70-30.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/Tunning/6 Classes/75-25.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/SemTunning/6 Classes/75-25.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 01/FineTunning/6 Classes/75-25.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes/75-25.md",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes/70-30.md",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Comparativos/Exp06",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Comparativos",
     "Livros/Estat e prob.pdf",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/Tunning/6 Classes/Resultados",
     "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 03/SemTunning/6 Classes/Resultados",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 02/Tunning/5 Classes/Resultados",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Tunning/4 Classes/Resultados",
-    "8 Período/Desenvolvimento TCC 2026/Escrita/Julho/Exp 05/Sem Tunning/4 Classes/Resultados",
     "Prints/Captura de tela 2026-05-12 190330.png",
     "Prints/Pasted image 20260329152427.png",
     "Prints/Pasted image 20260322114010.png",

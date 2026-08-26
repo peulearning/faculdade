@@ -39,15 +39,11 @@ Nesse contexto, o emprego de tecnologias baseadas em Inteligência Artificial te
 
 --- 
 
-# Escrita com minhas palavras ( Instruções )
-
-
-Então eu preciso escrever como um Aluno esses parágrafos por exemplo :
+# Escrita com minhas palavras 
 
 Introdução : 1 Tópico oque eu vou abordar em contextualização e referencial
 
 1. Gostaria de iniciar contextualizando meu trabalho que é sobre as feridas, dizer sobre o impacto que elas tem tanto como um desafio nos sistemas de saúde quanto impacta na qualidade de vida dos pacientes ou seja merece um diagnóstico preciso.
-
 
 
 Introdução : 2 Tópico O que abordar na problematização
@@ -55,12 +51,9 @@ Introdução : 2 Tópico O que abordar na problematização
 2. Trabalhar com Visão Computacional na detecção e classificação de feridas com IA leve / MobileNetV2
 
 
-
 Introdução : 3 Tópico o que irei abordar na hipótese
 
 3. Por exemplo : "Será que o modelo mobilenet consegue se adequar bem ao contexto das feridas ( comparativo entre os experimentos etc.... ) ? "
-
-
 
 Introdução : 4 Tópico Abordagem no Objetivo
 
